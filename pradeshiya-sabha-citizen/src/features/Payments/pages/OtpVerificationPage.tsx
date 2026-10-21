@@ -1,0 +1,183 @@
+import { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { usePaymentFlow } from "../context/PaymentFlowContext";
+import StepIndicator from "../components/StepIndicator";
+
+const OTP_LENGTH = 6;
+const RESEND_SECONDS = 30;
+
+/**
+ * Generates a random 6-digit OTP code using crypto for demo purposes.
+ * @returns A 6-digit numeric string
+ */
+function generateOtp() {
+  const array = new Uint32Array(1);
+  crypto.getRandomValues(array);
+  return (100000 + (array[0] % 900000)).toString();
+}
+
+/**
+ * Renders Step 2 of the payment flow for 6-digit mobile OTP verification.
+ */
+export default function OtpVerificationPage() {
+  const { state, update, reset } = usePaymentFlow();
+  const navigate = useNavigate();
+  const [digits, setDigits] = useState(new Array(OTP_LENGTH).fill(""));
+  const [error, setError] = useState("");
+  const [secondsLeft, setSecondsLeft] = useState(RESEND_SECONDS);
+  const [sentOtp, setSentOtp] = useState("");
+  const inputsRef = useRef(new Array(OTP_LENGTH).fill(null));
+
+  /** Ensures account details are verified before proceeding; initiates OTP dispatch on mount */
+  useEffect(() => {
+    if (!state.verified) {
+      navigate("/payments", { replace: true });
+      return;
+    }
+    sendOtp();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  /** Decrements the resend timer every second until reaching zero */
+  useEffect(() => {
+    if (secondsLeft <= 0) return;
+    const t = setInterval(() => setSecondsLeft((s) => s - 1), 1000);
+    return () => clearInterval(t);
+  }, [secondsLeft]);
+
+  /**
+   * Generates and dispatches a demo OTP code, updating state and resetting the countdown timer.
+   */
+  function sendOtp() {
+    const code = generateOtp();
+    setSentOtp(code);
+    update("otpCode", code);
+    update("otpSentTo", state.mobile);
+    setSecondsLeft(RESEND_SECONDS);
+    setDigits(new Array(OTP_LENGTH).fill(""));
+    setError("");
+  }
+
+  /**
+   * Returns the user to Step 1 so they can revise bill details.
+   */
+  function handleBack() {
+    navigate("/payments");
+  }
+
+  /**
+   * Resets payment flow state and exits to the main services page.
+   */
+  function handleCancel() {
+    reset();
+    navigate("/services");
+  }
+
+  /**
+   * Handles single-digit OTP input changes, updating state and auto-advancing focus to the next input.
+   * @param i Input slot index (0 to 5)
+   * @param value Single digit string entered in the input slot
+   */
+  function handleChange(i, value) {
+    if (!/^\d?$/.test(value)) return;
+    const next = [...digits];
+    next[i] = value;
+    setDigits(next);
+    if (value && i < OTP_LENGTH - 1) inputsRef.current[i + 1]?.focus();
+  }
+
+  /**
+   * Handles keypresses on OTP input slots, auto-focusing the previous input when backspacing an empty slot.
+   * @param i Input slot index (0 to 5)
+   * @param e Keyboard event object
+   */
+  function handleKeyDown(i, e) {
+    if (e.key === "Backspace" && !digits[i] && i > 0) {
+      inputsRef.current[i - 1]?.focus();
+    }
+  }
+
+  /**
+   * Validates the 6-digit OTP entry against the generated code and navigates to the payment method step.
+   */
+  function handleVerify() {
+    const entered = digits.join("");
+    if (entered.length < OTP_LENGTH) {
+      setError("Please enter the full 6-digit code.");
+      return;
+    }
+    if (entered !== sentOtp) {
+      setError("Incorrect code. Please try again.");
+      return;
+    }
+    update("otpVerified", true);
+    navigate("/payments/method");
+  }
+
+  return (
+    <div className="max-w-lg mx-auto py-10 px-4">
+      <StepIndicator current={2} />
+      <div className="bg-white border border-zinc-200 rounded-xl p-6 sm:p-8 text-center">
+        <h2 className="text-xl font-extrabold text-[#1B1C1C] mb-1">Verify Your Number</h2>
+        <p className="text-sm text-zinc-500 mb-6">
+          We've sent a 6-digit code to <span className="font-semibold text-[#1B1C1C]">{state.mobile}</span>.
+        </p>
+
+        {/* Demo notice — remove once wired to a real SMS gateway */}
+        <div className="bg-amber-50 border border-amber-200 text-amber-800 text-xs rounded-lg px-3 py-2 mb-6">
+          Demo mode: your OTP is <span className="font-bold">{sentOtp}</span> — in production
+          this is sent by SMS and never shown on screen.
+        </div>
+
+        <div className="flex justify-center gap-2 mb-4">
+          {digits.map((d, i) => (
+            <input
+              key={`otp-input-${i + 1}`}
+              ref={(el) => {
+                inputsRef.current[i] = el;
+              }}
+              value={d}
+              onChange={(e) => handleChange(i, e.target.value)}
+              onKeyDown={(e) => handleKeyDown(i, e)}
+              inputMode="numeric"
+              maxLength={1}
+              className="w-11 h-12 text-center text-lg font-bold border border-zinc-300 rounded-lg focus:outline-none focus:border-[#81081C]"
+            />
+          ))}
+        </div>
+
+        {error && <p className="text-xs text-red-600 mb-4">{error}</p>}
+
+        <div className="flex flex-col sm:flex-row gap-3 mb-3">
+          <button
+            type="button"
+            onClick={handleBack}
+            className="flex-1 border border-zinc-300 text-[#1B1C1C] font-semibold py-3 rounded-lg text-sm transition-colors hover:bg-zinc-50"
+          >
+            Back
+          </button>
+          <button
+            type="button"
+            onClick={handleCancel}
+            className="flex-1 border border-zinc-300 text-[#1B1C1C] font-semibold py-3 rounded-lg text-sm transition-colors hover:bg-zinc-50"
+          >
+            Cancel
+          </button>
+        </div>
+
+        <button type="button" onClick={handleVerify} className="w-full bg-[#81081C] hover:bg-[#5E0614] text-white font-bold py-3 rounded-lg text-sm transition-colors mb-3">
+          Verify Code
+        </button>
+
+        <button
+          type="button"
+          onClick={sendOtp}
+          disabled={secondsLeft > 0}
+          className="text-xs font-semibold text-[#81081C] disabled:text-zinc-400 disabled:cursor-not-allowed"
+        >
+          {secondsLeft > 0 ? `Resend code in ${secondsLeft}s` : "Resend Code"}
+        </button>
+      </div>
+    </div>
+  );
+}

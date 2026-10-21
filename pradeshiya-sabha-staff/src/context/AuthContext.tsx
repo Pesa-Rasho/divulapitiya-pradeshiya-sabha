@@ -1,0 +1,92 @@
+/* eslint-disable react-refresh/only-export-components */
+import React, { createContext, useContext, useState, useMemo, useCallback } from 'react'
+
+export interface User {
+  id: string
+  name: string
+  email: string
+  role?: string
+}
+
+export const DUMMY_USERS: Record<string, User> = {
+  superadmin: {
+    id: '0',
+    name: 'Super Administrator',
+    email: 'superadmin@pradeshiyasabha.gov.lk',
+    role: 'superadmin',
+  },
+  admin: {
+    id: '1',
+    name: 'Dev Admin',
+    email: 'admin@pradeshiyasabha.gov.lk',
+    role: 'admin',
+  },
+  staff: {
+    id: '2',
+    name: 'Staff Member',
+    email: 'staff@pradeshiyasabha.gov.lk',
+    role: 'staff',
+  },
+}
+
+interface AuthContextType {
+  user: User | null
+  login: (userOrEmail: User | string) => void
+  logout: () => void
+}
+
+const AuthContext = createContext<AuthContextType | undefined>(undefined)
+
+export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const [user, setUser] = useState<User | null>(() => {
+    const saved = localStorage.getItem('pradeshiya_user')
+    if (saved) {
+      try {
+        return JSON.parse(saved)
+      } catch {
+        // ignore error
+      }
+    }
+    return null
+  })
+
+  const login = useCallback((userOrEmail: User | string) => {
+    let newUser: User
+    if (typeof userOrEmail === 'string') {
+      const lower = userOrEmail.toLowerCase()
+      if (lower.includes('super')) {
+        newUser = DUMMY_USERS.superadmin
+      } else if (lower.includes('staff') || userOrEmail.includes('1999703')) {
+        newUser = DUMMY_USERS.staff
+      } else {
+        newUser = DUMMY_USERS.admin
+      }
+    } else {
+      newUser = userOrEmail
+    }
+    setUser(newUser)
+    localStorage.setItem('pradeshiya_user', JSON.stringify(newUser))
+  }, [])
+
+  const logout = useCallback(() => {
+    setUser(null)
+    localStorage.removeItem('pradeshiya_user')
+  }, [])
+
+  const value = useMemo(() => ({ user, login, logout }), [user, login, logout])
+
+  return (
+    <AuthContext.Provider value={value}>
+      {children}
+    </AuthContext.Provider>
+  )
+}
+
+export const useAuth = () => {
+  const context = useContext(AuthContext)
+  if (!context) {
+    throw new Error('useAuth must be used within an AuthProvider')
+  }
+  return context
+}
+
