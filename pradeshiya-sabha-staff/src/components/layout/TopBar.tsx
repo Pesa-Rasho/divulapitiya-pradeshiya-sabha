@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useAuth } from '../../context/AuthContext'
 
-import logo from '../../assets/logo.png'
 
 // ── Icons ──────────────────────────────────────────────────────────────────
 const FacebookIcon = () => (
@@ -65,8 +64,15 @@ const TopBar: React.FC<TopBarProps> = ({ hideNav }) => {
             {/* Mobile Sidebar Reveal Toggle in Row 1 */}
 
 
-            {/* Real logo */}
-            <img src={logo} alt="Divulapitiya Pradeshiya Sabha Logo" className="h-11 sm:h-12 md:h-14 w-auto shrink-0" />
+            {/* Brand Typography */}
+            <Link to="/" className="group flex flex-col justify-center focus:outline-none">
+              <span className="text-lg sm:text-xl font-extrabold tracking-tight text-gray-900 group-hover:text-[#A31736] transition-colors leading-tight">
+                Divulapitiya Pradeshiya Sabha
+              </span>
+              <span className="text-[10px] sm:text-xs font-semibold text-gray-500 tracking-wide mt-0.5 leading-none">
+                දිවුලපිටිය ප්‍රාදේශීය සභාව • திவுலபிட்டிய பிரதேச சபை
+              </span>
+            </Link>
           </div>
 
           {/* Right side: language + social + phone */}

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import logoImg from '../../assets/logo.png';
 import { useAuth } from '../../context/AuthContext';
 import { useLanguage } from '../../context/LanguageContext';
 import { useLocation, Link } from 'react-router-dom';
@@ -86,14 +85,15 @@ const Header = () => {
       <div className="bg-white px-2.5 sm:px-6 lg:px-10 py-1.5 sm:py-3 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2 sm:gap-4 border-b border-gray-100">
         {/* Top Row on mobile: Logo + Contact Button */}
         <div className="flex items-center justify-between sm:justify-start gap-2 w-full sm:w-auto">
-          {/* Logo Section */}
+          {/* Brand Typography */}
           <div className="flex items-center min-w-0">
-            <Link to="/" className="inline-block transition-transform hover:scale-[1.01] duration-200 focus:outline-none">
-              <img
-                src={logoImg}
-                alt="Divulapitiya Pradeshiya Sabha Logo"
-                className="h-9 sm:h-14 md:h-16 w-auto object-contain max-w-[160px] sm:max-w-none shrink-0"
-              />
+            <Link to="/" className="group flex flex-col justify-center focus:outline-none py-1">
+              <span className="text-lg sm:text-2xl font-extrabold tracking-tight text-gray-900 group-hover:text-[#8C1538] transition-colors leading-tight">
+                Divulapitiya Pradeshiya Sabha
+              </span>
+              <span className="text-[10px] sm:text-xs font-semibold text-gray-500 tracking-wide mt-0.5 leading-none">
+                දිවුලපිටිය ප්‍රාදේශීය සභාව • திவுலபிட்டிய பிரதேச சபை
+              </span>
             </Link>
           </div>
 

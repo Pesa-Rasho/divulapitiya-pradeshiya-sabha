@@ -1,5 +1,4 @@
 import React from 'react';
-import logoImg from '../../../assets/logo.png';
 import { useLanguage } from '../../../context/LanguageContext';
 
 const OfficialLetterModal = ({ isOpen, onClose, letter }) => {
@@ -56,7 +55,9 @@ const OfficialLetterModal = ({ isOpen, onClose, letter }) => {
         <div className="p-6 sm:p-12 bg-white flex-grow overflow-y-auto print:p-0 print:overflow-visible select-text" id="printable-letter">
           {/* Letterhead */}
           <div className="flex flex-col items-center border-b-2 border-[#8C1538] pb-6 mb-8 text-center">
-            <img src={logoImg} alt="Divulapitiya Pradeshiya Sabha Logo" className="h-20 mb-3" />
+            <span className="text-xs sm:text-sm font-semibold tracking-wider text-gray-600 uppercase mb-1">
+              දිවුලපිටිය ප්‍රාදේශීය සභාව • திவுலபிட்டிய பிரதேச சபை
+            </span>
             <h1 className="text-xl sm:text-2xl font-bold text-[#8C1538] tracking-tight">DIVULAPITIYA PRADESHIYA SABHA</h1>
             <p className="text-sm font-semibold text-gray-700 mt-1">Court Road, Divulapitiya, Sri Lanka.</p>
             <p className="text-xs text-gray-500 mt-1">Tel: +94 11 285 5230 | Email: divulapitiyapradeshiyasabawa@gmail.com</p>
