@@ -70,7 +70,7 @@ export const AddPropertyDrawer: React.FC<AddPropertyDrawerProps> = ({
 
       // Boundary proximity check
       if (initialCoords.latitude < 6.82 || initialCoords.latitude > 6.865 || initialCoords.longitude < 79.98 || initialCoords.longitude > 80.035) {
-        setBoundaryWarning('Notice: This coordinate lies near or outside the standard Homagama Sabha boundary polygon.')
+        setBoundaryWarning('Notice: This coordinate lies near or outside the standard Divulapitiya Sabha boundary polygon.')
       } else {
         setBoundaryWarning(null)
       }
@@ -187,7 +187,7 @@ export const AddPropertyDrawer: React.FC<AddPropertyDrawerProps> = ({
           name: ownerName.trim(),
           nic: ownerNic.trim(),
           mobile: ownerMobile.trim(),
-          postalAddress: postalAddress.trim() || `${propertyNumber}, Homagama`,
+          postalAddress: postalAddress.trim() || `${propertyNumber}, Divulapitiya`,
         },
       })
       onClose()
@@ -271,7 +271,7 @@ export const AddPropertyDrawer: React.FC<AddPropertyDrawerProps> = ({
                 type="text"
                 value={addressSearchQuery}
                 onChange={(e) => setAddressSearchQuery(e.target.value)}
-                placeholder="e.g. Station Road, Homagama Town..."
+                placeholder="e.g. Station Road, Divulapitiya Town..."
                 className="flex-1 px-3 py-1.5 text-xs bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#A31736]"
               />
               <button
@@ -487,7 +487,7 @@ export const AddPropertyDrawer: React.FC<AddPropertyDrawerProps> = ({
               <label className="block text-xs font-semibold text-gray-700 mb-1">Postal Address</label>
               <input
                 type="text"
-                placeholder="e.g. No. 78/12A, High Level Road, Homagama"
+                placeholder="e.g. No. 78/12A, High Level Road, Divulapitiya"
                 value={postalAddress}
                 onChange={(e) => setPostalAddress(e.target.value)}
                 className="w-full px-3 py-2 text-xs bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#A31736]"

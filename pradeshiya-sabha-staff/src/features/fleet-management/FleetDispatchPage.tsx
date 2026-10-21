@@ -49,7 +49,7 @@ const MinusIcon = () => (
   </svg>
 )
 
-// Helper to determine realistic GPS coordinates in Homagama / Pradeshiya Sabha area
+// Helper to determine realistic GPS coordinates in Divulapitiya / Pradeshiya Sabha area
 function getVehicleCoordinates(v: VehicleRecord, index: number): [number, number] {
   if (v.gpsTracking) {
     return [v.gpsTracking.lat, v.gpsTracking.lng]
@@ -160,7 +160,7 @@ export const FleetDispatchPage: React.FC = () => {
   useEffect(() => {
     if (!mapContainerRef.current || mapInstanceRef.current) return
 
-    // Center on Western Province / Homagama municipal region
+    // Center on Western Province / Divulapitiya municipal region
     const initialCenter: [number, number] = [6.8435, 79.9750]
     const map = L.map(mapContainerRef.current, {
       center: initialCenter,
@@ -306,7 +306,7 @@ export const FleetDispatchPage: React.FC = () => {
             Real-Time Vehicle Telemetry & Interactive GIS Tracking
           </h1>
           <p className="text-xs sm:text-sm text-gray-500 mt-0.5">
-            Live GPS telemetry, speed monitoring, and municipal route dispatch tracking for Homagama jurisdiction.
+            Live GPS telemetry, speed monitoring, and municipal route dispatch tracking for Divulapitiya jurisdiction.
           </p>
         </div>
 

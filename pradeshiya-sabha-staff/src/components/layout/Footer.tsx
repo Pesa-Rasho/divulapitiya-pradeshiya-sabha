@@ -49,9 +49,9 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-white font-semibold text-base mb-4">Contact Information</h3>
             <div className="space-y-1 text-sm text-gray-400">
-              <p>හෝමාගම ප්‍රාදේශීය සභාව,</p>
+              <p>දිවුලපිටිය ප්‍රාදේශීය සභාව,</p>
               <p>උසාවිය පාර,</p>
-              <p>හෝමාගම</p>
+              <p>දිවුලපිටිය</p>
             </div>
             <div className="mt-4 space-y-1 text-sm">
               <p>
@@ -67,10 +67,10 @@ const Footer: React.FC = () => {
               <p>
                 Email:{' '}
                 <a
-                  href="mailto:homagamapradeshiyasabawa@gmail.com"
+                  href="mailto:divulapitiyapradeshiyasabawa@gmail.com"
                   className="hover:text-white transition-colors"
                 >
-                  homagamapradeshiyasabawa@gmail.com
+                  divulapitiyapradeshiyasabawa@gmail.com
                 </a>
               </p>
             </div>
@@ -132,7 +132,7 @@ const Footer: React.FC = () => {
       {/* Copyright bar */}
       <div className="border-t border-gray-700">
         <div className="max-w-screen-2xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-500">
-          <span>Copyright © 2025 Homagama Pradeshiya Sabha. All Rights Reserved.</span>
+          <span>Copyright © 2025 Divulapitiya Pradeshiya Sabha. All Rights Reserved.</span>
           <span>Concept, Design &amp; Development by SLT</span>
         </div>
       </div>

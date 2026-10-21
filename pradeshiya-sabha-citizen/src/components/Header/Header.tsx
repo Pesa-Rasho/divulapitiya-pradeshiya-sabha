@@ -91,7 +91,7 @@ const Header = () => {
             <Link to="/" className="inline-block transition-transform hover:scale-[1.01] duration-200 focus:outline-none">
               <img
                 src={logoImg}
-                alt="Homagama Pradeshiya Sabha Logo"
+                alt="Divulapitiya Pradeshiya Sabha Logo"
                 className="h-9 sm:h-14 md:h-16 w-auto object-contain max-w-[160px] sm:max-w-none shrink-0"
               />
             </Link>

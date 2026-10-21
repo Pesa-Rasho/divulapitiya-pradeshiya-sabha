@@ -91,7 +91,7 @@ const FacilitySchedulePage: React.FC = () => {
           <option value="Pradeshiya Sabha Town Hall">Pradeshiya Sabha Town Hall</option>
           <option value="Mattegoda Community Center">Mattegoda Community Center</option>
           <option value="Kottawa Public Ground & Pavilion">Kottawa Public Ground & Pavilion</option>
-          <option value="Homagama Indoor Sports Complex">Homagama Indoor Sports Complex</option>
+          <option value="Divulapitiya Indoor Sports Complex">Divulapitiya Indoor Sports Complex</option>
           <option value="Public Crematorium & Chapel">Public Crematorium & Chapel</option>
           <option value="Mobile Stage & Sound Equipment">Mobile Stage & Sound Equipment</option>
         </select>

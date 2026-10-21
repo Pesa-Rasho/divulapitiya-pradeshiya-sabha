@@ -35,9 +35,9 @@ const NewLetterModal = ({
             </h2>
             <p className="text-[11px] sm:text-sm text-white/90 font-medium truncate sm:whitespace-normal">
               {L(
-                'හෝමාගම ප්‍රාදේශීය සභාවේ අදාළ අංශ වෙත ඔබගේ ලිපිය හෝ ඉල්ලීම යොමු කරන්න',
+                'දිවුලපිටිය ප්‍රාදේශීය සභාවේ අදාළ අංශ වෙත ඔබගේ ලිපිය හෝ ඉල්ලීම යොමු කරන්න',
                 'Submit formal correspondence directly to municipal departments',
-                'ஹோமகம பிரதேச சபையின் உரிய பிரிவுக்கு உங்கள் கடிதத்தை சமர்ப்பிக்கவும்'
+                'திவுலபிட்டிய பிரதேச சபையின் உரிய பிரிவுக்கு உங்கள் கடிதத்தை சமர்ப்பிக்கவும்'
               )}
             </p>
           </div>

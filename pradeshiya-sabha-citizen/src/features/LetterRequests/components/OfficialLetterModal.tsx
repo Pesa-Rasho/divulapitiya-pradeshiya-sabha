@@ -21,7 +21,7 @@ const OfficialLetterModal = ({ isOpen, onClose, letter }) => {
                 {L('නිල ලිපි ආකෘතිය', 'Official Letter Format', 'அதிகாரபூர்வ கடிதம்')}
               </h2>
               <p className="text-[11px] sm:text-xs text-white/85 font-medium">
-                {L('හෝමාගම ප්‍රාදේශීය සභාවේ නිල ලේඛන පිටපත', 'Homagama Pradeshiya Sabha Official Record Copy', 'ஹோமகம பிரதேச சபை உத்தியோகபூர்வ ஆவணம்')}
+                {L('දිවුලපිටිය ප්‍රාදේශීය සභාවේ නිල ලේඛන පිටපත', 'Divulapitiya Pradeshiya Sabha Official Record Copy', 'திவுலபிட்டிய பிரதேச சபை உத்தியோகபூர்வ ஆவணம்')}
               </p>
             </div>
             <span className="bg-white/15 text-white border border-white/20 px-2.5 py-0.5 rounded-md text-xs font-bold">
@@ -56,10 +56,10 @@ const OfficialLetterModal = ({ isOpen, onClose, letter }) => {
         <div className="p-6 sm:p-12 bg-white flex-grow overflow-y-auto print:p-0 print:overflow-visible select-text" id="printable-letter">
           {/* Letterhead */}
           <div className="flex flex-col items-center border-b-2 border-[#8C1538] pb-6 mb-8 text-center">
-            <img src={logoImg} alt="Homagama Pradeshiya Sabha Logo" className="h-20 mb-3" />
-            <h1 className="text-xl sm:text-2xl font-bold text-[#8C1538] tracking-tight">HOMAGAMA PRADESHIYA SABHA</h1>
-            <p className="text-sm font-semibold text-gray-700 mt-1">Court Road, Homagama, Sri Lanka.</p>
-            <p className="text-xs text-gray-500 mt-1">Tel: +94 11 285 5230 | Email: homagamapradeshiyasabawa@gmail.com</p>
+            <img src={logoImg} alt="Divulapitiya Pradeshiya Sabha Logo" className="h-20 mb-3" />
+            <h1 className="text-xl sm:text-2xl font-bold text-[#8C1538] tracking-tight">DIVULAPITIYA PRADESHIYA SABHA</h1>
+            <p className="text-sm font-semibold text-gray-700 mt-1">Court Road, Divulapitiya, Sri Lanka.</p>
+            <p className="text-xs text-gray-500 mt-1">Tel: +94 11 285 5230 | Email: divulapitiyapradeshiyasabawa@gmail.com</p>
           </div>
 
           {/* Letter Metadata */}
@@ -77,7 +77,7 @@ const OfficialLetterModal = ({ isOpen, onClose, letter }) => {
           <div className="mb-8 text-sm text-gray-800 leading-relaxed">
             <p>To,</p>
             <p className="font-bold mt-1 text-gray-900">The Applicant / Relevant Authority,</p>
-            <p>Homagama.</p>
+            <p>Divulapitiya.</p>
           </div>
 
           {/* Subject */}
@@ -102,7 +102,7 @@ const OfficialLetterModal = ({ isOpen, onClose, letter }) => {
               {letter.remarks && <span><strong>Additional Notes:</strong> {letter.remarks}</span>}
             </p>
             <p className="text-xs text-gray-500 italic pt-2">
-              Please note that this is an electronically generated official correspondence record from the Homagama Pradeshiya Sabha Digital Citizen Portal and may require a physical verification or signature for processing purposes depending on statutory requirements.
+              Please note that this is an electronically generated official correspondence record from the Divulapitiya Pradeshiya Sabha Digital Citizen Portal and may require a physical verification or signature for processing purposes depending on statutory requirements.
             </p>
             <p>Thank you,</p>
           </div>
@@ -118,7 +118,7 @@ const OfficialLetterModal = ({ isOpen, onClose, letter }) => {
             <div className="text-center">
               <div className="border-t border-gray-400 w-48 pt-2 mx-auto">
                 <p className="font-semibold">Authorized Officer</p>
-                <p className="text-xs text-gray-500">Homagama Pradeshiya Sabha</p>
+                <p className="text-xs text-gray-500">Divulapitiya Pradeshiya Sabha</p>
               </div>
             </div>
           </div>

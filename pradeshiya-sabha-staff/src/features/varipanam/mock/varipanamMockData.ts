@@ -13,25 +13,25 @@ import type {
 } from '../types/varipanam'
 
 export const INITIAL_ZONES: Zone[] = [
-  { id: 'zone-homagama', name: 'Homagama', code: 'HMG' },
+  { id: 'zone-divulapitiya', name: 'Divulapitiya', code: 'HMG' },
   { id: 'zone-wateraka', name: 'Wateraka', code: 'WTK' },
 ]
 
 export const INITIAL_WARDS: Ward[] = [
-  { id: 'ward-01', zoneId: 'zone-homagama', number: 1, name: 'Homagama Town' },
-  { id: 'ward-02', zoneId: 'zone-homagama', number: 2, name: 'Pannipitiya North' },
-  { id: 'ward-03', zoneId: 'zone-homagama', number: 3, name: 'Makumbura' },
+  { id: 'ward-01', zoneId: 'zone-divulapitiya', number: 1, name: 'Divulapitiya Town' },
+  { id: 'ward-02', zoneId: 'zone-divulapitiya', number: 2, name: 'Pannipitiya North' },
+  { id: 'ward-03', zoneId: 'zone-divulapitiya', number: 3, name: 'Makumbura' },
   { id: 'ward-04', zoneId: 'zone-wateraka', number: 4, name: 'Wateraka Central' },
   { id: 'ward-05', zoneId: 'zone-wateraka', number: 5, name: 'Godagama South' },
   { id: 'ward-06', zoneId: 'zone-wateraka', number: 6, name: 'Galagedara' },
 ]
 
 export const INITIAL_ROADS: Road[] = [
-  // Homagama Zone
-  { id: 'road-hmg-01', zoneId: 'zone-homagama', wardId: 'ward-01', name: 'High Level Road (A4)', code: 'HMG-HLR' },
-  { id: 'road-hmg-02', zoneId: 'zone-homagama', wardId: 'ward-01', name: 'Station Road', code: 'HMG-STR' },
-  { id: 'road-hmg-03', zoneId: 'zone-homagama', wardId: 'ward-02', name: 'Court & Temple Avenue', code: 'HMG-CTA' },
-  { id: 'road-hmg-04', zoneId: 'zone-homagama', wardId: 'ward-03', name: 'Makumbura Expressway Access Road', code: 'HMG-MEA' },
+  // Divulapitiya Zone
+  { id: 'road-hmg-01', zoneId: 'zone-divulapitiya', wardId: 'ward-01', name: 'High Level Road (A4)', code: 'HMG-HLR' },
+  { id: 'road-hmg-02', zoneId: 'zone-divulapitiya', wardId: 'ward-01', name: 'Station Road', code: 'HMG-STR' },
+  { id: 'road-hmg-03', zoneId: 'zone-divulapitiya', wardId: 'ward-02', name: 'Court & Temple Avenue', code: 'HMG-CTA' },
+  { id: 'road-hmg-04', zoneId: 'zone-divulapitiya', wardId: 'ward-03', name: 'Makumbura Expressway Access Road', code: 'HMG-MEA' },
   // Wateraka Zone
   { id: 'road-wtk-01', zoneId: 'zone-wateraka', wardId: 'ward-04', name: 'Godagama - Wateraka Link Road', code: 'WTK-GWL' },
   { id: 'road-wtk-02', zoneId: 'zone-wateraka', wardId: 'ward-04', name: 'Industrial Zone Access Way', code: 'WTK-IZA' },
@@ -85,7 +85,7 @@ export const DEFAULT_VARIPANAM_SETTINGS: VaripanamSettings = {
 }
 
 export const INITIAL_PROPERTIES: Property[] = [
-  // ── Homagama Zone Properties (1 to 22) ───────────────────────────────────
+  // ── Divulapitiya Zone Properties (1 to 22) ───────────────────────────────────
   {
     id: 'prop-01',
     assessmentNumber: '78/12a',
@@ -95,7 +95,7 @@ export const INITIAL_PROPERTIES: Property[] = [
     annualAssessedValue: 200000, // Annual tax = 20,000, Quarterly = 5,000
     latitude: 6.8421,
     longitude: 80.0028,
-    zoneId: 'zone-homagama',
+    zoneId: 'zone-divulapitiya',
     wardId: 'ward-01',
     roadId: 'road-hmg-01',
     currentOwner: {
@@ -103,7 +103,7 @@ export const INITIAL_PROPERTIES: Property[] = [
       name: 'Sunil Shantha Perera',
       nic: '197512400321',
       mobile: '+94 77 123 4567',
-      postalAddress: 'No. 78/12A, High Level Road, Homagama',
+      postalAddress: 'No. 78/12A, High Level Road, Divulapitiya',
     },
     status: 'Overdue',
     dues: [
@@ -124,7 +124,7 @@ export const INITIAL_PROPERTIES: Property[] = [
     annualAssessedValue: 400000, // Annual tax = 60,000 (15%), Quarterly = 15,000
     latitude: 6.8435,
     longitude: 80.0042,
-    zoneId: 'zone-homagama',
+    zoneId: 'zone-divulapitiya',
     wardId: 'ward-01',
     roadId: 'road-hmg-01',
     currentOwner: {
@@ -132,7 +132,7 @@ export const INITIAL_PROPERTIES: Property[] = [
       name: 'Kithsiri Jayawardena',
       nic: '196809800112',
       mobile: '+94 71 890 1234',
-      postalAddress: 'No. 45/2, High Level Road, Homagama',
+      postalAddress: 'No. 45/2, High Level Road, Divulapitiya',
     },
     status: 'Warrant issued',
     dues: [
@@ -171,7 +171,7 @@ export const INITIAL_PROPERTIES: Property[] = [
     annualAssessedValue: 180000, // Tax = 18,000, Quarter = 4,500
     latitude: 6.8408,
     longitude: 80.0019,
-    zoneId: 'zone-homagama',
+    zoneId: 'zone-divulapitiya',
     wardId: 'ward-01',
     roadId: 'road-hmg-02',
     currentOwner: {
@@ -179,7 +179,7 @@ export const INITIAL_PROPERTIES: Property[] = [
       name: 'Anula Damayanthi Silva',
       nic: '198264500987',
       mobile: '+94 77 445 6789',
-      postalAddress: 'No. 12/A, Station Road, Homagama',
+      postalAddress: 'No. 12/A, Station Road, Divulapitiya',
     },
     status: 'Paid',
     dues: [
@@ -200,7 +200,7 @@ export const INITIAL_PROPERTIES: Property[] = [
     annualAssessedValue: 240000,
     latitude: 6.8395,
     longitude: 80.0031,
-    zoneId: 'zone-homagama',
+    zoneId: 'zone-divulapitiya',
     wardId: 'ward-01',
     roadId: 'road-hmg-02',
     currentOwner: {
@@ -208,7 +208,7 @@ export const INITIAL_PROPERTIES: Property[] = [
       name: 'Nalaka Bandara',
       nic: '198810200456',
       mobile: '+94 70 234 5678',
-      postalAddress: 'No. 19/3, Station Road, Homagama',
+      postalAddress: 'No. 19/3, Station Road, Divulapitiya',
     },
     status: 'Due soon',
     dues: [
@@ -226,7 +226,7 @@ export const INITIAL_PROPERTIES: Property[] = [
     annualAssessedValue: 500000, // 7% rate = 35,000
     latitude: 6.8445,
     longitude: 80.0062,
-    zoneId: 'zone-homagama',
+    zoneId: 'zone-divulapitiya',
     wardId: 'ward-02',
     roadId: 'road-hmg-03',
     currentOwner: {
@@ -234,7 +234,7 @@ export const INITIAL_PROPERTIES: Property[] = [
       name: 'Ministry of Public Administration',
       nic: 'GOV-SL-0091',
       mobile: '+94 11 289 0000',
-      postalAddress: 'Court & Temple Avenue, Homagama',
+      postalAddress: 'Court & Temple Avenue, Divulapitiya',
     },
     status: 'Paid',
     dues: [
@@ -252,7 +252,7 @@ export const INITIAL_PROPERTIES: Property[] = [
     annualAssessedValue: 300000, // 0% rate = 0
     latitude: 6.8462,
     longitude: 80.0075,
-    zoneId: 'zone-homagama',
+    zoneId: 'zone-divulapitiya',
     wardId: 'ward-02',
     roadId: 'road-hmg-03',
     currentOwner: {
@@ -260,7 +260,7 @@ export const INITIAL_PROPERTIES: Property[] = [
       name: 'Viharadhipathi Ven. Medhananda Thero',
       nic: 'REL-TEM-0012',
       mobile: '+94 11 289 1234',
-      postalAddress: 'Court & Temple Avenue, Homagama',
+      postalAddress: 'Court & Temple Avenue, Divulapitiya',
     },
     status: 'Paid',
     dues: [],
@@ -276,7 +276,7 @@ export const INITIAL_PROPERTIES: Property[] = [
     annualAssessedValue: 800000, // 15% rate = 120,000, Quarterly = 30,000
     latitude: 6.8419,
     longitude: 80.0089,
-    zoneId: 'zone-homagama',
+    zoneId: 'zone-divulapitiya',
     wardId: 'ward-03',
     roadId: 'road-hmg-04',
     currentOwner: {
@@ -284,7 +284,7 @@ export const INITIAL_PROPERTIES: Property[] = [
       name: 'Commercial Properties Lanka Ltd',
       nic: 'PV-98765432',
       mobile: '+94 11 450 6700',
-      postalAddress: 'No. 102/B, Makumbura Expressway Access Road, Homagama',
+      postalAddress: 'No. 102/B, Makumbura Expressway Access Road, Divulapitiya',
     },
     status: 'Paid',
     dues: [
@@ -303,7 +303,7 @@ export const INITIAL_PROPERTIES: Property[] = [
     annualAssessedValue: 120000, // 7% rate = 8,400, Quarterly = 2,100
     latitude: 6.8402,
     longitude: 80.0102,
-    zoneId: 'zone-homagama',
+    zoneId: 'zone-divulapitiya',
     wardId: 'ward-03',
     roadId: 'road-hmg-04',
     currentOwner: {
@@ -311,7 +311,7 @@ export const INITIAL_PROPERTIES: Property[] = [
       name: 'Gamini Wickramasinghe',
       nic: '196523400123',
       mobile: '+94 77 901 2345',
-      postalAddress: 'No. 104/1, Makumbura Access Road, Homagama',
+      postalAddress: 'No. 104/1, Makumbura Access Road, Divulapitiya',
     },
     status: 'Overdue',
     dues: [
@@ -332,7 +332,7 @@ export const INITIAL_PROPERTIES: Property[] = [
     annualAssessedValue: 150000,
     latitude: 6.8411,
     longitude: 80.0049,
-    zoneId: 'zone-homagama',
+    zoneId: 'zone-divulapitiya',
     wardId: 'ward-01',
     roadId: 'road-hmg-01',
     currentOwner: {
@@ -340,7 +340,7 @@ export const INITIAL_PROPERTIES: Property[] = [
       name: 'Chandrika Kumari Gunasekara',
       nic: '197955600432',
       mobile: '+94 71 334 5566',
-      postalAddress: 'No. 25/C, High Level Road, Homagama',
+      postalAddress: 'No. 25/C, High Level Road, Divulapitiya',
     },
     status: 'Due soon',
     dues: [
@@ -358,7 +358,7 @@ export const INITIAL_PROPERTIES: Property[] = [
     annualAssessedValue: 600000,
     latitude: 6.8431,
     longitude: 80.0015,
-    zoneId: 'zone-homagama',
+    zoneId: 'zone-divulapitiya',
     wardId: 'ward-01',
     roadId: 'road-hmg-01',
     currentOwner: {
@@ -366,7 +366,7 @@ export const INITIAL_PROPERTIES: Property[] = [
       name: 'Lanka Super Center (Pvt) Ltd',
       nic: 'PV-10293847',
       mobile: '+94 11 289 4433',
-      postalAddress: 'No. 33/B, High Level Road, Homagama',
+      postalAddress: 'No. 33/B, High Level Road, Divulapitiya',
     },
     status: 'Paid',
     dues: [
@@ -384,7 +384,7 @@ export const INITIAL_PROPERTIES: Property[] = [
     annualAssessedValue: 190000,
     latitude: 6.8389,
     longitude: 80.0022,
-    zoneId: 'zone-homagama',
+    zoneId: 'zone-divulapitiya',
     wardId: 'ward-01',
     roadId: 'road-hmg-02',
     currentOwner: {
@@ -392,7 +392,7 @@ export const INITIAL_PROPERTIES: Property[] = [
       name: 'Rohitha Jayawardena',
       nic: '197210900234',
       mobile: '+94 77 567 8901',
-      postalAddress: 'No. 55/1, Station Road, Homagama',
+      postalAddress: 'No. 55/1, Station Road, Divulapitiya',
     },
     status: 'Overdue',
     dues: [
@@ -412,7 +412,7 @@ export const INITIAL_PROPERTIES: Property[] = [
     annualAssessedValue: 160000,
     latitude: 6.8387,
     longitude: 80.0024,
-    zoneId: 'zone-homagama',
+    zoneId: 'zone-divulapitiya',
     wardId: 'ward-01',
     roadId: 'road-hmg-02',
     currentOwner: {
@@ -420,7 +420,7 @@ export const INITIAL_PROPERTIES: Property[] = [
       name: 'Nimal Jayawardena',
       nic: '199518000345',
       mobile: '+94 76 890 1234',
-      postalAddress: 'No. 55/2, Station Road, Homagama',
+      postalAddress: 'No. 55/2, Station Road, Divulapitiya',
     },
     status: 'Paid',
     dues: [
@@ -439,7 +439,7 @@ export const INITIAL_PROPERTIES: Property[] = [
     annualAssessedValue: 320000,
     latitude: 6.8451,
     longitude: 80.0055,
-    zoneId: 'zone-homagama',
+    zoneId: 'zone-divulapitiya',
     wardId: 'ward-02',
     roadId: 'road-hmg-03',
     currentOwner: {
@@ -447,7 +447,7 @@ export const INITIAL_PROPERTIES: Property[] = [
       name: 'Sarath Fonseka PC',
       nic: '196011200199',
       mobile: '+94 71 223 3445',
-      postalAddress: 'No. 14, Court & Temple Avenue, Homagama',
+      postalAddress: 'No. 14, Court & Temple Avenue, Divulapitiya',
     },
     status: 'Due soon',
     dues: [
@@ -465,7 +465,7 @@ export const INITIAL_PROPERTIES: Property[] = [
     annualAssessedValue: 280000,
     latitude: 6.8458,
     longitude: 80.0068,
-    zoneId: 'zone-homagama',
+    zoneId: 'zone-divulapitiya',
     wardId: 'ward-02',
     roadId: 'road-hmg-03',
     currentOwner: {
@@ -473,7 +473,7 @@ export const INITIAL_PROPERTIES: Property[] = [
       name: 'M. Dharmadasa',
       nic: '197023400567',
       mobile: '+94 77 112 2334',
-      postalAddress: 'No. 18, Court & Temple Avenue, Homagama',
+      postalAddress: 'No. 18, Court & Temple Avenue, Divulapitiya',
     },
     status: 'Overdue',
     dues: [
@@ -492,7 +492,7 @@ export const INITIAL_PROPERTIES: Property[] = [
     annualAssessedValue: 1200000, // 15% rate = 180,000, Quarterly = 45,000
     latitude: 6.8428,
     longitude: 80.0095,
-    zoneId: 'zone-homagama',
+    zoneId: 'zone-divulapitiya',
     wardId: 'ward-03',
     roadId: 'road-hmg-04',
     currentOwner: {
@@ -500,7 +500,7 @@ export const INITIAL_PROPERTIES: Property[] = [
       name: 'Southern Logistics Hub Lanka',
       nic: 'PV-89012345',
       mobile: '+94 11 789 0123',
-      postalAddress: 'No. 88, Makumbura Expressway Access Road, Homagama',
+      postalAddress: 'No. 88, Makumbura Expressway Access Road, Divulapitiya',
     },
     status: 'Warrant issued',
     dues: [
@@ -537,7 +537,7 @@ export const INITIAL_PROPERTIES: Property[] = [
     annualAssessedValue: 950000,
     latitude: 6.8415,
     longitude: 80.0112,
-    zoneId: 'zone-homagama',
+    zoneId: 'zone-divulapitiya',
     wardId: 'ward-03',
     roadId: 'road-hmg-04',
     currentOwner: {
@@ -545,7 +545,7 @@ export const INITIAL_PROPERTIES: Property[] = [
       name: 'Makumbura Petroleum (Pvt) Ltd',
       nic: 'PV-77665544',
       mobile: '+94 11 345 6789',
-      postalAddress: 'No. 92, Makumbura Access Road, Homagama',
+      postalAddress: 'No. 92, Makumbura Access Road, Divulapitiya',
     },
     status: 'Paid',
     dues: [
@@ -563,7 +563,7 @@ export const INITIAL_PROPERTIES: Property[] = [
     annualAssessedValue: 350000,
     latitude: 6.8425,
     longitude: 80.0039,
-    zoneId: 'zone-homagama',
+    zoneId: 'zone-divulapitiya',
     wardId: 'ward-01',
     roadId: 'road-hmg-01',
     currentOwner: {
@@ -571,7 +571,7 @@ export const INITIAL_PROPERTIES: Property[] = [
       name: 'Dr. Senaka Rajapaksha',
       nic: '197608900456',
       mobile: '+94 77 345 6789',
-      postalAddress: 'No. 62, High Level Road, Homagama',
+      postalAddress: 'No. 62, High Level Road, Divulapitiya',
     },
     status: 'Due soon',
     dues: [
@@ -589,7 +589,7 @@ export const INITIAL_PROPERTIES: Property[] = [
     annualAssessedValue: 220000,
     latitude: 6.8418,
     longitude: 80.0033,
-    zoneId: 'zone-homagama',
+    zoneId: 'zone-divulapitiya',
     wardId: 'ward-01',
     roadId: 'road-hmg-01',
     currentOwner: {
@@ -597,7 +597,7 @@ export const INITIAL_PROPERTIES: Property[] = [
       name: 'Kumari Mallika Somapala',
       nic: '196956700123',
       mobile: '+94 71 889 9001',
-      postalAddress: 'No. 74, High Level Road, Homagama',
+      postalAddress: 'No. 74, High Level Road, Divulapitiya',
     },
     status: 'Overdue',
     dues: [
@@ -617,7 +617,7 @@ export const INITIAL_PROPERTIES: Property[] = [
     annualAssessedValue: 175000,
     latitude: 6.8401,
     longitude: 80.0026,
-    zoneId: 'zone-homagama',
+    zoneId: 'zone-divulapitiya',
     wardId: 'ward-01',
     roadId: 'road-hmg-02',
     currentOwner: {
@@ -625,7 +625,7 @@ export const INITIAL_PROPERTIES: Property[] = [
       name: 'Ruwan Kumara Weerasinghe',
       nic: '198420900567',
       mobile: '+94 77 678 9012',
-      postalAddress: 'No. 31, Station Road, Homagama',
+      postalAddress: 'No. 31, Station Road, Divulapitiya',
     },
     status: 'Paid',
     dues: [
@@ -643,7 +643,7 @@ export const INITIAL_PROPERTIES: Property[] = [
     annualAssessedValue: 310000,
     latitude: 6.8392,
     longitude: 80.0018,
-    zoneId: 'zone-homagama',
+    zoneId: 'zone-divulapitiya',
     wardId: 'ward-01',
     roadId: 'road-hmg-02',
     currentOwner: {
@@ -651,7 +651,7 @@ export const INITIAL_PROPERTIES: Property[] = [
       name: 'Upul Nishantha Motors',
       nic: '197709800341',
       mobile: '+94 72 456 7890',
-      postalAddress: 'No. 42, Station Road, Homagama',
+      postalAddress: 'No. 42, Station Road, Divulapitiya',
     },
     status: 'Overdue',
     dues: [
@@ -672,15 +672,15 @@ export const INITIAL_PROPERTIES: Property[] = [
     annualAssessedValue: 260000,
     latitude: 6.8441,
     longitude: 80.0051,
-    zoneId: 'zone-homagama',
+    zoneId: 'zone-divulapitiya',
     wardId: 'ward-02',
     roadId: 'road-hmg-03',
     currentOwner: {
       id: 'own-21',
-      name: 'Homagama Pradeshiya Sabha Cultural Division',
+      name: 'Divulapitiya Pradeshiya Sabha Cultural Division',
       nic: 'GOV-PS-001',
       mobile: '+94 11 289 2200',
-      postalAddress: 'Court & Temple Avenue, Homagama',
+      postalAddress: 'Court & Temple Avenue, Divulapitiya',
     },
     status: 'Paid',
     dues: [],
@@ -696,7 +696,7 @@ export const INITIAL_PROPERTIES: Property[] = [
     annualAssessedValue: 140000,
     latitude: 6.8398,
     longitude: 80.0125,
-    zoneId: 'zone-homagama',
+    zoneId: 'zone-divulapitiya',
     wardId: 'ward-03',
     roadId: 'road-hmg-04',
     currentOwner: {
@@ -704,7 +704,7 @@ export const INITIAL_PROPERTIES: Property[] = [
       name: 'Chandrasena Abeyrathne',
       nic: '196123400890',
       mobile: '+94 71 567 8901',
-      postalAddress: 'No. 110, Makumbura Expressway Access Road, Homagama',
+      postalAddress: 'No. 110, Makumbura Expressway Access Road, Divulapitiya',
     },
     status: 'Due soon',
     dues: [
@@ -1343,7 +1343,7 @@ export const INITIAL_ATD_APPLICATIONS: AtdApplication[] = [
     ],
     documents: [
       { id: 'doc-1', type: 'Deed', name: 'Deed_4412_Perera.pdf', uploadedAt: '2026-01-10', fileSize: '2.4 MB' },
-      { id: 'doc-2', type: 'SurveyPlan', name: 'SurveyPlan_908_Homagama.pdf', uploadedAt: '2026-01-10', fileSize: '3.1 MB' },
+      { id: 'doc-2', type: 'SurveyPlan', name: 'SurveyPlan_908_Divulapitiya.pdf', uploadedAt: '2026-01-10', fileSize: '3.1 MB' },
       { id: 'doc-3', type: 'NotaryReport', name: 'Notary_Attestation_Report.pdf', uploadedAt: '2026-01-10', fileSize: '1.2 MB' },
     ],
     status: 'In Progress',

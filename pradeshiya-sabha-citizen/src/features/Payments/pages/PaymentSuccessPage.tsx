@@ -78,7 +78,7 @@ export default function PaymentSuccessPage() {
 
         <div className="border border-dashed border-zinc-300 rounded-lg p-5 mb-6">
           <div className="flex justify-between items-center mb-4">
-            <span className="text-sm font-bold text-[#1B1C1C]">Homagama Pradeshiya Sabha</span>
+            <span className="text-sm font-bold text-[#1B1C1C]">Divulapitiya Pradeshiya Sabha</span>
             <span className="text-xs text-zinc-400">Official Receipt</span>
           </div>
           <ReceiptRow label="Reference No." value={state.referenceNumber} />

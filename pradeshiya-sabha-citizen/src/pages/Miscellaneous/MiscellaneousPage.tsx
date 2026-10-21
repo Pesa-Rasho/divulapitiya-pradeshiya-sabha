@@ -24,7 +24,7 @@ const MiscellaneousPage: React.FC = () => {
           <h1 className="misc-page__title">Miscellaneous Payments</h1>
           <p className="misc-page__description">
             Select the service you wish to pay for. All payments are processed
-            securely through the Homagama Pradeshiya Sabha payment gateway.
+            securely through the Divulapitiya Pradeshiya Sabha payment gateway.
           </p>
         </div>
 

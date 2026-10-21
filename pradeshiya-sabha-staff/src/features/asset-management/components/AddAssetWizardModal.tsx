@@ -169,7 +169,7 @@ export const AddAssetWizardModal: React.FC<AddAssetWizardModalProps> = ({ isOpen
 
   /** Selects simulated GIS coordinates for the asset location. */
   const handlePickFromMap = () => {
-    // Simulate interactive GIS mapping coordinate selection in Homagama
+    // Simulate interactive GIS mapping coordinate selection in Divulapitiya
     const randomBytes = new Uint32Array(2)
     crypto.getRandomValues(randomBytes)
     const lat = (6.840000 + (randomBytes[0] % 10) / 1000).toFixed(6)
@@ -669,7 +669,7 @@ export const AddAssetWizardModal: React.FC<AddAssetWizardModalProps> = ({ isOpen
                         <div className="w-2.5 h-2.5 rounded-full bg-[#A31736]" />
                       </div>
                       <span className="text-[10px] font-bold bg-slate-900 text-white px-2 py-0.5 rounded shadow mt-1">
-                        Homagama Ward Central ({latitude}, {longitude})
+                        Divulapitiya Ward Central ({latitude}, {longitude})
                       </span>
                     </div>
                   )}

@@ -79,15 +79,15 @@ const ApplicationFormModal = ({ isOpen, onClose, applicationTitle, onAddApplicat
   const handleAutoFill = () => {
     setFormData({
       applicantName: 'Chaminda Perera',
-      address: 'No. 45, Temple Road, Homagama',
+      address: 'No. 45, Temple Road, Divulapitiya',
       landName: 'Perera Gardens (පෙරේරා වත්ත)',
-      village: 'Homagama North (උතුරු හෝමාගම)',
+      village: 'Divulapitiya North (උතුරු දිවුලපිටිය)',
       varipanamNumber: '45/B',
       roadName: 'High Level Road (4th Cross Lane)',
       planNumber: 'SP-8894',
       lotNumber: 'Lot 02 A',
       telephoneNumber: '071 285 5230',
-      reasonAndInstitution: 'For Housing Construction Mortgage Loan – Bank of Ceylon, Homagama Branch',
+      reasonAndInstitution: 'For Housing Construction Mortgage Loan – Bank of Ceylon, Divulapitiya Branch',
       certVaripanamPayment: true,
       certStreetLineBuilding: true,
       certPublicRoadMaint: false,
@@ -128,7 +128,7 @@ const ApplicationFormModal = ({ isOpen, onClose, applicationTitle, onAddApplicat
         applicantName: (formData as any).applicantName || 'Roshan Gunawardena',
         nicNumber: (formData as any).nicNumber || '198731402281',
         phone: (formData as any).phone || '077 458 9632',
-        address: (formData as any).address || 'Homagama Town',
+        address: (formData as any).address || 'Divulapitiya Town',
         locationAddress: `${(formData as any).wardNo || ''} ${(formData as any).streetName || ''}`,
         details: `Street Line & Non-Vesting Certificate (${(formData as any).assessmentNo || 'Lot 01'})`,
         documentName: 'SURVEY_PLAN_COPY.PDF',
@@ -232,7 +232,7 @@ const ApplicationFormModal = ({ isOpen, onClose, applicationTitle, onAddApplicat
                   Street Line & Municipal Certificate Application Successfully Submitted!
                 </p>
                 <p className="text-sm text-gray-500 max-w-lg mx-auto leading-relaxed">
-                  Your application has been logged with the Homagama Pradeshiya Sabha Planning & Land Division. SMS notifications will be sent to your registered telephone number.
+                  Your application has been logged with the Divulapitiya Pradeshiya Sabha Planning & Land Division. SMS notifications will be sent to your registered telephone number.
                 </p>
               </div>
 
@@ -352,7 +352,7 @@ const ApplicationFormModal = ({ isOpen, onClose, applicationTitle, onAddApplicat
                       required
                       value={formData.address}
                       onChange={handleInputChange}
-                      placeholder="e.g. No. 45, Temple Road, Homagama"
+                      placeholder="e.g. No. 45, Temple Road, Divulapitiya"
                       className="w-full bg-gray-50/70 border border-gray-300 focus:bg-white focus:border-[#8C1538] focus:ring-4 focus:ring-[#8C1538]/10 rounded-xl px-4 py-3 text-sm sm:text-base font-medium text-gray-900 focus:outline-none transition-all"
                     />
                   </div>
@@ -402,7 +402,7 @@ const ApplicationFormModal = ({ isOpen, onClose, applicationTitle, onAddApplicat
                       required
                       value={formData.village}
                       onChange={handleInputChange}
-                      placeholder="e.g. Homagama North"
+                      placeholder="e.g. Divulapitiya North"
                       className="w-full bg-gray-50/70 border border-gray-300 focus:bg-white focus:border-[#8C1538] focus:ring-4 focus:ring-[#8C1538]/10 rounded-xl px-4 py-3 text-sm sm:text-base font-medium text-gray-900 focus:outline-none transition-all"
                     />
                   </div>
@@ -519,7 +519,7 @@ const ApplicationFormModal = ({ isOpen, onClose, applicationTitle, onAddApplicat
                     required
                     value={formData.reasonAndInstitution}
                     onChange={handleInputChange}
-                    placeholder="e.g. For Housing Construction Mortgage Loan – Bank of Ceylon, Homagama Branch"
+                    placeholder="e.g. For Housing Construction Mortgage Loan – Bank of Ceylon, Divulapitiya Branch"
                     className="w-full bg-gray-50/70 border border-gray-300 focus:bg-white focus:border-[#8C1538] focus:ring-4 focus:ring-[#8C1538]/10 rounded-xl px-4 py-3 text-sm sm:text-base font-medium text-gray-900 focus:outline-none transition-all"
                   />
                 </div>

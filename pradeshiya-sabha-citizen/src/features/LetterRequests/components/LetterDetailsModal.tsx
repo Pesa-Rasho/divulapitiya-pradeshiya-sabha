@@ -134,7 +134,7 @@ const LetterDetailsModal: React.FC<LetterDetailsModalProps> = ({ isOpen, onClose
               {letter.subject}
             </h3>
             <p className="text-xs text-rose-200 mt-0.5 font-medium">
-              🏢 {letter.department || 'Homagama Pradeshiya Sabha Secretariat'}
+              🏢 {letter.department || 'Divulapitiya Pradeshiya Sabha Secretariat'}
             </p>
           </div>
 

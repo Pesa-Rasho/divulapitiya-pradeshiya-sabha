@@ -31,13 +31,13 @@ export const translations = {
     'nav.profile': 'Profile & Account Settings',
 
     // Header
-    'header.title': 'Homagama Pradeshiya Sabha',
+    'header.title': 'Divulapitiya Pradeshiya Sabha',
     'header.emergency': 'Emergency / Support',
     'header.switchAdmin': 'Switch to Admin Login',
 
     // Home
     'home.heroBadge': '🎉 Celebrating 1 Year of Digital Excellence',
-    'home.heroTitle': 'Empowering Homagama Citizens',
+    'home.heroTitle': 'Empowering Divulapitiya Citizens',
     'home.heroSubtitle': 'Welcome to our Unified Digital Gateway. We are committed to providing a seamless, transparent, and efficient administrative experience for all citizens.',
     'home.quickServices': 'Quick Citizen Services',
     'home.quickServicesSub': 'Access our most popular digital services instantly from anywhere',
@@ -60,7 +60,7 @@ export const translations = {
 
     // Services
     'services.title': 'Our Citizen Services',
-    'services.subtitle': 'Explore and access all online services provided by Homagama Pradeshiya Sabha.',
+    'services.subtitle': 'Explore and access all online services provided by Divulapitiya Pradeshiya Sabha.',
     'services.heroSearchPlaceholder': 'Search for services, permits, or bookings...',
     'services.applyNow': 'Apply Now',
     'services.bookNow': 'Book Now',
@@ -80,16 +80,16 @@ export const translations = {
     'applications.envClearDesc': 'Request environmental impact assessment and clearance for commercial activities.',
 
     // Footer
-    'footer.aboutTitle': 'About Homagama PS',
-    'footer.aboutDesc': 'Dedicated to sustainable regional development, digital transparency, and exceptional public service for all citizens of the Homagama Pradeshiya Sabha jurisdiction.',
+    'footer.aboutTitle': 'About Divulapitiya PS',
+    'footer.aboutDesc': 'Dedicated to sustainable regional development, digital transparency, and exceptional public service for all citizens of the Divulapitiya Pradeshiya Sabha jurisdiction.',
     'footer.quickLinks': 'Quick Links',
     'footer.contactUs': 'Contact Information',
     'footer.rights': 'All rights reserved. Designed for Citizen Empowerment & Digital Transformation.',
-    'footer.address': 'No. 123, High Level Road, Homagama, Sri Lanka.',
+    'footer.address': 'No. 123, High Level Road, Divulapitiya, Sri Lanka.',
 
     // Services Page
     'services.pageTitle': 'Digital Citizen Services',
-    'services.pageDesc': 'Access essential municipal services, track applications, and engage with the Homagama community through our unified portal.',
+    'services.pageDesc': 'Access essential municipal services, track applications, and engage with the Divulapitiya community through our unified portal.',
     'services.startRequest': 'Start New Request',
     'services.viewDocs': 'View Documents',
     'services.filterLabel': 'FILTER ASSETS',
@@ -116,7 +116,7 @@ export const translations = {
 
     // Applications Page
     'applications.pageTitle': 'Digital Citizen Applications',
-    'applications.pageDesc': 'Submit and track formal applications, permits, and requests to the Homagama Pradeshiya Sabha through our unified portal.',
+    'applications.pageDesc': 'Submit and track formal applications, permits, and requests to the Divulapitiya Pradeshiya Sabha through our unified portal.',
     'applications.filterLabel': 'FILTER APPLICATIONS',
     'applications.searchPlaceholder': 'Search applications...',
     'applications.noFoundTitle': 'No applications found',
@@ -132,7 +132,7 @@ export const translations = {
     'applications.item.gullyBowser': 'Application for Municipal Gully Bowser Service',
     'applications.item.gullyBowserDesc': 'Apply for municipal gully bowser trucks to empty septic tanks and wastewater pits for residential, commercial, industrial, or government premises.',
     'applications.item.businessTax': 'Industrial / Trade & Business Tax Application (Part A)',
-    'applications.item.businessTaxDesc': 'Submit annual trade and industry license assessment return (Part A) to Homagama Pradeshiya Sabha Head Office.',
+    'applications.item.businessTaxDesc': 'Submit annual trade and industry license assessment return (Part A) to Divulapitiya Pradeshiya Sabha Head Office.',
 
     // Appointments Page
     'appointments.tab.overview': 'Portal Overview',
@@ -149,7 +149,7 @@ export const translations = {
     'complaints.myComplaints': 'My Complaints',
 
     // Auth
-    'auth.title': 'Empowering Homagama',
+    'auth.title': 'Empowering Divulapitiya',
     'auth.subtitle': 'Welcome to our Unified Digital Gateway. Celebrating one year of digital transformation, we are committed to providing a seamless, transparent, and efficient administrative experience for all our citizens.',
     'auth.civilianLogin': 'Civilian Login',
     'auth.civilianRegister': 'Civilian Register',
@@ -230,7 +230,7 @@ export const translations = {
     'payments.histDate': 'Date:',
     'payments.histClose': 'Close',
     'payments.rcptSuccess': 'Payment Successful',
-    'payments.rcptSubtitle': 'Official Digital Receipt • Homagama Pradeshiya Sabha',
+    'payments.rcptSubtitle': 'Official Digital Receipt • Divulapitiya Pradeshiya Sabha',
     'payments.rcptNo': 'Receipt Number',
     'payments.rcptCategory': 'Service Category',
     'payments.rcptAcct': 'Account / Ref No.',
@@ -291,13 +291,13 @@ export const translations = {
     'nav.profile': 'පුරවැසි පැතිකඩ සහ ගිණුම් සැකසුම්',
 
     // Header
-    'header.title': 'හෝමාගම ප්‍රාදේශීය සභාව',
+    'header.title': 'දිවුලපිටිය ප්‍රාදේශීය සභාව',
     'header.emergency': 'හදිසි / සහාය සේවාව',
     'header.switchAdmin': 'පරිපාලක ප්‍රවේශයට මාරු වන්න',
 
     // Home
     'home.heroBadge': '🎉 ඩිජිටල් පරිවර්තනයේ 1 වන සංවත්සරය සමරමු',
-    'home.heroTitle': 'හෝමාගම පුරවැසියන් බලගන්වමින්',
+    'home.heroTitle': 'දිවුලපිටිය පුරවැසියන් බලගන්වමින්',
     'home.heroSubtitle': 'අපගේ ඒකාබද්ධ ඩිජිටල් ද්වාරය වෙත සාදරයෙන් පිළිගනිමු. සියලුම පුරවැසියන් සඳහා විනිවිදභාවයෙන් යුත් කාර්යක්ෂම පරිපාලන සේවාවක් ලබා දීමට අපි කැපවී සිටිමු.',
     'home.quickServices': 'ක්ෂණික පුරවැසි සේවාවන්',
     'home.quickServicesSub': 'ඕනෑම තැනක සිට අපගේ ජනප්‍රියම ඩිජිටල් සේවාවන් වෙත පහසුවෙන් පිවිසෙන්න',
@@ -320,7 +320,7 @@ export const translations = {
 
     // Services
     'services.title': 'අපගේ පුරවැසි සේවාවන්',
-    'services.subtitle': 'හෝමාගම ප්‍රාදේශීය සභාව මගින් සපයන සියලුම මාර්ගගත සේවාවන් ගවේෂණය කරන්න.',
+    'services.subtitle': 'දිවුලපිටිය ප්‍රාදේශීය සභාව මගින් සපයන සියලුම මාර්ගගත සේවාවන් ගවේෂණය කරන්න.',
     'services.heroSearchPlaceholder': 'සේවාවන්, බලපත්‍ර හෝ වෙන්කිරීම් සොයන්න...',
     'services.applyNow': 'අයදුම් කරන්න',
     'services.bookNow': 'වෙන්කරවා ගන්න',
@@ -340,12 +340,12 @@ export const translations = {
     'applications.envClearDesc': 'වාණිජ කටයුතු සඳහා පාරිසරික බලපෑම් ඇගයීම සහ අනුමැතිය ඉල්ලුම් කිරීම.',
 
     // Footer
-    'footer.aboutTitle': 'හෝමාගම ප්‍රාදේශීය සභාව පිළිබඳව',
-    'footer.aboutDesc': 'හෝමාගම ප්‍රාදේශීය සභා බලප්‍රදේශයේ සියලුම පුරවැසියන් සඳහා තිරසාර සංවර්ධනය, ඩිජිටල් විනිවිදභාවය සහ විශිෂ්ට මහජන සේවාවක් සඳහා කැපවී සිටී.',
+    'footer.aboutTitle': 'දිවුලපිටිය ප්‍රාදේශීය සභාව පිළිබඳව',
+    'footer.aboutDesc': 'දිවුලපිටිය ප්‍රාදේශීය සභා බලප්‍රදේශයේ සියලුම පුරවැසියන් සඳහා තිරසාර සංවර්ධනය, ඩිජිටල් විනිවිදභාවය සහ විශිෂ්ට මහජන සේවාවක් සඳහා කැපවී සිටී.',
     'footer.quickLinks': 'ක්ෂණික පිවිසුම්',
     'footer.contactUs': 'සම්බන්ධීකරණ තොරතුරු',
     'footer.rights': 'සියලුම හිමිකම් ඇවිරිණි. පුරවැසි බලගැන්වීම සහ ඩිජිටල් පරිවර්තනය වෙනුවෙන් නිර්මාණය කර ඇත.',
-    'footer.address': 'අංක 123, හයිලෙවල් පාර, හෝමාගම, ශ්‍රී ලංකාව.',
+    'footer.address': 'අංක 123, හයිලෙවල් පාර, දිවුලපිටිය, ශ්‍රී ලංකාව.',
 
     // Services Page
     'services.pageTitle': 'ඩිජිටල් පුරවැසි සේවාවන්',
@@ -376,7 +376,7 @@ export const translations = {
 
     // Applications Page
     'applications.pageTitle': 'ඩිජිටල් පුරවැසි අයදුම්පත්',
-    'applications.pageDesc': 'අපගේ ඒකාබද්ධ ද්වාරය හරහා හෝමාගම ප්‍රාදේශීය සභාව වෙත නිල අයදුම්පත්, බලපත්‍ර සහ ඉල්ලීම් ඉදිරිපත් කර තත්ත්වය නිරීක්ෂණය කරන්න.',
+    'applications.pageDesc': 'අපගේ ඒකාබද්ධ ද්වාරය හරහා දිවුලපිටිය ප්‍රාදේශීය සභාව වෙත නිල අයදුම්පත්, බලපත්‍ර සහ ඉල්ලීම් ඉදිරිපත් කර තත්ත්වය නිරීක්ෂණය කරන්න.',
     'applications.filterLabel': 'අයදුම්පත් පෙරහන',
     'applications.searchPlaceholder': 'අයදුම්පත් සොයන්න...',
     'applications.noFoundTitle': 'අයදුම්පත් කිසිවක් හමු නොවිණි',
@@ -392,7 +392,7 @@ export const translations = {
     'applications.item.gullyBowser': 'ගලි බවුසරය ලබා ගැනීමේ ඉල්ලුම්පත්‍රය',
     'applications.item.gullyBowserDesc': 'නේවාසික, ව්‍යාපාරික, කර්මාන්ත හෝ රාජ්‍ය ආයතනවල අපජලය හා ගලි ටැංකි හිස් කිරීම සඳහා ප්‍රාදේශීය සභා ගලි බවුසර රථය වෙන්කර ගැනීම.',
     'applications.item.businessTax': 'කර්මාන්ත හා ව්‍යාපාර බදු අයදුම්පත්‍රය - "ඒ" කොටස',
-    'applications.item.businessTaxDesc': 'වාර්ෂික කර්මාන්ත හා ව්‍යාපාර බදු තක්සේරු ඉල්ලුම්පත්‍රයේ "ඒ" කොටස හෝමාගම ප්‍රාදේශීය සභාවේ ප්‍රධාන කාර්යාලය වෙත ඉදිරිපත් කිරීම.',
+    'applications.item.businessTaxDesc': 'වාර්ෂික කර්මාන්ත හා ව්‍යාපාර බදු තක්සේරු ඉල්ලුම්පත්‍රයේ "ඒ" කොටස දිවුලපිටිය ප්‍රාදේශීය සභාවේ ප්‍රධාන කාර්යාලය වෙත ඉදිරිපත් කිරීම.',
 
     // Appointments Page
     'appointments.tab.overview': 'ද්වාර අවලෝකනය',
@@ -409,7 +409,7 @@ export const translations = {
     'complaints.myComplaints': 'මගේ පැමිණිලි',
 
     // Auth
-    'auth.title': 'හෝමාගම බලගන්වමින්',
+    'auth.title': 'දිවුලපිටිය බලගන්වමින්',
     'auth.subtitle': 'අපගේ ඒකාබද්ධ ඩිජිටල් ද්වාරය වෙත සාදරයෙන් පිළිගනිමු. ඩිජිටල් පරිවර්තනයේ පළමු වසර සමරන අපි, සියලුම පුරවැසියන් සඳහා විනිවිදභාවයෙන් යුත් කාර්යක්ෂම පරිපාලන සේවාවක් ලබා දීමට කැපවී සිටිමු.',
     'auth.civilianLogin': 'පුරවැසි ප්‍රවේශය',
     'auth.civilianRegister': 'පුරවැසි ලියාපදිංචිය',
@@ -490,7 +490,7 @@ export const translations = {
     'payments.histDate': 'දිනය:',
     'payments.histClose': 'වසා දමන්න',
     'payments.rcptSuccess': 'ගෙවීම සාර්ථකයි',
-    'payments.rcptSubtitle': 'නිල ඩිජිටල් රිසිට්පත • හෝමාගම ප්‍රාදේශීය සභාව',
+    'payments.rcptSubtitle': 'නිල ඩිජිටල් රිසිට්පත • දිවුලපිටිය ප්‍රාදේශීය සභාව',
     'payments.rcptNo': 'රිසිට්පත් අංකය',
     'payments.rcptCategory': 'සේවා කාණ්ඩය',
     'payments.rcptAcct': 'ගිණුම් / යොමු අංකය',
@@ -551,13 +551,13 @@ export const translations = {
     'nav.profile': 'சுயவிவரம் மற்றும் கணக்கு அமைப்புகள்',
 
     // Header
-    'header.title': 'ஹோமகம பிரதேச சபை',
+    'header.title': 'திவுலபிட்டிய பிரதேச சபை',
     'header.emergency': 'அவசர உதவி',
     'header.switchAdmin': 'நிர்வாகி நுழைவுக்கு மாறுங்கள்',
 
     // Home
     'home.heroBadge': '🎉 டிஜிட்டல் மாற்றத்தின் 1வது ஆண்டு நிறைவைக் கொண்டாடுகிறோம்',
-    'home.heroTitle': 'ஹோமகம குடிமக்களை வலுப்படுத்துதல்',
+    'home.heroTitle': 'திவுலபிட்டிய குடிமக்களை வலுப்படுத்துதல்',
     'home.heroSubtitle': 'எங்கள் ஒருங்கிணைந்த டிஜிட்டல் நுழைவாயிலுக்கு உங்களை வரவேற்கிறோம். அனைத்து குடிமக்களுக்கும் வெளிப்படையான மற்றும் திறமையான நிர்வாக அனுபவத்தை வழங்க நாங்கள் உறுதிபூண்டுள்ளோம்.',
     'home.quickServices': 'விரைவான குடிமக்கள் சேவைகள்',
     'home.quickServicesSub': 'எங்கிருந்தும் எங்கள் பிரபலமான டிஜிட்டல் சேவைகளை எளிதாக அணுகுங்கள்',
@@ -580,7 +580,7 @@ export const translations = {
 
     // Services
     'services.title': 'எங்கள் குடிமக்கள் சேவைகள்',
-    'services.subtitle': 'ஹோமகம பிரதேச சபை வழங்கும் அனைத்து ஆன்லைன் சேவைகளையும் ஆராயுங்கள்.',
+    'services.subtitle': 'திவுலபிட்டிய பிரதேச சபை வழங்கும் அனைத்து ஆன்லைன் சேவைகளையும் ஆராயுங்கள்.',
     'services.heroSearchPlaceholder': 'சேவைகள், அனுமதிகள் அல்லது முன்பதிவுகளைத் தேடுங்கள்...',
     'services.applyNow': 'விண்ணப்பியுங்கள்',
     'services.bookNow': 'முன்பதிவு செய்யுங்கள்',
@@ -600,12 +600,12 @@ export const translations = {
     'applications.envClearDesc': 'வணிக நடவடிக்கைகளுக்கான சுற்றுச்சூழல் தாக்க மதிப்பீடு மற்றும் அனுமதியைக் கோருங்கள்.',
 
     // Footer
-    'footer.aboutTitle': 'ஹோமகம பிரதேச சபை பற்றி',
-    'footer.aboutDesc': 'ஹோமகம பிரதேச சபை ஆளுகைக்குட்பட்ட அனைத்து குடிமக்களுக்கும் நிலையான பிராந்திய வளர்ச்சி, டிஜிட்டல் வெளிப்படைத்தன்மை மற்றும் சிறந்த பொதுச் சேவைக்காக அர்ப்பணிக்கப்பட்டுள்ளது.',
+    'footer.aboutTitle': 'திவுலபிட்டிய பிரதேச சபை பற்றி',
+    'footer.aboutDesc': 'திவுலபிட்டிய பிரதேச சபை ஆளுகைக்குட்பட்ட அனைத்து குடிமக்களுக்கும் நிலையான பிராந்திய வளர்ச்சி, டிஜிட்டல் வெளிப்படைத்தன்மை மற்றும் சிறந்த பொதுச் சேவைக்காக அர்ப்பணிக்கப்பட்டுள்ளது.',
     'footer.quickLinks': 'விரைவு இணைப்புகள்',
     'footer.contactUs': 'தொடர்பு விவரங்கள்',
     'footer.rights': 'அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை. குடிமக்கள் மேம்பாடு மற்றும் டிஜிட்டல் மாற்றத்திற்காக வடிவமைக்கப்பட்டுள்ளது.',
-    'footer.address': 'இல. 123, ஹை லெவல் வீதி, ஹோமகம, இலங்கை.',
+    'footer.address': 'இல. 123, ஹை லெவல் வீதி, திவுலபிட்டிய, இலங்கை.',
 
     // Services Page
     'services.pageTitle': 'டிஜிட்டல் குடிமக்கள் சேவைகள்',
@@ -636,7 +636,7 @@ export const translations = {
 
     // Applications Page
     'applications.pageTitle': 'டிஜிட்டல் குடிமக்கள் விண்ணப்பங்கள்',
-    'applications.pageDesc': 'எங்கள் ஒருங்கிணைந்த நுழைவாயில் மூலம் ஹோமகம பிரதேச சபைக்கு அதிகாரபூர்வ விண்ணப்பங்கள் மற்றும் அனுமதிகளை சமர்ப்பித்து கண்காணியுங்கள்.',
+    'applications.pageDesc': 'எங்கள் ஒருங்கிணைந்த நுழைவாயில் மூலம் திவுலபிட்டிய பிரதேச சபைக்கு அதிகாரபூர்வ விண்ணப்பங்கள் மற்றும் அனுமதிகளை சமர்ப்பித்து கண்காணியுங்கள்.',
     'applications.filterLabel': 'விண்ணப்பங்களை வடிகட்டு',
     'applications.searchPlaceholder': 'விண்ணப்பங்களைத் தேடுங்கள்...',
     'applications.noFoundTitle': 'விண்ணப்பங்கள் எதுவும் காணப்படவில்லை',
@@ -669,7 +669,7 @@ export const translations = {
     'complaints.myComplaints': 'எனது முறைப்பாடுகள்',
 
     // Auth
-    'auth.title': 'ஹோமகமவை வலுப்படுத்துதல்',
+    'auth.title': 'திவுலபிட்டியவை வலுப்படுத்துதல்',
     'auth.subtitle': 'எங்கள் ஒருங்கிணைந்த டிஜிட்டல் நுழைவாயிலுக்கு உங்களை வரவேற்கிறோம். டிஜிட்டல் மாற்றத்தின் முதல் ஆண்டைக் கொண்டாடும் நாங்கள், அனைத்து குடிமக்களுக்கும் வெளிப்படையான மற்றும் திறமையான நிர்வாக அனுபவத்தை வழங்க உறுதிபூண்டுள்ளோம்.',
     'auth.civilianLogin': 'குடிமக்கள் நுழைவு',
     'auth.civilianRegister': 'குடிமக்கள் பதிவு',
@@ -750,7 +750,7 @@ export const translations = {
     'payments.histDate': 'தேதி:',
     'payments.histClose': 'மூடு',
     'payments.rcptSuccess': 'கொடுப்பனவு வெற்றிகரமானது',
-    'payments.rcptSubtitle': 'அதிகாரப்பூர்வ டிஜிட்டல் ரசீது • ஹோமகம பிரதேச சபை',
+    'payments.rcptSubtitle': 'அதிகாரப்பூர்வ டிஜிட்டல் ரசீது • திவுலபிட்டிய பிரதேச சபை',
     'payments.rcptNo': 'ரசீது எண்',
     'payments.rcptCategory': 'சேவை வகை',
     'payments.rcptAcct': 'கணக்கு / குறிப்பு எண்',

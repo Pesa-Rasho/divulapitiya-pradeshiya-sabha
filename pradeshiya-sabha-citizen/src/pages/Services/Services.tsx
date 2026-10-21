@@ -89,7 +89,7 @@ const Services = () => {
             {t('services.pageTitle', 'Digital Citizen Services')}
           </h1>
           <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-            {t('services.pageDesc', 'Access essential municipal services, track applications, and engage with the Homagama community through our unified portal.')}
+            {t('services.pageDesc', 'Access essential municipal services, track applications, and engage with the Divulapitiya community through our unified portal.')}
           </p>
         </div>
 

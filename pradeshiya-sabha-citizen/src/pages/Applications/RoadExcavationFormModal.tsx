@@ -62,7 +62,7 @@ const RoadExcavationFormModal: React.FC<RoadExcavationFormModalProps> = ({ isOpe
     setFormData({
       referenceLetterNo: 'NWSDB/HMA/CON/2026/142',
       referenceDate: '2026-07-05',
-      assessmentNo: '45/2B, Temple Road, Homagama',
+      assessmentNo: '45/2B, Temple Road, Divulapitiya',
       roadType: 'TAR',
       excavationAreaSqM: '4.5',
       applicantNameOrInstitution: 'K. A. D. Samantha Perera',
@@ -88,8 +88,8 @@ const RoadExcavationFormModal: React.FC<RoadExcavationFormModalProps> = ({ isOpe
         applicantName: (formData as any).applicantNameOrInstitution || (formData as any).fullName || 'Chaminda Perera',
         nicNumber: (formData as any).nicNo || '199012345678',
         phone: (formData as any).phone || '071 285 5230',
-        address: (formData as any).address || 'No. 45, Temple Road, Homagama',
-        locationAddress: `${(formData as any).roadName || (formData as any).roadType || 'Road'}, ${(formData as any).subOffice || 'Homagama'}`,
+        address: (formData as any).address || 'No. 45, Temple Road, Divulapitiya',
+        locationAddress: `${(formData as any).roadName || (formData as any).roadType || 'Road'}, ${(formData as any).subOffice || 'Divulapitiya'}`,
         details: `Road Excavation (${(formData as any).roadType || 'Tar Road'}, Area: ${(formData as any).excavationAreaSqM || '12'} sq.m, Length: ${(formData as any).excavationLength || '12'}m)`,
         documentName: 'WATER_BOARD_LETTER.PDF',
         inspectionDate: null,
@@ -201,8 +201,8 @@ const RoadExcavationFormModal: React.FC<RoadExcavationFormModalProps> = ({ isOpe
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
                   {L(
-                    'ඔබගේ මාර්ග කැණීම් අවසර පත්‍ර අයදුම්පත හෝමාගම ප්‍රාදේශීය සභාවේ ඉංජිනේරු හා මාර්ග අංශය වෙත යොමු කර ඇත.',
-                    'Your Road Excavation Permit application has been submitted to the Homagama Pradeshiya Sabha Engineering & Roads Department.',
+                    'ඔබගේ මාර්ග කැණීම් අවසර පත්‍ර අයදුම්පත දිවුලපිටිය ප්‍රාදේශීය සභාවේ ඉංජිනේරු හා මාර්ග අංශය වෙත යොමු කර ඇත.',
+                    'Your Road Excavation Permit application has been submitted to the Divulapitiya Pradeshiya Sabha Engineering & Roads Department.',
                     'உங்கள் வீதி அகழ்வு அனுமதி விண்ணப்பம் பிரதேச சபை பொறியியல் பிரிவுக்கு அனுப்பப்பட்டுள்ளது.'
                   )}
                 </p>
@@ -289,7 +289,7 @@ const RoadExcavationFormModal: React.FC<RoadExcavationFormModalProps> = ({ isOpe
                   <div className="md:col-span-2">
                     <label className="block mb-2">
                       <span className="block text-sm sm:text-base font-bold text-gray-900">
-                        {L('හෝමාගම ප්‍රාදේශීය සභා බල ප්‍රදේශයට අයත් අංක / ස්ථානය', 'Assessment Number / Premises Location', 'மதிப்பீட்டு இலக்கம் / இடம்')} <span className="text-red-500">*</span>
+                        {L('දිවුලපිටිය ප්‍රාදේශීය සභා බල ප්‍රදේශයට අයත් අංක / ස්ථානය', 'Assessment Number / Premises Location', 'மதிப்பீட்டு இலக்கம் / இடம்')} <span className="text-red-500">*</span>
                       </span>
                     </label>
                     <input
@@ -298,7 +298,7 @@ const RoadExcavationFormModal: React.FC<RoadExcavationFormModalProps> = ({ isOpe
                       required
                       value={formData.assessmentNo}
                       onChange={handleInputChange}
-                      placeholder="e.g. 45/2B, Temple Road, Homagama"
+                      placeholder="e.g. 45/2B, Temple Road, Divulapitiya"
                       className="w-full bg-gray-50/70 border border-gray-300 focus:bg-white focus:border-[#8C1538] focus:ring-4 focus:ring-[#8C1538]/10 rounded-xl px-4 py-3 text-sm sm:text-base font-medium text-gray-900 focus:outline-none transition-all"
                     />
                   </div>
@@ -464,7 +464,7 @@ const RoadExcavationFormModal: React.FC<RoadExcavationFormModalProps> = ({ isOpe
                   <span className="text-xs sm:text-sm font-bold text-gray-900 leading-relaxed">
                     {L(
                       'ඉහත සඳහන් කොන්දේසිවලට යටත්ව ජලනළ සම්බන්ධය සඳහා මාර්ග කැණීම් කිරීමට අවසර ලබාගැනීමට එකඟ වෙමි.',
-                      'I declare agreement to abide by the above Homagama Pradeshiya Sabha statutory conditions for road excavation.',
+                      'I declare agreement to abide by the above Divulapitiya Pradeshiya Sabha statutory conditions for road excavation.',
                       'மேற்கண்ட நிபந்தனைகளுக்கு உட்பட்டு வீதி அகழ்வு அனுமதி பெற ஒப்புக்கொள்கிறேன்.'
                     )}
                   </span>

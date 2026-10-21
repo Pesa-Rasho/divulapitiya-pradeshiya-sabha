@@ -35,9 +35,9 @@ const Footer = () => {
             {t('footer.contactUs', 'Contact Information')}
           </h3>
           <div className="text-gray-300 text-sm leading-relaxed mb-4 font-normal space-y-1">
-            <p>හෝමාගම ප්‍රාදේශීය සභාව,</p>
+            <p>දිවුලපිටිය ප්‍රාදේශීය සභාව,</p>
             <p>උසාවිය පාර,</p>
-            <p>හෝමාගම</p>
+            <p>දිවුලපිටිය</p>
           </div>
           <p className="text-gray-300 text-sm mb-2">
             <span className="text-gray-400">Phone: </span> 
@@ -46,10 +46,10 @@ const Footer = () => {
           <p className="text-gray-300 text-sm mb-5">
             <span className="text-gray-400">Email: </span> 
             <a 
-              href="mailto:homagamapradeshiyasabawa@gmail.com" 
+              href="mailto:divulapitiyapradeshiyasabawa@gmail.com" 
               className="hover:text-white transition-colors underline-offset-2 hover:underline"
             >
-              homagamapradeshiyasabawa@gmail.com
+              divulapitiyapradeshiyasabawa@gmail.com
             </a>
           </p>
 
@@ -191,7 +191,7 @@ const Footer = () => {
       {/* Divider and Copyright */}
       <div className="max-w-7xl mx-auto border-t border-gray-800/80 mt-10 pt-6">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-gray-400">
-          <p>Copyright © 2025 {t('header.title', 'Homagama Pradeshiya Sabha')}. {t('footer.rights', 'All Rights Reserved.')}</p>
+          <p>Copyright © 2025 {t('header.title', 'Divulapitiya Pradeshiya Sabha')}. {t('footer.rights', 'All Rights Reserved.')}</p>
           <p>Concept, Design & Development by SLT</p>
         </div>
       </div>

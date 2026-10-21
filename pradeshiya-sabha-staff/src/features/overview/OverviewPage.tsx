@@ -215,7 +215,7 @@ export const OverviewPage: React.FC = () => {
               </span>
             </div>
             <h1 className="text-xl sm:text-2xl font-bold text-gray-900 tracking-tight uppercase mt-1">
-              Homagama Pradeshiya Sabha • Municipal Command Overview
+              Divulapitiya Pradeshiya Sabha • Municipal Command Overview
             </h1>
             <p className="text-xs sm:text-sm text-gray-500 mt-0.5">
               Live multi-department governance hub: monitor approvals, citizen grievances, fleet dispatch, store logistics, and biometric attendance.

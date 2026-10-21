@@ -187,7 +187,7 @@ export default function ComplaintForm({ onSubmit, onBackToDashboard }: Complaint
                     value={formData.location}
                     onChange={handleChange}
                     className="w-full bg-white border border-gray-200 rounded-lg p-2.5 text-xs text-gray-900 focus:outline-none focus:border-[#8C1538]"
-                    placeholder="E.g., In front of 124/2, Station Road, Homagama"
+                    placeholder="E.g., In front of 124/2, Station Road, Divulapitiya"
                     required
                   />
                 </div>

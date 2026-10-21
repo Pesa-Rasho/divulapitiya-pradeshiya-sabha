@@ -140,9 +140,9 @@ const Profile = () => {
     name: user?.name || 'Verified Citizen',
     nic: user?.nic || '199012345678',
     phone: user?.phone || '+94 71 234 5678',
-    email: user?.email || 'citizen@homagamaps.lk',
-    address: user?.address || 'No. 45, Temple Road, Homagama',
-    gnDivision: user?.gnDivision || '584/A - Homagama North'
+    email: user?.email || 'citizen@divulapitiyaps.lk',
+    address: user?.address || 'No. 45, Temple Road, Divulapitiya',
+    gnDivision: user?.gnDivision || '584/A - Divulapitiya North'
   });
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -173,9 +173,9 @@ const Profile = () => {
       name: user?.name || 'Verified Citizen',
       nic: user?.nic || '199012345678',
       phone: user?.phone || '+94 71 234 5678',
-      email: user?.email || 'citizen@homagamaps.lk',
-      address: user?.address || 'No. 45, Temple Road, Homagama',
-      gnDivision: user?.gnDivision || '584/A - Homagama North'
+      email: user?.email || 'citizen@divulapitiyaps.lk',
+      address: user?.address || 'No. 45, Temple Road, Divulapitiya',
+      gnDivision: user?.gnDivision || '584/A - Divulapitiya North'
     });
     setIsEditing(false);
   };

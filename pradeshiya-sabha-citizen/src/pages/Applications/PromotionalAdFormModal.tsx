@@ -90,10 +90,10 @@ const PromotionalAdFormModal = ({ isOpen, onClose, applicationTitle, onAddApplic
   const handleAutoFill = () => {
     setFormData({
       applicantFullName: 'Roshan K. Gunawardena',
-      permanentAddress: 'No. 112, High Level Road, Homagama',
+      permanentAddress: 'No. 112, High Level Road, Divulapitiya',
       nicNumber: '198731402281',
       telephoneNumber: '077 458 9632',
-      promotionalLocationAddress: 'High Level Junction, Homagama Town (Near Clock Tower)',
+      promotionalLocationAddress: 'High Level Junction, Divulapitiya Town (Near Clock Tower)',
       locationOwnerAddress: 'Pradeshiya Sabha Commercial Zone / Public Easement',
       advertisementNature: 'Annual Trade Fair & Agricultural Exhibition Promotional Banner',
       artworkFileName: 'EXHIBITION_BANNER_FINAL_2026.PNG',
@@ -140,8 +140,8 @@ const PromotionalAdFormModal = ({ isOpen, onClose, applicationTitle, onAddApplic
         applicantName: (formData as any).applicantFullName || (formData as any).applicantName || 'Roshan K. Gunawardena',
         nicNumber: (formData as any).nicNumber || '198731402281',
         phone: (formData as any).telephoneNumber || '077 458 9632',
-        address: (formData as any).permanentAddress || 'No. 112, High Level Road, Homagama',
-        locationAddress: (formData as any).promotionalLocationAddress || 'Homagama Town',
+        address: (formData as any).permanentAddress || 'No. 112, High Level Road, Divulapitiya',
+        locationAddress: (formData as any).promotionalLocationAddress || 'Divulapitiya Town',
         details: `${(formData as any).advertisementNature || 'Promotional Banner'} (${(formData as any).lengthFeet}ft x ${(formData as any).widthFeet}ft)`,
         documentName: (formData as any).artworkFileName || 'EXHIBITION_BANNER.PNG',
         inspectionDate: null,
@@ -249,7 +249,7 @@ const PromotionalAdFormModal = ({ isOpen, onClose, applicationTitle, onAddApplic
                   Promotional Advertisement Display Permit Application Successfully Submitted!
                 </p>
                 <p className="text-sm text-gray-500 max-w-lg mx-auto leading-relaxed">
-                  Your application has been received by the Homagama Pradeshiya Sabha Revenue & Planning Inspectorate. Inspection schedule and fee voucher will be notified via SMS.
+                  Your application has been received by the Divulapitiya Pradeshiya Sabha Revenue & Planning Inspectorate. Inspection schedule and fee voucher will be notified via SMS.
                 </p>
               </div>
 
@@ -356,7 +356,7 @@ const PromotionalAdFormModal = ({ isOpen, onClose, applicationTitle, onAddApplic
                       required
                       value={formData.permanentAddress}
                       onChange={handleInputChange}
-                      placeholder="e.g. No. 112, High Level Road, Homagama"
+                      placeholder="e.g. No. 112, High Level Road, Divulapitiya"
                       className="w-full bg-gray-50/70 border border-gray-300 focus:bg-white focus:border-[#8C1538] focus:ring-4 focus:ring-[#8C1538]/10 rounded-xl px-4 py-3 text-sm sm:text-base font-medium text-gray-900 focus:outline-none transition-all"
                     />
                   </div>
@@ -431,7 +431,7 @@ const PromotionalAdFormModal = ({ isOpen, onClose, applicationTitle, onAddApplic
                       required
                       value={formData.promotionalLocationAddress}
                       onChange={handleInputChange}
-                      placeholder="e.g. High Level Junction, Homagama Town (Near Clock Tower)"
+                      placeholder="e.g. High Level Junction, Divulapitiya Town (Near Clock Tower)"
                       className="w-full bg-gray-50/70 border border-gray-300 focus:bg-white focus:border-[#8C1538] focus:ring-4 focus:ring-[#8C1538]/10 rounded-xl px-4 py-3 text-sm sm:text-base font-medium text-gray-900 focus:outline-none transition-all"
                     />
                   </div>
@@ -507,7 +507,7 @@ const PromotionalAdFormModal = ({ isOpen, onClose, applicationTitle, onAddApplic
                   </label>
 
                   <div
-                    onClick={() => setFormData((p) => ({ ...p, artworkFileName: p.artworkFileName ? null : 'HOMAGAMA_FESTIVAL_BANNER_DESIGN_2026.PNG' }))}
+                    onClick={() => setFormData((p) => ({ ...p, artworkFileName: p.artworkFileName ? null : 'DIVULAPITIYA_FESTIVAL_BANNER_DESIGN_2026.PNG' }))}
                     className={`border-2 border-dashed rounded-2xl p-6 text-center cursor-pointer transition-all ${formData.artworkFileName
                       ? 'border-[#8C1538] bg-red-50/50'
                       : 'border-gray-300 hover:border-[#8C1538] bg-gray-50/50'

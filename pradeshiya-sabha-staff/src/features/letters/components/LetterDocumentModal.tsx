@@ -61,7 +61,7 @@ const LetterDocumentModal: React.FC<LetterDocumentModalProps> = ({ letter, onClo
 </head>
 <body>
   <div class="header">
-    <h1>Homagama Pradeshiya Sabha</h1>
+    <h1>Divulapitiya Pradeshiya Sabha</h1>
     <h2>Official Municipal Correspondence &amp; Departmental Dispatch</h2>
   </div>
   <table class="meta-table">
@@ -98,11 +98,11 @@ const LetterDocumentModal: React.FC<LetterDocumentModalProps> = ({ letter, onClo
     <p>Yours faithfully,</p>
     <br/><br/>
     <div class="name">${letter.senderName}</div>
-    <div class="title">Staff Officer • Homagama Pradeshiya Sabha</div>
+    <div class="title">Staff Officer • Divulapitiya Pradeshiya Sabha</div>
     <div class="title">ID: ${letter.senderId}</div>
   </div>
   <div class="footer">
-    This document was digitally issued via the Homagama Pradeshiya Sabha Staff Portal. System verification ID: ${letter.id}
+    This document was digitally issued via the Divulapitiya Pradeshiya Sabha Staff Portal. System verification ID: ${letter.id}
   </div>
 </body>
 </html>
@@ -172,13 +172,13 @@ const LetterDocumentModal: React.FC<LetterDocumentModalProps> = ({ letter, onClo
               </div>
             </div>
             <h1 className="text-2xl md:text-3xl font-extrabold text-[#A31736] tracking-wide uppercase font-sans">
-              Homagama Pradeshiya Sabha
+              Divulapitiya Pradeshiya Sabha
             </h1>
             <p className="text-sm md:text-base text-gray-600 font-sans mt-1 font-semibold">
               Official Municipal Correspondence &amp; Departmental Dispatch
             </p>
             <p className="text-xs text-gray-400 font-sans mt-0.5">
-              Court Road, Homagama • Tel: +94 11 285 5230 • Email: homagamapradeshiyasabawa@gmail.com
+              Court Road, Divulapitiya • Tel: +94 11 285 5230 • Email: divulapitiyapradeshiyasabawa@gmail.com
             </p>
           </div>
 
@@ -247,7 +247,7 @@ const LetterDocumentModal: React.FC<LetterDocumentModalProps> = ({ letter, onClo
               <p className="text-sm font-serif italic text-gray-600 mb-6">Yours faithfully,</p>
               <div className="w-48 border-b-2 border-gray-900 mb-2"></div>
               <p className="font-extrabold text-gray-900 text-base">{letter.senderName}</p>
-              <p className="text-xs font-semibold text-gray-500">Staff Officer • Homagama Pradeshiya Sabha</p>
+              <p className="text-xs font-semibold text-gray-500">Staff Officer • Divulapitiya Pradeshiya Sabha</p>
               <p className="text-xs text-gray-400">Employee ID: {letter.senderId}</p>
             </div>
             <div className="hidden sm:block text-right">
@@ -259,7 +259,7 @@ const LetterDocumentModal: React.FC<LetterDocumentModalProps> = ({ letter, onClo
 
           {/* Document Footer */}
           <div className="mt-16 pt-4 border-t border-gray-200 text-center font-sans text-[10px] text-gray-400">
-            This document is an official digital record generated from the Homagama Pradeshiya Sabha Staff Administration Portal. System Reference ID: {letter.id}
+            This document is an official digital record generated from the Divulapitiya Pradeshiya Sabha Staff Administration Portal. System Reference ID: {letter.id}
           </div>
 
         </div>

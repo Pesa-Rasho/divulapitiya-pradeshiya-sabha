@@ -297,7 +297,7 @@ const BookingDetailsModal = ({ isOpen, onClose, booking }: { isOpen: boolean; on
             </div>
             <div>
               <span className="text-gray-500 font-medium block">Division:</span>
-              <span className="font-bold text-gray-900">{booking.division || 'Homagama Jurisdiction'}</span>
+              <span className="font-bold text-gray-900">{booking.division || 'Divulapitiya Jurisdiction'}</span>
             </div>
           </div>
 

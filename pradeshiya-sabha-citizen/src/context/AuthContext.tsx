@@ -14,7 +14,7 @@ const DUMMY_CITIZEN = {
   name: 'Verified Citizen',
   nic: '199012345678',
   phone: '+94 71 234 5678',
-  email: "citizen@homagamaps.lk",
+  email: "citizen@divulapitiyaps.lk",
   role: 'citizen',
   verified: true,
   avatar: null

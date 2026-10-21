@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
             </svg>
           </div>
           <div className="navbar__brand-text">
-            <span className="navbar__brand-main">Homagama</span>
+            <span className="navbar__brand-main">Divulapitiya</span>
             <span className="navbar__brand-sub">Pradeshiya Sabha</span>
           </div>
         </Link>

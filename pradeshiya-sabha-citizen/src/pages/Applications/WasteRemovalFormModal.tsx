@@ -74,8 +74,8 @@ const WasteRemovalFormModal = ({ isOpen, onClose, onAddApplication }: any) => {
   const handleAutoFill = () => {
     setFormData({
       applicantName: 'Nimal Jayatilleke',
-      institutionName: 'Homagama Green Supermarket & Food Emporium',
-      institutionAddress: 'No. 205, High Level Road, Homagama Town',
+      institutionName: 'Divulapitiya Green Supermarket & Food Emporium',
+      institutionAddress: 'No. 205, High Level Road, Divulapitiya Town',
       telephoneNumber: '071 854 1200',
       serviceBasis: 'monthly',
       biodegradableKg: '450',
@@ -117,8 +117,8 @@ const WasteRemovalFormModal = ({ isOpen, onClose, onAddApplication }: any) => {
         applicantName: (formData as any).applicantName || 'Nimal Jayatilleke',
         nicNumber: '198123456789',
         phone: (formData as any).telephoneNumber || '071 854 1200',
-        address: (formData as any).institutionAddress || 'No. 205, High Level Road, Homagama Town',
-        locationAddress: (formData as any).wasteLocationAddress || (formData as any).institutionAddress || 'Homagama Town',
+        address: (formData as any).institutionAddress || 'No. 205, High Level Road, Divulapitiya Town',
+        locationAddress: (formData as any).wasteLocationAddress || (formData as any).institutionAddress || 'Divulapitiya Town',
         details: `Commercial Solid Waste Collection (${(formData as any).institutionType || (formData as any).institutionName || 'Enterprise'}, Biodegradable: ${(formData as any).biodegradableKg || (formData as any).bioWasteWeightKg || '450'}kg, Non-bio: ${(formData as any).nonBiodegradableKg || (formData as any).nonBioWasteWeightKg || '180'}kg)`,
         documentName: 'TRADE_LICENSE_COPY.PDF',
         inspectionDate: null,
@@ -221,7 +221,7 @@ const WasteRemovalFormModal = ({ isOpen, onClose, onAddApplication }: any) => {
                   Waste Removal Service Application Successfully Submitted!
                 </p>
                 <p className="text-sm text-gray-500 max-w-lg mx-auto leading-relaxed">
-                  Your request has been forwarded to the Homagama Health & Solid Waste Management Inspectorate. Collection scheduling details will be sent via SMS.
+                  Your request has been forwarded to the Divulapitiya Health & Solid Waste Management Inspectorate. Collection scheduling details will be sent via SMS.
                 </p>
               </div>
 
@@ -346,7 +346,7 @@ const WasteRemovalFormModal = ({ isOpen, onClose, onAddApplication }: any) => {
                       required
                       value={formData.institutionName}
                       onChange={handleInputChange}
-                      placeholder="e.g. Homagama Green Supermarket & Food Emporium"
+                      placeholder="e.g. Divulapitiya Green Supermarket & Food Emporium"
                       className="w-full bg-gray-50/70 border border-gray-300 focus:bg-white focus:border-[#8C1538] focus:ring-4 focus:ring-[#8C1538]/10 rounded-xl px-4 py-3 text-sm sm:text-base font-medium text-gray-900 focus:outline-none transition-all"
                     />
                   </div>
@@ -363,7 +363,7 @@ const WasteRemovalFormModal = ({ isOpen, onClose, onAddApplication }: any) => {
                       required
                       value={formData.institutionAddress}
                       onChange={handleInputChange}
-                      placeholder="e.g. No. 205, High Level Road, Homagama Town"
+                      placeholder="e.g. No. 205, High Level Road, Divulapitiya Town"
                       className="w-full bg-gray-50/70 border border-gray-300 focus:bg-white focus:border-[#8C1538] focus:ring-4 focus:ring-[#8C1538]/10 rounded-xl px-4 py-3 text-sm sm:text-base font-medium text-gray-900 focus:outline-none transition-all"
                     />
                   </div>
@@ -556,7 +556,7 @@ const WasteRemovalFormModal = ({ isOpen, onClose, onAddApplication }: any) => {
                   <span className="text-xs sm:text-sm font-bold text-gray-900 leading-relaxed">
                     {L(
                       'ඉහත සඳහන් තොරතුරු සත්‍ය හා නිවැරදි බවත්, ප්‍රාදේශීය සභාවේ කසළ වෙන්කිරීමේ නියමයන්ට එකඟ වන බවත් ප්‍රකාශ කරමි.',
-                      'I declare that the details provided are accurate and agree to abide by Homagama Pradeshiya Sabha solid waste segregation regulations.',
+                      'I declare that the details provided are accurate and agree to abide by Divulapitiya Pradeshiya Sabha solid waste segregation regulations.',
                       'மேலே உள்ள தகவல்கள் சரியானவை மற்றும் பிரதேச சபை கழிவுப் பிரிப்பு விதிகளுக்கு கட்டுப்படுவேன் என்று அறிவிக்கிறேன்.'
                     )}
                   </span>

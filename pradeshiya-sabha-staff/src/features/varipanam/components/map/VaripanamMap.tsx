@@ -99,7 +99,7 @@ export const VaripanamMap: React.FC<VaripanamMapProps> = ({
 
     // OpenStreetMap standard tile layer
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; OpenStreetMap contributors | Homagama Pradeshiya Sabha GIS',
+      attribution: '&copy; OpenStreetMap contributors | Divulapitiya Pradeshiya Sabha GIS',
       maxZoom: 19,
     }).addTo(map)
 

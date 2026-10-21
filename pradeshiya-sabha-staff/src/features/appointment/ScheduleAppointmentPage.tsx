@@ -173,7 +173,7 @@ export const ScheduleAppointmentPage: React.FC = () => {
             <p className="text-base font-bold text-gray-900 mt-0.5">
               Counter 01 - Helpdesk
             </p>
-            <p className="text-[11px] text-gray-400">Homagama Council Complex</p>
+            <p className="text-[11px] text-gray-400">Divulapitiya Council Complex</p>
           </div>
           <div className="p-2 bg-blue-50 text-blue-800 rounded border border-blue-200">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5">

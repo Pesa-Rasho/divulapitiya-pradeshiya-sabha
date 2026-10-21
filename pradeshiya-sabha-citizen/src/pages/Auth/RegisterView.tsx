@@ -101,8 +101,8 @@ const RegisterView = ({ onCancel }) => {
       name: formData.name || 'Verified Citizen',
       nic: formData.nic || '199012345678',
       phone: formData.phone || '+94 71 234 5678',
-      email: formData.email || 'citizen@homagamaps.lk',
-      address: formData.address || 'Homagama, Sri Lanka',
+      email: formData.email || 'citizen@divulapitiyaps.lk',
+      address: formData.address || 'Divulapitiya, Sri Lanka',
       role: 'citizen'
     });
   };
@@ -404,7 +404,7 @@ const RegisterView = ({ onCancel }) => {
               className="mt-0.5 w-4 h-4 rounded-sm text-[#8C1538] focus:ring-[#8C1538] border-gray-300 cursor-pointer"
             />
             <label htmlFor="confirmAuthBox" className="text-xs text-gray-700 leading-relaxed cursor-pointer select-none">
-              I confirm that the uploaded documents are authentic and belong to me. I authorize Homagama Pradeshiya Sabha to verify these details against the national database.
+              I confirm that the uploaded documents are authentic and belong to me. I authorize Divulapitiya Pradeshiya Sabha to verify these details against the national database.
             </label>
           </div>
 

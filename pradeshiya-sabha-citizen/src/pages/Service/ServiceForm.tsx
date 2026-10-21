@@ -156,7 +156,7 @@ const ServiceForm: React.FC = () => {
         <div className="service-form-page__disclaimer">
           <span>🔒</span>
           <span>
-            This is an official Homagama Pradeshiya Sabha payment portal.
+            This is an official Divulapitiya Pradeshiya Sabha payment portal.
             Your information is encrypted and secure.
           </span>
         </div>

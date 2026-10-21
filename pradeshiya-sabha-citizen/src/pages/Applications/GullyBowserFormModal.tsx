@@ -62,13 +62,13 @@ const GullyBowserFormModal: React.FC<GullyBowserFormModalProps> = ({ isOpen, onC
   const handleAutoFill = () => {
     setFormData({
       applicantName: 'M. P. Nimal Karunaratne',
-      address: 'No. 88, Station Road, Homagama',
+      address: 'No. 88, Station Road, Divulapitiya',
       telephoneNumber: '077 452 8891',
       nicNumber: '851240892V',
-      gullyLocationAddress: 'No. 88, Station Road, Homagama (Backyard Pit)',
+      gullyLocationAddress: 'No. 88, Station Road, Divulapitiya (Backyard Pit)',
       premisesCategory: 'RESIDENTIAL',
       loadsCount: '1',
-      accessRoadDescription: 'Turn left near Homagama Railway Station lane; 12ft wide carpet road accessible for bowser truck.',
+      accessRoadDescription: 'Turn left near Divulapitiya Railway Station lane; 12ft wide carpet road accessible for bowser truck.',
       agreedToTerms: true,
       submissionDate: new Date().toISOString().split('T')[0],
       applicantSignature: 'N. Karunaratne',
@@ -90,8 +90,8 @@ const GullyBowserFormModal: React.FC<GullyBowserFormModalProps> = ({ isOpen, onC
         applicantName: (formData as any).applicantName || (formData as any).fullName || 'Sujith Fernando',
         nicNumber: (formData as any).nicNumber || (formData as any).nicNo || '198544332211',
         phone: (formData as any).telephoneNumber || (formData as any).phone || '075 444 3322',
-        address: (formData as any).address || 'No. 88, Katuwana Industrial Estate, Homagama',
-        locationAddress: `${(formData as any).gullyLocationAddress || (formData as any).serviceAddress || (formData as any).address || 'Homagama'}`,
+        address: (formData as any).address || 'No. 88, Katuwana Industrial Estate, Divulapitiya',
+        locationAddress: `${(formData as any).gullyLocationAddress || (formData as any).serviceAddress || (formData as any).address || 'Divulapitiya'}`,
         details: `Gully Bowser Service (${(formData as any).premisesCategory || (formData as any).premisesType || 'Commercial'}, Loads: ${(formData as any).loadsCount || '1'})`,
         documentName: 'TAX_RECEIPT_COPY.PDF',
         inspectionDate: null,
@@ -202,8 +202,8 @@ const GullyBowserFormModal: React.FC<GullyBowserFormModalProps> = ({ isOpen, onC
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
                   {L(
-                    'ඔබගේ ගලි බවුසර ඉල්ලුම හෝමාගම ප්‍රාදේශීය සභාවේ සෞඛ්‍ය හා පරිසර අංශය වෙත යොමු කර ඇත. සේවා වෙන්කිරීම තහවුරු කිරීමට අපගේ නිලධාරියෙකු ඔබව අමතනු ඇත.',
-                    'Your Gully Bowser service request has been registered with the Homagama Pradeshiya Sabha Health & Environment Department.',
+                    'ඔබගේ ගලි බවුසර ඉල්ලුම දිවුලපිටිය ප්‍රාදේශීය සභාවේ සෞඛ්‍ය හා පරිසර අංශය වෙත යොමු කර ඇත. සේවා වෙන්කිරීම තහවුරු කිරීමට අපගේ නිලධාරියෙකු ඔබව අමතනු ඇත.',
+                    'Your Gully Bowser service request has been registered with the Divulapitiya Pradeshiya Sabha Health & Environment Department.',
                     'உங்கள் கல்லி பௌசர் சேவை கோரிக்கை பிரதேச சபை சுகாதார பிரிவில் பதிவு செய்யப்பட்டுள்ளது.'
                   )}
                 </p>
@@ -300,7 +300,7 @@ const GullyBowserFormModal: React.FC<GullyBowserFormModalProps> = ({ isOpen, onC
                       required
                       value={formData.address}
                       onChange={handleInputChange}
-                      placeholder="e.g. No. 88, Station Road, Homagama"
+                      placeholder="e.g. No. 88, Station Road, Divulapitiya"
                       className="w-full bg-gray-50/70 border border-gray-300 focus:bg-white focus:border-[#8C1538] focus:ring-4 focus:ring-[#8C1538]/10 rounded-xl px-4 py-3 text-sm sm:text-base font-medium text-gray-900 focus:outline-none transition-all"
                     />
                   </div>
@@ -350,7 +350,7 @@ const GullyBowserFormModal: React.FC<GullyBowserFormModalProps> = ({ isOpen, onC
                       required
                       value={formData.gullyLocationAddress}
                       onChange={handleInputChange}
-                      placeholder="e.g. No. 88, Station Road, Homagama (Backyard Pit)"
+                      placeholder="e.g. No. 88, Station Road, Divulapitiya (Backyard Pit)"
                       className="w-full bg-gray-50/70 border border-gray-300 focus:bg-white focus:border-[#8C1538] focus:ring-4 focus:ring-[#8C1538]/10 rounded-xl px-4 py-3 text-sm sm:text-base font-medium text-gray-900 focus:outline-none transition-all"
                     />
                   </div>
@@ -414,7 +414,7 @@ const GullyBowserFormModal: React.FC<GullyBowserFormModalProps> = ({ isOpen, onC
                       required
                       value={formData.accessRoadDescription}
                       onChange={handleInputChange}
-                      placeholder="e.g. Turn left near Homagama Railway Station lane; 12ft wide road accessible for heavy vehicles."
+                      placeholder="e.g. Turn left near Divulapitiya Railway Station lane; 12ft wide road accessible for heavy vehicles."
                       className="w-full bg-gray-50/70 border border-gray-300 focus:bg-white focus:border-[#8C1538] focus:ring-4 focus:ring-[#8C1538]/10 rounded-xl px-4 py-3 text-sm sm:text-base font-medium text-gray-900 focus:outline-none transition-all"
                     />
                   </div>
@@ -446,7 +446,7 @@ const GullyBowserFormModal: React.FC<GullyBowserFormModalProps> = ({ isOpen, onC
                   <span className="text-xs sm:text-sm font-bold text-gray-900 leading-relaxed">
                     {L(
                       'ඉහත සඳහන් තොරතුරු සත්‍ය හා නිවැරදි බවත්, ප්‍රාදේශීය සභාවේ නියමිත ගලි බවුසර ගාස්තු ගෙවීමට එකඟ වන බවත් ප්‍රකාශ කරමි.',
-                      'I declare that the details provided are accurate and agree to pay the standard Homagama Pradeshiya Sabha tariff for the bowser service.',
+                      'I declare that the details provided are accurate and agree to pay the standard Divulapitiya Pradeshiya Sabha tariff for the bowser service.',
                       'மேலே உள்ள தகவல்கள் சரியானவை மற்றும் நிர்ணயிக்கப்பட்ட கட்டணத்தை செலுத்த ஒப்புக்கொள்கிறேன்.'
                     )}
                   </span>

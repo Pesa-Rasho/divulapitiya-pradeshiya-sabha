@@ -73,9 +73,9 @@ const FacilityBooking: React.FC = () => {
   const handleReserve = async (fac: MunicipalFacility, bookingDetails: any) => {
     let location = 'Main Municipal Grounds';
     if (fac.title === 'Central Town Hall') {
-      location = 'South Wing, Level 1, Homagama';
-    } else if (fac.title === 'Homagama Crematorium') {
-      location = 'Homagama Municipal Cemetery Grounds';
+      location = 'South Wing, Level 1, Divulapitiya';
+    } else if (fac.title === 'Divulapitiya Crematorium') {
+      location = 'Divulapitiya Municipal Cemetery Grounds';
     } else if (fac.title === 'Water Bowser Rental (6000L)') {
       location = 'Water Supply & Engineering Yard';
     }

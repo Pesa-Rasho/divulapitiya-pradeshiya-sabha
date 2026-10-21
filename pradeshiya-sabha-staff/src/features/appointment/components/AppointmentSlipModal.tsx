@@ -65,7 +65,7 @@ export const AppointmentSlipModal: React.FC<AppointmentSlipModalProps> = ({
               </svg>
             </div>
             <h2 className="text-sm font-black text-gray-900 uppercase tracking-wide">
-              HOMAGAMA PRADESHIYA SABHA
+              DIVULAPITIYA PRADESHIYA SABHA
             </h2>
             <p className="text-[11px] text-gray-500 font-medium">
               Official Citizen Appointment & Consultation Token

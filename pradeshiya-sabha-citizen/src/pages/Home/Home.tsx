@@ -94,7 +94,7 @@ const Home = () => {
       tag: 'Development',
       tagColor: 'bg-[#0f3b7d] text-white',
       title: 'New Community Center Opening',
-      desc: 'The Phase II expansion of the Homagama Digital Center is now complete and open to all public members for digital literacy courses.',
+      desc: 'The Phase II expansion of the Divulapitiya Digital Center is now complete and open to all public members for digital literacy courses.',
       linkText: 'Read Full Story',
       imgTint: 'from-blue-900/80 to-slate-900/90'
     },
@@ -112,7 +112,7 @@ const Home = () => {
       tag: 'Sustainability',
       tagColor: 'bg-[#2e6b35] text-white',
       title: 'Solar Initiative Phase 1',
-      desc: 'Homagama is moving towards a greener future with the installation of solar panels across 15 municipal office buildings.',
+      desc: 'Divulapitiya is moving towards a greener future with the installation of solar panels across 15 municipal office buildings.',
       linkText: 'View Roadmap',
       imgTint: 'from-emerald-950/80 to-teal-900/90'
     }
@@ -144,7 +144,7 @@ const Home = () => {
             </h1>
 
             <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-              {t('home.heroSubtitle', 'Manage your administrative requirements, track active applications, and contribute to the Homagama community from your digital dashboard.')}
+              {t('home.heroSubtitle', 'Manage your administrative requirements, track active applications, and contribute to the Divulapitiya community from your digital dashboard.')}
             </p>
           </div>
 

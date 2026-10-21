@@ -69,11 +69,11 @@ const BusinessTaxFormModal: React.FC<BusinessTaxFormModalProps> = ({ isOpen, onC
       businessNature: 'Hardware & Construction Materials Retail Trade',
       businessName: 'Lanka Hardware & Stores',
       proprietorName: 'W. A. D. Sunil Jayawardena',
-      businessAddress: 'No. 120, High Level Road, Homagama',
-      routeDescription: 'Located 150m from Homagama Town Clock Tower towards Kottawa on High Level Road left side.',
+      businessAddress: 'No. 120, High Level Road, Divulapitiya',
+      routeDescription: 'Located 150m from Divulapitiya Town Clock Tower towards Kottawa on High Level Road left side.',
       telephoneNumber: '011 285 4490 / 071 882 1100',
       nicNumber: '791140320V',
-      privateAddress: 'No. 14/A, Katuwana Road, Homagama',
+      privateAddress: 'No. 14/A, Katuwana Road, Divulapitiya',
       buildingOwnerInfo: 'Self-Owned (W. A. D. Sunil Jayawardena, No. 14/A, Katuwana Road)',
       assessmentNumberAndRoad: 'Assessment No. 120, High Level Road',
       previousYearRevenue: '4500000',
@@ -98,8 +98,8 @@ const BusinessTaxFormModal: React.FC<BusinessTaxFormModalProps> = ({ isOpen, onC
         applicantName: (formData as any).ownerName || 'S. Jayawardena',
         nicNumber: (formData as any).ownerNic || '198233445566',
         phone: (formData as any).phone || '077 889 9000',
-        address: (formData as any).ownerAddress || 'No. 15, High Level Road, Homagama',
-        locationAddress: `${(formData as any).businessAddress || 'Homagama'} (Assessment No: ${(formData as any).assessmentNo || '12/A'})`,
+        address: (formData as any).ownerAddress || 'No. 15, High Level Road, Divulapitiya',
+        locationAddress: `${(formData as any).businessAddress || 'Divulapitiya'} (Assessment No: ${(formData as any).assessmentNo || '12/A'})`,
         details: `Business Tax Return (${(formData as any).businessName || 'Trade Enterprise'}, Type: ${(formData as any).businessNature || 'Retail'}, Annual Turnover: Rs. ${(formData as any).annualTurnover || '0'})`,
         documentName: 'BALANCE_SHEET_2025.PDF',
         inspectionDate: null,
@@ -206,7 +206,7 @@ const BusinessTaxFormModal: React.FC<BusinessTaxFormModalProps> = ({ isOpen, onC
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
                   {L(
-                    'ඔබගේ "ඒ" කොටස අයදුම්පත හෝමාගම ප්‍රාදේශීය සභාවේ ආදායම් පරීක්ෂක අංශය වෙත යොමු කර ඇත. තක්සේරු වාර්තාව සකස් කළ පසු ඔබට බදු ගෙවීම් දැනුම්දීම ලැබෙනු ඇත.',
+                    'ඔබගේ "ඒ" කොටස අයදුම්පත දිවුලපිටිය ප්‍රාදේශීය සභාවේ ආදායම් පරීක්ෂක අංශය වෙත යොමු කර ඇත. තක්සේරු වාර්තාව සකස් කළ පසු ඔබට බදු ගෙවීම් දැනුම්දීම ලැබෙනු ඇත.',
                     'Your Part A return has been submitted to the Revenue Inspector Department. You will receive the tax assessment notification after review.',
                     'உங்கள் பகுதி A விண்ணப்பம் வருவாய் பரிசோதகர் பிரிவுக்கு அனுப்பப்பட்டுள்ளது.'
                   )}
@@ -239,7 +239,7 @@ const BusinessTaxFormModal: React.FC<BusinessTaxFormModalProps> = ({ isOpen, onC
                     {L('අයදුම්කරු විසින් පිරවිය යුතු "ඒ" කොටස:', 'Part A (Applicant Declaration):', 'பகுதி A (விண்ணப்பதாரர் பகுதி):')}
                   </span>{' '}
                   {L(
-                    'මෙම ෆෝරමයේ "ඒ" කොටස පුරවා හෝමාගම ප්‍රාදේශීය සභාවේ ප්‍රධාන කාර්යාලයට ඉදිරිපත් කළ යුතුය. (Office use Part B excluded).',
+                    'මෙම ෆෝරමයේ "ඒ" කොටස පුරවා දිවුලපිටිය ප්‍රාදේශීය සභාවේ ප්‍රධාන කාර්යාලයට ඉදිරිපත් කළ යුතුය. (Office use Part B excluded).',
                     'Complete Part A details accurately. The Part B revenue inspector assessment report is reserved for municipal officers.',
                     'பகுதி A தகவல்களை சரியாக பூர்த்தி செய்யவும். பகுதி B அலுவலக பயன்பாட்டிற்கு மட்டுமே.'
                   )}
@@ -352,7 +352,7 @@ const BusinessTaxFormModal: React.FC<BusinessTaxFormModalProps> = ({ isOpen, onC
                       required
                       value={formData.businessAddress}
                       onChange={handleInputChange}
-                      placeholder="e.g. No. 120, High Level Road, Homagama"
+                      placeholder="e.g. No. 120, High Level Road, Divulapitiya"
                       className="w-full bg-gray-50/70 border border-gray-300 focus:bg-white focus:border-[#8C1538] focus:ring-4 focus:ring-[#8C1538]/10 rounded-xl px-4 py-3 text-sm sm:text-base font-medium text-gray-900 focus:outline-none transition-all"
                     />
                   </div>
@@ -372,7 +372,7 @@ const BusinessTaxFormModal: React.FC<BusinessTaxFormModalProps> = ({ isOpen, onC
                       name="routeDescription"
                       value={formData.routeDescription}
                       onChange={handleInputChange}
-                      placeholder="e.g. Located 150m from Homagama Town Clock Tower towards Kottawa on High Level Road left side."
+                      placeholder="e.g. Located 150m from Divulapitiya Town Clock Tower towards Kottawa on High Level Road left side."
                       className="w-full bg-gray-50/70 border border-gray-300 focus:bg-white focus:border-[#8C1538] focus:ring-4 focus:ring-[#8C1538]/10 rounded-xl px-4 py-3 text-sm sm:text-base font-medium text-gray-900 focus:outline-none transition-all"
                     />
                   </div>
@@ -423,7 +423,7 @@ const BusinessTaxFormModal: React.FC<BusinessTaxFormModalProps> = ({ isOpen, onC
                       required
                       value={formData.privateAddress}
                       onChange={handleInputChange}
-                      placeholder="e.g. No. 14/A, Katuwana Road, Homagama"
+                      placeholder="e.g. No. 14/A, Katuwana Road, Divulapitiya"
                       className="w-full bg-gray-50/70 border border-gray-300 focus:bg-white focus:border-[#8C1538] focus:ring-4 focus:ring-[#8C1538]/10 rounded-xl px-4 py-3 text-sm sm:text-base font-medium text-gray-900 focus:outline-none transition-all"
                     />
                   </div>

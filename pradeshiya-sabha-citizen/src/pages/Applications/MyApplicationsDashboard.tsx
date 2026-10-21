@@ -110,7 +110,7 @@ const MyApplicationsDashboard: React.FC<MyApplicationsDashboardProps> = ({
       {
         label: L('අයදුම්පත් ඉදිරිපත් කිරීම', 'Application Submitted', 'விண்ணப்பம் சமர்ப்பிக்கப்பட்டது'),
         description: L(
-          'අයදුම්පත්‍රය සාර්ථකව හෝමාගම ප්‍රාදේශීය සභා ඩිජිටල් පද්ධතියේ ලියාපදිංචි විය.',
+          'අයදුම්පත්‍රය සාර්ථකව දිවුලපිටිය ප්‍රාදේශීය සභා ඩිජිටල් පද්ධතියේ ලියාපදිංචි විය.',
           'Form received, verified, and officially logged into the Pradeshiya Sabha digital registry.',
           'விண்ணப்பம் பெறப்பட்டு பிரதேச சபை டிஜிட்டல் பதிவேட்டில் பதிவு செய்யப்பட்டது.'
         ),

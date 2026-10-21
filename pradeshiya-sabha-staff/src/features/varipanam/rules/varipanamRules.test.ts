@@ -64,7 +64,7 @@ const baseDomesticProperty: Property = {
   annualAssessedValue: 200000,
   latitude: 6.842,
   longitude: 80.003,
-  zoneId: 'zone-homagama',
+  zoneId: 'zone-divulapitiya',
   wardId: 'ward-01',
   roadId: 'road-hmg-01',
   currentOwner: {
@@ -72,7 +72,7 @@ const baseDomesticProperty: Property = {
     name: 'Perera',
     nic: '1975000001',
     mobile: '+94 77 111 2222',
-    postalAddress: 'Homagama',
+    postalAddress: 'Divulapitiya',
   },
   status: 'Overdue',
   dues: [
@@ -191,12 +191,12 @@ assertEquals(statusPaid, 'Paid', '2.E: Returns "Paid" when all dues are fully pa
 console.log('\nTest 3: Property Filtering by Zone & Road')
 
 const propertyPool: Property[] = [
-  { ...baseDomesticProperty, id: 'p1', zoneId: 'zone-homagama', roadId: 'road-hmg-01' },
-  { ...baseDomesticProperty, id: 'p2', zoneId: 'zone-homagama', roadId: 'road-hmg-02' },
+  { ...baseDomesticProperty, id: 'p1', zoneId: 'zone-divulapitiya', roadId: 'road-hmg-01' },
+  { ...baseDomesticProperty, id: 'p2', zoneId: 'zone-divulapitiya', roadId: 'road-hmg-02' },
   { ...baseDomesticProperty, id: 'p3', zoneId: 'zone-wateraka', roadId: 'road-wtk-01' },
 ]
 
-const filteredRoadHmg01 = propertyPool.filter((p) => p.zoneId === 'zone-homagama' && p.roadId === 'road-hmg-01')
+const filteredRoadHmg01 = propertyPool.filter((p) => p.zoneId === 'zone-divulapitiya' && p.roadId === 'road-hmg-01')
 assertEquals(filteredRoadHmg01.length, 1, '3: Filtering by zone and road returns only properties in that specific road')
 assertEquals(filteredRoadHmg01[0].id, 'p1', '3: Correct property returned')
 

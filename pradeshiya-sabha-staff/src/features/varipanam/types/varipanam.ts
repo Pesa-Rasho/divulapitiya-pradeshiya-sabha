@@ -319,7 +319,7 @@ export interface VaripanamSettings {
     Q3: string // "09-30"
     Q4: string // "12-31"
   }
-  mapCentre: [number, number] // [6.8415, 80.0035] Homagama
+  mapCentre: [number, number] // [6.8415, 80.0035] Divulapitiya
   defaultZoom: number // 14
   sabhaBoundaryGeoJson?: {
     type: string

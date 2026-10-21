@@ -28,9 +28,9 @@ export interface AppointmentItem {
 }
 
 export const GN_DIVISIONS = [
-  'Homagama Town',
-  'Homagama North',
-  'Homagama South',
+  'Divulapitiya Town',
+  'Divulapitiya North',
+  'Divulapitiya South',
   'Meegoda',
   'Pitipana North',
   'Pitipana South',
@@ -92,7 +92,7 @@ const MOCK_APPOINTMENTS: AppointmentItem[] = [
     dateTime: '2026-06-05 11.00 AM',
     assignedOfficer: 'L.D.Silva',
     status: 'APPROVED',
-    remark: 'Requesting license renewal for retail grocery store in Homagama.',
+    remark: 'Requesting license renewal for retail grocery store in Divulapitiya.',
     documents: [
       { name: 'NIC Front.jpg', size: '115 KB' },
       { name: 'Business Registration.pdf', size: '1.8 MB' },

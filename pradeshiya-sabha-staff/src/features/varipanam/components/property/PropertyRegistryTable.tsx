@@ -210,7 +210,7 @@ export const PropertyRegistryTable: React.FC<PropertyRegistryTableProps> = ({
               paginatedProperties.map((prop) => {
                 const isSelected = selectedProperty?.id === prop.id
                 const amountDue = prop.dues.reduce((s, d) => s + (d.amount - d.paidAmount), 0)
-                const roadName = roadMap.get(prop.roadId) || 'Homagama PS limits'
+                const roadName = roadMap.get(prop.roadId) || 'Divulapitiya PS limits'
 
                 return (
                   <tr

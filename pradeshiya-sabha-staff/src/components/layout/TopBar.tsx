@@ -66,7 +66,7 @@ const TopBar: React.FC<TopBarProps> = ({ hideNav }) => {
 
 
             {/* Real logo */}
-            <img src={logo} alt="Homagama Pradeshiya Sabha Logo" className="h-11 sm:h-12 md:h-14 w-auto shrink-0" />
+            <img src={logo} alt="Divulapitiya Pradeshiya Sabha Logo" className="h-11 sm:h-12 md:h-14 w-auto shrink-0" />
           </div>
 
           {/* Right side: language + social + phone */}
@@ -115,7 +115,7 @@ const TopBar: React.FC<TopBarProps> = ({ hideNav }) => {
             <div className="flex items-center gap-2 sm:gap-3 min-w-0 flex-1">
 
               <span className="text-xs sm:text-sm md:text-base font-bold tracking-wide uppercase truncate">
-                Homagama Pradeshiya Sabha <span className="hidden md:inline">- Administrative Portal</span>
+                Divulapitiya Pradeshiya Sabha <span className="hidden md:inline">- Administrative Portal</span>
               </span>
             </div>
 

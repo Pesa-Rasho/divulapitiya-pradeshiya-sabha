@@ -62,9 +62,9 @@ export default function LetterForm({ onSubmit, onBackToDashboard, loading = fals
             </h2>
             <p className="text-xs text-gray-500 mt-1">
               {L(
-                'හෝමාගම ප්‍රාදේශීය සභාවේ අදාළ අංශ හෝ නිලධාරීන් වෙත ඔබගේ නිල ලිපිය හෝ ඉල්ලීම ඍජුවම යොමු කරන්න.',
+                'දිවුලපිටිය ප්‍රාදේශීය සභාවේ අදාළ අංශ හෝ නිලධාරීන් වෙත ඔබගේ නිල ලිපිය හෝ ඉල්ලීම ඍජුවම යොමු කරන්න.',
                 'Submit formal letters and requests directly to the municipal secretariat and departmental officers.',
-                'ஹோமகம பிரதேச சபையின் உரிய பிரிவுக்கு உங்கள் கடிதத்தை சமர்ப்பிக்கவும்.'
+                'திவுலபிட்டிய பிரதேச சபையின் உரிய பிரிவுக்கு உங்கள் கடிதத்தை சமர்ப்பிக்கவும்.'
               )}
             </p>
           </div>

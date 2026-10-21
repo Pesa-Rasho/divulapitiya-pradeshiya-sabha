@@ -120,7 +120,7 @@ const facilitiesInfo: {
     icon: <PublicGroundIcon />
   },
   {
-    name: 'Homagama Indoor Sports Complex',
+    name: 'Divulapitiya Indoor Sports Complex',
     category: 'Badminton & Indoor Athletics',
     capacity: '150 Players / Audience',
     rate: 'Rs. 25,000 / Slot',

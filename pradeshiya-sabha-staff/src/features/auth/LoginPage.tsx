@@ -82,7 +82,7 @@ export const LoginPage: React.FC = () => {
             {/* Background Image */}
             <img
               src={pradeshiyaSabhaImg}
-              alt="Homagama Pradeshiya Sabha Building"
+              alt="Divulapitiya Pradeshiya Sabha Building"
               className="absolute inset-0 w-full h-full object-cover object-center opacity-50 transition-transform duration-700 hover:scale-105 pointer-events-none"
             />
             {/* Gradient Overlay for Text Readability */}
@@ -93,7 +93,7 @@ export const LoginPage: React.FC = () => {
             {/* Bottom Text */}
             <div className="relative z-10 mt-auto pt-12">
               <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-3 drop-shadow">
-                Empowering Homagama
+                Empowering Divulapitiya
               </h2>
               <p className="text-white/90 text-sm md:text-base leading-relaxed font-light drop-shadow">
                 Welcome to our Unified Digital Gateway. Celebrating one year of digital transformation, we are committed to providing a seamless, transparent, and efficient administrative experience for all our citizens.

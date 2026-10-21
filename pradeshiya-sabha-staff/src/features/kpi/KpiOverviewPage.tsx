@@ -91,7 +91,7 @@ export const KpiOverviewPage: React.FC = () => {
             Council KPI Performance Benchmarks
           </h1>
           <p className="text-xs sm:text-sm text-gray-500 mt-0.5">
-            Homagama Pradeshiya Sabha municipal performance benchmarks, department averages, and staff ratings.
+            Divulapitiya Pradeshiya Sabha municipal performance benchmarks, department averages, and staff ratings.
           </p>
         </div>
 

@@ -110,7 +110,7 @@ const INITIAL_SENT_LETTERS: SentLetter[] = [
     department: 'Health & Sanitation',
     recipientOfficer: 'Dr. R. de Silva (MOH Officer)',
     subject: 'Community Dengue Prevention & Fogging Campaign Schedule',
-    body: 'This letter serves to confirm the finalized operational schedule for the upcoming community dengue awareness and mosquito fogging campaign across Homagama North GN divisions starting next Monday. Support teams have been fully briefed.',
+    body: 'This letter serves to confirm the finalized operational schedule for the upcoming community dengue awareness and mosquito fogging campaign across Divulapitiya North GN divisions starting next Monday. Support teams have been fully briefed.',
     status: 'DELIVERED',
     attachments: []
   }

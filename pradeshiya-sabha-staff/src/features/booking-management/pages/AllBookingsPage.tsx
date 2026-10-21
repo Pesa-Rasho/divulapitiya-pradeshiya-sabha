@@ -51,7 +51,7 @@ const AllBookingsPage: React.FC = () => {
             Facility Booking Management
           </h1>
           <p className="text-xs sm:text-sm text-gray-500 mt-0.5">
-            Review and manage all citizen facility booking applications submitted online across Homagama Pradeshiya Sabha.
+            Review and manage all citizen facility booking applications submitted online across Divulapitiya Pradeshiya Sabha.
           </p>
         </div>
 

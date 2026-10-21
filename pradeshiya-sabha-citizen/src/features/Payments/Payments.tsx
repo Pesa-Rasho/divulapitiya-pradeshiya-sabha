@@ -643,7 +643,7 @@ const Payments = () => {
                 {t('payments.rcptSuccess', 'Payment Successful')}
               </h3>
               <p className="text-xs text-gray-500 mt-0.5">
-                {t('payments.rcptSubtitle', 'Official Digital Receipt • Homagama Pradeshiya Sabha')}
+                {t('payments.rcptSubtitle', 'Official Digital Receipt • Divulapitiya Pradeshiya Sabha')}
               </p>
             </div>
 

@@ -324,7 +324,7 @@ export const AssetDirectoryPage: React.FC = () => {
                   className="w-full appearance-none bg-white border border-gray-300 rounded px-3 py-1.5 text-xs text-gray-800 focus:outline-none focus:ring-1 focus:ring-[#A31736] pr-8 cursor-pointer h-9 font-medium"
                 >
                   <option value="">All Wards & Zones</option>
-                  <option value="Homagama">Homagama Central</option>
+                  <option value="Divulapitiya">Divulapitiya Central</option>
                   <option value="Meegoda">Meegoda Ward</option>
                   <option value="Pitipana">Pitipana Ward</option>
                   <option value="Godagama">Godagama Ward</option>

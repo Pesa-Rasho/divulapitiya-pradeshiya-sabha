@@ -18,7 +18,7 @@ const AuthPortal = () => {
           <div className="absolute inset-0 z-0 opacity-25 mix-blend-overlay">
             <img 
               src={pradeshiyaImg} 
-              alt="Homagama Pradeshiya Sabha Building" 
+              alt="Divulapitiya Pradeshiya Sabha Building" 
               className="w-full h-full object-cover object-center"
             />
           </div>
@@ -27,7 +27,7 @@ const AuthPortal = () => {
           {/* Foreground Mission Content */}
           <div className="relative z-20 space-y-4">
             <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-white leading-tight">
-              {t('auth.title', 'Empowering Homagama')}
+              {t('auth.title', 'Empowering Divulapitiya')}
             </h1>
             <p className="text-white/90 text-sm sm:text-base leading-relaxed font-light">
               {t('auth.subtitle', 'Welcome to our Unified Digital Gateway. Celebrating one year of digital transformation, we are committed to providing a seamless, transparent, and efficient administrative experience for all our citizens.')}

@@ -209,7 +209,7 @@ export const ProfileHeaderCard: React.FC<ProfileHeaderCardProps> = ({
           <div className="w-full max-w-sm rounded bg-white border border-gray-300 p-5 text-gray-900 shadow-sm">
             <div className="flex items-center justify-between pb-3 border-b border-gray-200">
               <div>
-                <p className="text-[10px] uppercase font-bold tracking-widest text-[#A31736]">Homagama Pradeshiya Sabha</p>
+                <p className="text-[10px] uppercase font-bold tracking-widest text-[#A31736]">Divulapitiya Pradeshiya Sabha</p>
                 <p className="text-xs font-bold uppercase tracking-wide text-gray-800">Staff Identity Badge</p>
               </div>
               <div className="w-7 h-7 rounded bg-[#A31736] text-white flex items-center justify-center font-bold text-xs">

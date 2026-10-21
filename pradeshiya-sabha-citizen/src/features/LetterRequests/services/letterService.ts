@@ -8,7 +8,7 @@ let letterRequests = [
     dateSubmitted: '2026-06-01',
     timeSubmitted: '10.30 AM',
     status: 'In review',
-    description: 'Request for official approval on the building plan submitted for residential construction at Homagama.',
+    description: 'Request for official approval on the building plan submitted for residential construction at Divulapitiya.',
     remarks: 'Awaiting site inspection from the planning department officer.',
     timeline: [
       { date: '2026-06-01 10:30 AM', status: 'Submitted', description: 'Letter request submitted by citizen.' },

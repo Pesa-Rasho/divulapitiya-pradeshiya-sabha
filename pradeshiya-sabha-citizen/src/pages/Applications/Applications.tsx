@@ -88,8 +88,8 @@ const Applications: React.FC<ApplicationsProps> = ({ initialTab }) => {
       applicantName: 'Roshan K. Gunawardena',
       nicNumber: '198731402281',
       phone: '077 458 9632',
-      address: 'No. 112, High Level Road, Homagama',
-      locationAddress: 'High Level Junction, Homagama Town (Near Clock Tower)',
+      address: 'No. 112, High Level Road, Divulapitiya',
+      locationAddress: 'High Level Junction, Divulapitiya Town (Near Clock Tower)',
       details: 'Annual Trade Fair & Agricultural Exhibition Promotional Banner (Length: 15 ft, Width: 4 ft, Duration: 3 Months)',
       documentName: 'EXHIBITION_BANNER_FINAL_2026.PNG',
       inspectionDate: 'Jul 15, 2026',
@@ -108,8 +108,8 @@ const Applications: React.FC<ApplicationsProps> = ({ initialTab }) => {
       applicantName: 'Nimal Jayatilleke',
       nicNumber: '198123456789',
       phone: '071 854 1200',
-      address: 'No. 205, High Level Road, Homagama Town',
-      locationAddress: 'Homagama Green Supermarket & Food Emporium, High Level Rd',
+      address: 'No. 205, High Level Road, Divulapitiya Town',
+      locationAddress: 'Divulapitiya Green Supermarket & Food Emporium, High Level Rd',
       details: 'Monthly Commercial Solid Waste Collection (Biodegradable: 450 kg/month, Non-Biodegradable: 180 kg/month)',
       documentName: 'TRADE_LICENSE_COPY_2026.PDF',
       inspectionDate: 'Jul 09, 2026',
@@ -128,8 +128,8 @@ const Applications: React.FC<ApplicationsProps> = ({ initialTab }) => {
       applicantName: 'Chaminda Perera',
       nicNumber: '199012345678',
       phone: '071 285 5230',
-      address: 'No. 45, Temple Road, Homagama',
-      locationAddress: '4th Cross Lane, Temple Road, Homagama North',
+      address: 'No. 45, Temple Road, Divulapitiya',
+      locationAddress: '4th Cross Lane, Temple Road, Divulapitiya North',
       details: 'Excavation of Carpeted Road for Water Board Main Pipeline Connection (Length: 12 meters, Depth: 1.5 meters)',
       documentName: 'WATER_BOARD_APPROVAL_LETTER.PDF',
       inspectionDate: null,
@@ -148,8 +148,8 @@ const Applications: React.FC<ApplicationsProps> = ({ initialTab }) => {
       applicantName: 'Sujith Fernando',
       nicNumber: '198544332211',
       phone: '075 444 3322',
-      address: 'No. 88, Katuwana Industrial Estate, Homagama',
-      locationAddress: 'No. 88, Katuwana Industrial Estate, Homagama',
+      address: 'No. 88, Katuwana Industrial Estate, Divulapitiya',
+      locationAddress: 'No. 88, Katuwana Industrial Estate, Divulapitiya',
       details: 'Emergency Septic Tank & Wastewater Pit Clearance (Capacity: 5000 Liters, Commercial Premises)',
       documentName: 'PREMISES_ASSESSMENT_TAX_RECEIPT.PDF',
       inspectionDate: 'Jun 16, 2026',
@@ -168,8 +168,8 @@ const Applications: React.FC<ApplicationsProps> = ({ initialTab }) => {
       applicantName: 'K. Premadasa',
       nicNumber: '197855667788',
       phone: '072 111 2233',
-      address: 'No. 12, Station Road, Homagama',
-      locationAddress: 'Lot 04, Plan SP-1204, Station Road, Homagama',
+      address: 'No. 12, Station Road, Divulapitiya',
+      locationAddress: 'Lot 04, Plan SP-1204, Station Road, Divulapitiya',
       details: 'Street Line & Building Limit Verification Certificate (Returned due to missing survey plan annexure B)',
       documentName: 'INCOMPLETE_SURVEY_PLAN.PDF',
       inspectionDate: 'May 22, 2026',
@@ -190,7 +190,7 @@ const Applications: React.FC<ApplicationsProps> = ({ initialTab }) => {
         'விளம்பர பலகை காட்சி அனுமதிப்பத்திரம்'
       ),
       desc: L(
-        'හෝමාගම ප්‍රාදේශීය සභා බලප්‍රදේශය තුළ ප්‍රචාරක බැනර්, නාමපුවරු සහ වාණිජ දැන්වීම් ප්‍රදර්ශනය කිරීම සඳහා නිල අවසර පත්‍රය ලබා ගැනීම.',
+        'දිවුලපිටිය ප්‍රාදේශීය සභා බලප්‍රදේශය තුළ ප්‍රචාරක බැනර්, නාමපුවරු සහ වාණිජ දැන්වීම් ප්‍රදර්ශනය කිරීම සඳහා නිල අවසර පත්‍රය ලබා ගැනීම.',
         'Apply for official municipal permit to display promotional banners, signboards, hoardings, and commercial advertisements within the Pradeshiya Sabha area.',
         'பிரதேச சபை எல்லைக்குள் விளம்பர பதாகைகள் மற்றும் வர்த்தக பலகைகளை காட்சிப்படுத்துவதற்கான அனுமதிப்பத்திரம்.'
       ),
@@ -254,8 +254,8 @@ const Applications: React.FC<ApplicationsProps> = ({ initialTab }) => {
         'தொழில் / வியாபார வரி விண்ணப்பம் (பகுதி A)'
       ),
       desc: L(
-        'වාර්ෂික කර්මාන්ත හා ව්‍යාපාර බදු තක්සේරු ඉල්ලුම්පත්‍රයේ "ඒ" කොටස හෝමාගම ප්‍රාදේශීය සභාවේ ප්‍රධාන කාර්යාලය වෙත ඉදිරිපත් කිරීම.',
-        'Submit annual trade and industry license assessment return (Part A) to Homagama Pradeshiya Sabha Head Office.',
+        'වාර්ෂික කර්මාන්ත හා ව්‍යාපාර බදු තක්සේරු ඉල්ලුම්පත්‍රයේ "ඒ" කොටස දිවුලපිටිය ප්‍රාදේශීය සභාවේ ප්‍රධාන කාර්යාලය වෙත ඉදිරිපත් කිරීම.',
+        'Submit annual trade and industry license assessment return (Part A) to Divulapitiya Pradeshiya Sabha Head Office.',
         'வருடாந்த தொழில் மற்றும் வர்த்தக வரி மதிப்பீட்டு விண்ணப்பம் (பகுதி A) சமர்ப்பித்தல்.'
       ),
       icon: <BusinessTaxIcon />,
@@ -308,9 +308,9 @@ const Applications: React.FC<ApplicationsProps> = ({ initialTab }) => {
             </h1>
             <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
               {L(
-                'හෝමාගම ප්‍රාදේශීය සභාවේ නිල අයදුම්පත් හා අවසර පත්‍ර මාර්ගගතව ඉදිරිපත් කරන්න හෝ ඉදිරිපත් කළ අයදුම්පත් වල ප්‍රගතිය නිරීක්ෂණය කරන්න.',
+                'දිවුලපිටිය ප්‍රාදේශීය සභාවේ නිල අයදුම්පත් හා අවසර පත්‍ර මාර්ගගතව ඉදිරිපත් කරන්න හෝ ඉදිරිපත් කළ අයදුම්පත් වල ප්‍රගතිය නිරීක්ෂණය කරන්න.',
                 'Submit formal applications online or switch to My Applications to view entered details and track live progress stages.',
-                'ஹோமகம பிரதேச சபைக்கு உத்தியோகபூர்வ விண்ணப்பங்கள் மற்றும் அனுமதிப்பத்திரங்களை சமர்ப்பிக்கவும்.'
+                'திவுலபிட்டிய பிரதேச சபைக்கு உத்தியோகபூர்வ விண்ணப்பங்கள் மற்றும் அனுமதிப்பத்திரங்களை சமர்ப்பிக்கவும்.'
               )}
             </p>
           </div>

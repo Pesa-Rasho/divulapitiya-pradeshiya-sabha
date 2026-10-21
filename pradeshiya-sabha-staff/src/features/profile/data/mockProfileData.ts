@@ -28,7 +28,7 @@ export const STAFF_PROFILE: UserBioProfile = {
   emergencyContactName: 'Sanduni Senanayake (Spouse)',
   emergencyContactRelation: 'Spouse',
   emergencyContactPhone: '+94 71 892 4431',
-  residentialAddress: 'No. 142/A, High Level Road, Homagama, Western Province',
+  residentialAddress: 'No. 142/A, High Level Road, Divulapitiya, Western Province',
 }
 
 export const ADMIN_PROFILE: UserBioProfile = {
@@ -52,7 +52,7 @@ export const ADMIN_PROFILE: UserBioProfile = {
   emergencyContactName: 'Nadeeka Gunawardena (Wife)',
   emergencyContactRelation: 'Spouse',
   emergencyContactPhone: '+94 77 912 3381',
-  residentialAddress: 'No. 88, Temple Road, Pannipitiya, Homagama',
+  residentialAddress: 'No. 88, Temple Road, Pannipitiya, Divulapitiya',
 }
 
 export const INITIAL_SESSIONS: SecuritySession[] = [
@@ -61,7 +61,7 @@ export const INITIAL_SESSIONS: SecuritySession[] = [
     device: 'Windows 11 PC - Office Desktop (Room 204)',
     browser: 'Chrome 123.0 (64-bit)',
     ipAddress: '192.168.10.42 (Internal LAN)',
-    location: 'Homagama Council Head Office',
+    location: 'Divulapitiya Council Head Office',
     lastActive: 'Just now (Active Session)',
     isCurrent: true,
     deviceType: 'desktop',
@@ -71,7 +71,7 @@ export const INITIAL_SESSIONS: SecuritySession[] = [
     device: 'Apple iPhone 15 Pro',
     browser: 'Safari Mobile / HPS Staff App v2.4',
     ipAddress: '112.134.88.19 (Mobitel 4G)',
-    location: 'Homagama, Sri Lanka',
+    location: 'Divulapitiya, Sri Lanka',
     lastActive: '2 hours ago',
     isCurrent: false,
     deviceType: 'mobile',
@@ -148,7 +148,7 @@ export const INITIAL_ACTIVITY_LOGS: ActivityLogItem[] = [
 export const STAFF_DEPARTMENT: DepartmentInfo = {
   name: 'Administration & Citizen Services Division',
   headOfDepartment: 'Mrs. Swarna K. Perera (Director of Administration)',
-  location: 'Homagama Council Head Office - Wing A',
+  location: 'Divulapitiya Council Head Office - Wing A',
   roomNumber: 'Room 204 (2nd Floor)',
   contactExtension: 'Ext. 214',
   clearances: [
@@ -172,7 +172,7 @@ export const STAFF_DEPARTMENT: DepartmentInfo = {
 export const ADMIN_DEPARTMENT: DepartmentInfo = {
   name: 'Secretarial & E-Governance Directorate',
   headOfDepartment: 'Dr. Kasun M. Gunawardena (Chief Administrative Officer)',
-  location: 'Homagama Council Head Office - Executive Wing',
+  location: 'Divulapitiya Council Head Office - Executive Wing',
   roomNumber: 'Room 301 (3rd Floor)',
   contactExtension: 'Ext. 101',
   clearances: [

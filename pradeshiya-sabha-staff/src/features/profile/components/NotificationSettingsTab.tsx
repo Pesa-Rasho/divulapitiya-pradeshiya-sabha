@@ -57,7 +57,7 @@ export const NotificationSettingsTab: React.FC<NotificationSettingsTabProps> = (
           <div>
             <h3 className="text-sm font-bold text-gray-900 uppercase tracking-wide">Communication & Alert Channels</h3>
             <p className="text-xs text-gray-500 mt-0.5">
-              Customize where and when you receive real-time workflow notifications from Homagama Pradeshiya Sabha
+              Customize where and when you receive real-time workflow notifications from Divulapitiya Pradeshiya Sabha
             </p>
           </div>
         </div>

@@ -288,7 +288,7 @@ export const AppointmentPage: React.FC<AppointmentPageProps> = ({ mode }) => {
         <td className="py-3.5 px-6 whitespace-nowrap">
           <div className="font-bold text-[#1e3a8a]">{app.service}</div>
           <div className="text-[11px] text-gray-500 font-medium">
-            {app.division || 'Homagama Jurisdiction'}
+            {app.division || 'Divulapitiya Jurisdiction'}
           </div>
         </td>
 

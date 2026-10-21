@@ -9,7 +9,7 @@ export type FacilityType =
   | 'Pradeshiya Sabha Town Hall' 
   | 'Mattegoda Community Center' 
   | 'Kottawa Public Ground & Pavilion' 
-  | 'Homagama Indoor Sports Complex' 
+  | 'Divulapitiya Indoor Sports Complex' 
   | 'Public Crematorium & Chapel' 
   | 'Mobile Stage & Sound Equipment'
 

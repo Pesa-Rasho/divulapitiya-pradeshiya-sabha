@@ -743,7 +743,7 @@ export const Property360Page: React.FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
               { name: 'Deed_4412_Certified_Copy.pdf', size: '2.4 MB', type: 'Deed Copy', date: '2023-01-15' },
-              { name: 'Approved_Survey_Plan_908_Homagama.pdf', size: '3.1 MB', type: 'Survey Plan', date: '2023-01-15' },
+              { name: 'Approved_Survey_Plan_908_Divulapitiya.pdf', size: '3.1 MB', type: 'Survey Plan', date: '2023-01-15' },
               { name: 'Notary_Attestation_Report.pdf', size: '1.1 MB', type: 'Notary Report', date: '2023-01-15' },
             ].map((doc) => (
               <div key={doc.name} className="p-4 rounded-xl border border-gray-200 bg-gray-50 flex items-center justify-between text-xs">

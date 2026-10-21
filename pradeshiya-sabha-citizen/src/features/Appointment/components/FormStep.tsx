@@ -349,7 +349,7 @@ export const FormStep: React.FC<FormStepProps> = ({
                     ? 'border-red-500 focus:ring-red-500 focus:border-red-500 bg-red-50/10' 
                     : 'border-gray-300 focus:ring-red-800 focus:border-red-800'
                 }`}
-                placeholder="e.g. Homagama North - 482"
+                placeholder="e.g. Divulapitiya North - 482"
               />
               {errors.applicantGrama && <p className="text-[10px] text-red-600 mt-1 font-bold">{errors.applicantGrama}</p>}
             </div>

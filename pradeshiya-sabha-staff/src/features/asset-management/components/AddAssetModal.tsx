@@ -184,7 +184,7 @@ export const AddAssetModal: React.FC<AddAssetModalProps> = ({ isOpen, onClose, o
               required
               value={location}
               onChange={(e) => setLocation(e.target.value)}
-              placeholder="e.g. Ward 04, Homagama Central"
+              placeholder="e.g. Ward 04, Divulapitiya Central"
               className="w-full bg-white border border-gray-300 rounded px-3 py-2 text-xs text-gray-900 focus:outline-none focus:ring-1 focus:ring-[#A31736]"
             />
           </div>

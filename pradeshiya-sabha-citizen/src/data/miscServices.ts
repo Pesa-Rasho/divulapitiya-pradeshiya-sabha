@@ -22,7 +22,7 @@ export const miscServices: MiscService[] = [
     title: "Character Certificate",
     slug: "character-certificate",
     description:
-      "Obtain an official character certificate issued by Homagama Pradeshiya Sabha for personal or professional use.",
+      "Obtain an official character certificate issued by Divulapitiya Pradeshiya Sabha for personal or professional use.",
     icon: MdVerified,
   },
   {

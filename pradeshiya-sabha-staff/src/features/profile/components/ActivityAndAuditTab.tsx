@@ -160,7 +160,7 @@ export const ActivityAndAuditTab: React.FC<ActivityAndAuditTabProps> = ({ logs }
             </div>
             <div>
               <h3 className="font-bold text-gray-900 text-sm sm:text-base uppercase tracking-tight">Personal Administrative Audit Trail</h3>
-              <p className="text-xs text-gray-500">Immutable log of credentials usage across Homagama Pradeshiya Sabha portal</p>
+              <p className="text-xs text-gray-500">Immutable log of credentials usage across Divulapitiya Pradeshiya Sabha portal</p>
             </div>
           </div>
           <span className="text-[10px] font-bold uppercase tracking-wider bg-gray-100 px-2 py-0.5 rounded text-gray-700 border border-gray-200">

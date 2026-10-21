@@ -50,7 +50,7 @@ export const downloadSlip = (item) => {
         
         <!-- Header -->
         <div style="text-align: center; border-bottom: 2px solid #e5e7eb; padding-bottom: 20px; margin-bottom: 24px;">
-          <div style="font-size: 26px; font-weight: 800; color: #8C1538; letter-spacing: 0.5px;">HOMAGAMA PRADESHIYA SABHA</div>
+          <div style="font-size: 26px; font-weight: 800; color: #8C1538; letter-spacing: 0.5px;">DIVULAPITIYA PRADESHIYA SABHA</div>
           <div style="font-size: 13px; font-weight: 700; color: #374151; text-transform: uppercase; letter-spacing: 1px; margin-top: 4px;">${docTitle}</div>
           <div style="font-size: 11px; color: #6b7280; margin-top: 2px;">Democratic Socialist Republic of Sri Lanka</div>
         </div>
@@ -186,7 +186,7 @@ export const downloadSlip = (item) => {
         <!-- Barcode and Verification Footer -->
         <div style="display: flex; justify-content: space-between; align-items: flex-end; border-top: 1px dashed #d1d5db; padding-top: 16px;">
           <div style="font-size: 11px; color: #9ca3af;">
-            <div>Digitally authorized by Homagama Pradeshiya Sabha Administration</div>
+            <div>Digitally authorized by Divulapitiya Pradeshiya Sabha Administration</div>
             <div style="margin-top: 2px;">System generated • No physical signature required</div>
           </div>
           <div style="text-align: right;">

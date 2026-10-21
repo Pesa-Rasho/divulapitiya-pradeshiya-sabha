@@ -173,9 +173,9 @@ const Appointment = () => {
             onReserve={async (fac, bookingDetails) => {
               let location = 'Main Ground';
               if (fac.title === 'Central Town Hall') {
-                location = 'South Wing, Level 1, Homagama';
-              } else if (fac.title === 'Homagama Crematorium') {
-                location = 'Homagama Cremation Ground';
+                location = 'South Wing, Level 1, Divulapitiya';
+              } else if (fac.title === 'Divulapitiya Crematorium') {
+                location = 'Divulapitiya Cremation Ground';
               } else if (fac.title === 'Water Bowser Rental') {
                 location = 'Water Supply Dept';
               }

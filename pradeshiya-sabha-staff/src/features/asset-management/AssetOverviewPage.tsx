@@ -257,7 +257,7 @@ const AssetOverviewPage: React.FC = () => {
         <div>
           <h1 className="text-xl sm:text-2xl font-bold text-gray-900 tracking-tight uppercase">Public Asset Overview</h1>
           <p className="text-xs sm:text-sm text-gray-500 mt-0.5">
-            Real-time monitoring of public assets, infrastructure records, and GIS mapping for Homagama jurisdiction.
+            Real-time monitoring of public assets, infrastructure records, and GIS mapping for Divulapitiya jurisdiction.
           </p>
         </div>
         <div className="flex flex-wrap items-center gap-2.5">

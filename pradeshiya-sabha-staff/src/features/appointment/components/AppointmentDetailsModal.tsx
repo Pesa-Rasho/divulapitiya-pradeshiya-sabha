@@ -590,7 +590,7 @@ export const AppointmentDetailsModal: React.FC<AppointmentDetailsModalProps> = (
             </div>
 
             <div className="bg-amber-50 border border-amber-200 rounded p-3 text-xs text-amber-900 italic">
-              "Dear {appointment.citizenName}, your appointment for {appointment.service} at Homagama Pradeshiya Sabha is set for {appointment.dateTime} at {appointment.counter || 'Counter 01'}. Officer in charge: {appointment.assignedOfficer}."
+              "Dear {appointment.citizenName}, your appointment for {appointment.service} at Divulapitiya Pradeshiya Sabha is set for {appointment.dateTime} at {appointment.counter || 'Counter 01'}. Officer in charge: {appointment.assignedOfficer}."
             </div>
 
             <div className="flex justify-end gap-2 pt-2 border-t border-gray-200">

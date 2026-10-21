@@ -91,7 +91,7 @@ const DUMMY_LETTERS: Letter[] = [
     time: '08:30 AM',
     assignedOfficer: 'K.Perera',
     status: 'REJECTED',
-    remarks: 'Application for commercial stall permit at the annual Homagama public market festival.',
+    remarks: 'Application for commercial stall permit at the annual Divulapitiya public market festival.',
     attachments: []
   },
   {

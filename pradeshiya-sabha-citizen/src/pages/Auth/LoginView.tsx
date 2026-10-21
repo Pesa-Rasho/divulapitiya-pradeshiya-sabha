@@ -51,7 +51,7 @@ const LoginView = () => {
     name: 'Verified Citizen',
     nic: '199012345678',
     phone: '+94 71 234 5678',
-    email: 'citizen@homagamaps.lk',
+    email: 'citizen@divulapitiyaps.lk',
     password: ''
   });
 
@@ -330,7 +330,7 @@ const LoginView = () => {
               Password Reset Successful!
             </h2>
             <p className="text-sm text-gray-600 max-w-md mx-auto leading-relaxed">
-              Your portal password has been updated securely. You can now use your new credentials to sign into the Homagama Pradeshiya Sabha portal.
+              Your portal password has been updated securely. You can now use your new credentials to sign into the Divulapitiya Pradeshiya Sabha portal.
             </p>
 
             <div className="pt-4">
