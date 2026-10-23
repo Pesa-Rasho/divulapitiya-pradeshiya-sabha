@@ -54,13 +54,13 @@ const INITIAL_ASSETS: AssetRecord[] = [
     wattage: '120W Solar LED',
     poleId: 'SL-HML-042',
     conditionStatus: 'Good - Battery 98%',
-    coordinates: { lat: '6.8415', lng: '79.9982' }
+    coordinates: { lat: '7.2215', lng: '80.0182' }
   },
   {
     id: 'ASSET-SL-4022',
     category: 'Streetlamp',
     name: 'Dual Arm Highway Streetlamp Pole #SL-HML-043',
-    location: 'High Level Road Junction',
+    location: 'Divulapitiya Clock Tower Junction',
     dateAdded: 'Nov 04, 2026',
     status: 'Operational',
     value: 1,
@@ -68,13 +68,13 @@ const INITIAL_ASSETS: AssetRecord[] = [
     wattage: '150W LED Grid',
     poleId: 'SL-HML-043',
     conditionStatus: 'Operational',
-    coordinates: { lat: '6.8428', lng: '79.9995' }
+    coordinates: { lat: '7.2228', lng: '80.0195' }
   },
   {
     id: 'ASSET-SL-4023',
     category: 'Streetlamp',
     name: 'Station Road LED Lamp Pole #SL-STR-012',
-    location: 'Station Road, Divulapitiya Railway Station',
+    location: 'Negombo Road, Divulapitiya',
     dateAdded: 'Oct 30, 2026',
     status: 'Under Maintenance',
     value: 1,
@@ -82,7 +82,7 @@ const INITIAL_ASSETS: AssetRecord[] = [
     wattage: '90W LED',
     poleId: 'SL-STR-012',
     conditionStatus: 'Bulb Replacement Scheduled',
-    coordinates: { lat: '6.8450', lng: '80.0015' }
+    coordinates: { lat: '7.2250', lng: '80.0215' }
   },
 
   // ── GROUNDS & PARKS ──
@@ -90,27 +90,27 @@ const INITIAL_ASSETS: AssetRecord[] = [
     id: 'ASSET-GR-0901',
     category: 'Grounds',
     name: 'Divulapitiya Municipal Central Sports Ground',
-    location: 'Ward 01, Court Complex Road',
+    location: 'Ward 01, Mirigama Road',
     dateAdded: 'Nov 02, 2026',
     status: 'Operational',
     value: 12.5,
     unit: 'Acres',
     acreage: '12.5 Acres',
     valuation: 145000000,
-    coordinates: { lat: '6.8432', lng: '79.9968' }
+    coordinates: { lat: '7.2232', lng: '80.0168' }
   },
   {
     id: 'ASSET-GR-0902',
     category: 'Grounds',
-    name: 'Meegoda Community Play Park & Recreation Area',
-    location: 'Ward 06, Meegoda Junction',
+    name: 'Dunagaha Community Play Park & Recreation Area',
+    location: 'Ward 06, Dunagaha Junction',
     dateAdded: 'Oct 28, 2026',
     status: 'Verified',
     value: 4.8,
     unit: 'Acres',
     acreage: '4.8 Acres',
     valuation: 65000000,
-    coordinates: { lat: '6.8550', lng: '80.0420' }
+    coordinates: { lat: '7.2150', lng: '80.0050' }
   },
 
   // ── LANDS ──
@@ -125,20 +125,20 @@ const INITIAL_ASSETS: AssetRecord[] = [
     unit: 'Perches',
     acreage: '2.5 Acres',
     valuation: 85000000,
-    coordinates: { lat: '6.8450', lng: '80.0010' }
+    coordinates: { lat: '7.2250', lng: '80.0210' }
   },
   {
     id: 'ASSET-LN-0923',
     category: 'Land',
-    name: 'Pitipana Tech City Municipal Reserve Plot',
-    location: 'Pitipana South',
+    name: 'Badalgama Municipal Reserve Plot',
+    location: 'Badalgama Road, Divulapitiya',
     dateAdded: 'Oct 26, 2026',
     status: 'Verified',
     value: 6.2,
     unit: 'Acres',
     acreage: '6.2 Acres',
     valuation: 180000000,
-    coordinates: { lat: '6.8330', lng: '80.0150' }
+    coordinates: { lat: '7.2330', lng: '80.0150' }
   },
 
   // ── ROADS & DRAINAGE ──
@@ -152,19 +152,19 @@ const INITIAL_ASSETS: AssetRecord[] = [
     value: 4.5,
     unit: 'KM',
     roadKm: 4.5,
-    coordinates: { lat: '6.8850', lng: '79.9150' }
+    coordinates: { lat: '7.2285', lng: '80.0180' }
   },
   {
     id: 'ASSET-RD-0043',
     category: 'Road',
-    name: 'Main Station Canal Concrete Drainage Channel',
+    name: 'Mirigama Road Concrete Drainage Channel',
     location: 'Ward 04, Central North',
     dateAdded: 'Oct 21, 2026',
     status: 'Audit Pending',
     value: 12,
     unit: 'KM',
     roadKm: 12.0,
-    coordinates: { lat: '6.8750', lng: '79.9350' }
+    coordinates: { lat: '7.2260', lng: '80.0190' }
   },
 
   // ── CIVIC BUILDINGS ──
@@ -172,48 +172,48 @@ const INITIAL_ASSETS: AssetRecord[] = [
     id: 'ASSET-BL-1184',
     category: 'Building',
     name: 'Pradeshiya Sabha Main Administrative Secretariat',
-    location: 'High Level Road, Divulapitiya Town Center',
+    location: 'Mirigama Road, Divulapitiya Town Center',
     dateAdded: 'Oct 28, 2026',
     status: 'Operational',
     value: 1,
     unit: 'Units',
     valuation: 320000000,
-    coordinates: { lat: '6.8410', lng: '79.9975' }
+    coordinates: { lat: '7.2245', lng: '80.0194' }
   },
   {
     id: 'ASSET-BL-1182',
     category: 'Building',
-    name: 'Piliyandala Ward Sub-Office & Community Center',
-    location: 'Ward 12, Piliyandala',
+    name: 'Dunagaha Ward Sub-Office & Community Center',
+    location: 'Ward 03, Dunagaha',
     dateAdded: 'Oct 23, 2026',
     status: 'Digitized',
     value: 1,
     unit: 'Units',
-    coordinates: { lat: '6.8018', lng: '79.9227' }
+    coordinates: { lat: '7.2118', lng: '80.0027' }
   },
 
   // ── UTILITIES ──
   {
     id: 'ASSET-UT-1046',
     category: 'Utility / Infrastructure',
-    name: 'Peliyagoda Water Pumping Station',
-    location: 'Peliyagoda / Kelani River',
+    name: 'Divulapitiya Water Distribution Pump Station',
+    location: 'Divulapitiya Water Works Yard',
     dateAdded: 'Nov 01, 2026',
     status: 'Operational',
     value: 2,
     unit: 'Plants',
-    coordinates: { lat: '6.9520', lng: '79.8880' }
+    coordinates: { lat: '7.2290', lng: '80.0160' }
   },
   {
     id: 'ASSET-UT-1044',
     category: 'Utility / Infrastructure',
     name: 'Solar Roof Power Grid Depot',
-    location: 'Ward 09, Mattegoda',
+    location: 'Ward 02, Divulapitiya',
     dateAdded: 'Oct 15, 2026',
     status: 'Operational',
     value: 1,
     unit: 'Items',
-    coordinates: { lat: '6.8250', lng: '79.9550' }
+    coordinates: { lat: '7.2235', lng: '80.0220' }
   }
 ]
 

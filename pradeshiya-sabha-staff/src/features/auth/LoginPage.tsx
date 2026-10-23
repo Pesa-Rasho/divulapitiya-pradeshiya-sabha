@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAuth, DUMMY_USERS, type User } from '../../context/AuthContext'
 import TopBar from '../../components/layout/TopBar'
-import pradeshiyaSabhaImg from '../../assets/pradeshiyasabha.png'
 
 const SendIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="w-4 h-4">
@@ -78,20 +77,42 @@ export const LoginPage: React.FC = () => {
       <main className="flex-1 flex items-center justify-center p-4 sm:p-8 md:p-12">
         <div className="w-full max-w-5xl bg-white rounded border border-gray-300 shadow-md overflow-hidden grid grid-cols-1 md:grid-cols-12 min-h-[560px]">
           {/* Left Column: Branding / Banner */}
-          <div className="md:col-span-6 bg-[#801028] text-white p-8 md:p-12 flex flex-col justify-between relative overflow-hidden min-h-[480px]">
-            {/* Background Image */}
-            <img
-              src={pradeshiyaSabhaImg}
-              alt="Divulapitiya Pradeshiya Sabha Building"
-              className="absolute inset-0 w-full h-full object-cover object-center opacity-50 transition-transform duration-700 hover:scale-105 pointer-events-none"
-            />
-            {/* Gradient Overlay for Text Readability */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#400510] via-[#801028]/10 to-transparent pointer-events-none" />
+          <div className="md:col-span-6 bg-gradient-to-br from-[#540716] via-[#751124] to-[#8c1538] text-white p-8 md:p-12 flex flex-col justify-between relative overflow-hidden min-h-[480px]">
+            {/* Subtle decorative background pattern */}
+            <div className="absolute inset-0 opacity-10 pointer-events-none">
+              <svg className="w-full h-full" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="200" cy="200" r="160" stroke="white" strokeWidth="1.5" strokeDasharray="4 6" />
+                <circle cx="200" cy="200" r="120" stroke="white" strokeWidth="1" />
+                <circle cx="200" cy="200" r="80" stroke="white" strokeWidth="1.5" strokeDasharray="6 6" />
+                <path d="M40 200 H360 M200 40 V360" stroke="white" strokeWidth="1" strokeOpacity="0.5" />
+              </svg>
+            </div>
+            {/* Ambient lighting glow */}
+            <div className="absolute -top-24 -left-24 w-80 h-80 bg-white/10 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute -bottom-24 -right-24 w-80 h-80 bg-black/30 rounded-full blur-3xl pointer-events-none" />
 
-
+            {/* Top Emblem / Branding */}
+            <div className="relative z-10 flex items-center gap-3">
+              <div className="w-12 h-12 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white shadow-lg">
+                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.75}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.333A1.333 1.333 0 0019.167 9H4.833A1.333 1.333 0 003.5 10.333V21h17z" />
+                </svg>
+              </div>
+              <div>
+                <span className="text-[11px] font-semibold tracking-widest uppercase text-white/80 block">
+                  Democratic Socialist Republic of Sri Lanka
+                </span>
+                <span className="text-sm font-bold text-white tracking-wide">
+                  Divulapitiya Pradeshiya Sabha
+                </span>
+              </div>
+            </div>
 
             {/* Bottom Text */}
             <div className="relative z-10 mt-auto pt-12">
+              <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-white/15 backdrop-blur-xs text-white mb-4 border border-white/20">
+                Staff &amp; Administrative Gateway
+              </span>
               <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-3 drop-shadow">
                 Empowering Divulapitiya
               </h2>

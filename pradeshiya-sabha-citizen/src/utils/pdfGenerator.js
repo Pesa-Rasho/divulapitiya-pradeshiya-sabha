@@ -178,7 +178,7 @@ export const downloadSlip = (item) => {
           <strong>Official Notice for Citizens:</strong>
           <ul style="margin: 4px 0 0 0; padding-left: 16px;">
             <li>Keep this tracking slip for future follow-up and verification reference.</li>
-            <li>For status inquiries and escalations, contact the council helpline: 011-2855222 quoting reference ${refToken}.</li>
+            <li>For status inquiries and escalations, contact the council helpline: 031-2246275 quoting reference ${refToken}.</li>
             <li>Official council updates will be communicated via SMS and the Citizen Digital Gateway.</li>
           </ul>
         </div>

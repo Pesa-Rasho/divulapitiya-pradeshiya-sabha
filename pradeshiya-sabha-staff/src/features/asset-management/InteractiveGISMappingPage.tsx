@@ -179,7 +179,7 @@ export const InteractiveGISMappingPage: React.FC = () => {
   useEffect(() => {
     if (!mapContainerRef.current || mapInstanceRef.current) return
 
-    const initialCenter: [number, number] = [6.8432, 79.9968]
+    const initialCenter: [number, number] = [7.2245, 80.0194]
     const map = L.map(mapContainerRef.current, {
       center: initialCenter,
       zoom: 13,
@@ -286,8 +286,8 @@ export const InteractiveGISMappingPage: React.FC = () => {
 
     // 2. Render Live GPS Vehicles (Garbage Tractors, Compactors, Bowsers)
     visibleVehicles.forEach((v, idx) => {
-      const lat = v.gpsTracking?.lat || 6.8415 + (idx % 4) * 0.005
-      const lng = v.gpsTracking?.lng || 79.9982 + (idx % 3) * 0.004
+      const lat = v.gpsTracking?.lat || 7.2215 + (idx % 4) * 0.004
+      const lng = v.gpsTracking?.lng || 80.0182 + (idx % 3) * 0.004
 
       // Draw route trail polyline if present
       if (v.gpsTracking?.routeTrail && v.gpsTracking.routeTrail.length > 1) {
@@ -337,8 +337,8 @@ export const InteractiveGISMappingPage: React.FC = () => {
   const handleZoomIn = () => mapInstanceRef.current?.zoomIn()
   /** Decreases the Leaflet map zoom level. */
   const handleZoomOut = () => mapInstanceRef.current?.zoomOut()
-  /** Centers the Leaflet map on the default jurisdiction location. */
-  const handleCenterMap = () => mapInstanceRef.current?.setView([6.8432, 79.9968], 13, { animate: true })
+  /** Centers the Leaflet map on the default jurisdiction location (Divulapitiya). */
+  const handleCenterMap = () => mapInstanceRef.current?.setView([7.2245, 80.0194], 13, { animate: true })
 
   return (
     <div className="flex flex-col h-[calc(100vh-64px)] bg-white overflow-hidden text-left">

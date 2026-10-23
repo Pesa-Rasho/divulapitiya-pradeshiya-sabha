@@ -168,7 +168,7 @@ const LetterDocumentModal: React.FC<LetterDocumentModalProps> = ({ letter, onClo
           <div className="text-center border-b-4 border-[#A31736] pb-6 mb-8 relative">
             <div className="absolute left-0 top-0 hidden sm:block">
               <div className="w-12 h-12 rounded border-2 border-[#A31736] flex items-center justify-center text-[#A31736] font-extrabold text-xs tracking-tighter">
-                HPS
+                DPS
               </div>
             </div>
             <h1 className="text-2xl md:text-3xl font-extrabold text-[#A31736] tracking-wide uppercase font-sans">
@@ -178,7 +178,7 @@ const LetterDocumentModal: React.FC<LetterDocumentModalProps> = ({ letter, onClo
               Official Municipal Correspondence &amp; Departmental Dispatch
             </p>
             <p className="text-xs text-gray-400 font-sans mt-0.5">
-              Court Road, Divulapitiya • Tel: +94 11 285 5230 • Email: divulapitiyapradeshiyasabawa@gmail.com
+              Mirigama Road, Divulapitiya • Tel: +94 31 224 6275 • Email: divupitiyaps@gmail.com
             </p>
           </div>
 

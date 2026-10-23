@@ -2,7 +2,6 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import { useLanguage } from '../../context/LanguageContext';
-import pradeshiyaImg from '../../assets/pradeshiyasabha.png';
 
 const ShieldCheckIcon = () => (
   <svg className="w-3.5 h-3.5 text-[#8C1538] shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -96,7 +95,12 @@ const Home = () => {
       title: 'New Community Center Opening',
       desc: 'The Phase II expansion of the Divulapitiya Digital Center is now complete and open to all public members for digital literacy courses.',
       linkText: 'Read Full Story',
-      imgTint: 'from-blue-900/80 to-slate-900/90'
+      gradient: 'from-blue-950 via-indigo-950 to-slate-900',
+      icon: (
+        <svg className="w-12 h-12 text-blue-300/40" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />
+        </svg>
+      )
     },
     {
       id: 'news-2',
@@ -105,7 +109,12 @@ const Home = () => {
       title: 'Town Hall Meeting: Road Planning',
       desc: 'Join us this Friday at the Main Hall to discuss the proposed bypass route and provide your valuable community feedback.',
       linkText: 'Register Attendance',
-      imgTint: 'from-amber-950/80 to-stone-900/90'
+      gradient: 'from-amber-950 via-stone-900 to-zinc-950',
+      icon: (
+        <svg className="w-12 h-12 text-amber-300/40" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 110-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 01-1.44-4.282m3.102.069a18.03 18.03 0 01-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 018.835 2.535M10.34 6.66a23.847 23.847 0 008.835-2.535m0 0A23.74 23.74 0 0018.795 3m.38 1.125a23.91 23.91 0 011.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 001.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 010 3.46" />
+        </svg>
+      )
     },
     {
       id: 'news-3',
@@ -114,7 +123,12 @@ const Home = () => {
       title: 'Solar Initiative Phase 1',
       desc: 'Divulapitiya is moving towards a greener future with the installation of solar panels across 15 municipal office buildings.',
       linkText: 'View Roadmap',
-      imgTint: 'from-emerald-950/80 to-teal-900/90'
+      gradient: 'from-emerald-950 via-teal-950 to-slate-900',
+      icon: (
+        <svg className="w-12 h-12 text-emerald-300/40" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+        </svg>
+      )
     }
   ];
 
@@ -261,18 +275,18 @@ const Home = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {newsItems.map((news) => (
             <div key={news.id} className="bg-white rounded-2xl border border-gray-200/80 overflow-hidden shadow-xs hover:shadow-md transition-all duration-200 flex flex-col group">
-              {/* Card Image Banner */}
-              <div className="h-48 relative overflow-hidden bg-gray-900">
-                <img
-                  src={pradeshiyaImg}
-                  alt={news.title}
-                  className="w-full h-full object-cover object-center opacity-60 group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className={`absolute inset-0 bg-gradient-to-t ${news.imgTint} mix-blend-multiply`} />
-                <div className="absolute top-4 left-4 z-10">
-                  <span className={`px-3 py-1 rounded-full text-xs font-semibold shadow-sm ${news.tagColor}`}>
+              {/* Card Header Banner with Civic Theme */}
+              <div className={`h-44 relative overflow-hidden bg-gradient-to-br ${news.gradient} p-6 flex flex-col justify-between group-hover:brightness-110 transition-all duration-300`}>
+                <div className="absolute right-4 bottom-2 opacity-60 group-hover:scale-110 group-hover:opacity-80 transition-all duration-500 pointer-events-none">
+                  {news.icon}
+                </div>
+                <div>
+                  <span className={`px-3 py-1 rounded-full text-xs font-semibold shadow-sm inline-block ${news.tagColor}`}>
                     {news.tag}
                   </span>
+                </div>
+                <div className="text-white/60 text-xs font-mono tracking-wide">
+                  Divulapitiya Municipal Updates
                 </div>
               </div>
 

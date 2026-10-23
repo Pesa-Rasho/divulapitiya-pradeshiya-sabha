@@ -71,7 +71,7 @@ const BusinessTaxFormModal: React.FC<BusinessTaxFormModalProps> = ({ isOpen, onC
       proprietorName: 'W. A. D. Sunil Jayawardena',
       businessAddress: 'No. 120, High Level Road, Divulapitiya',
       routeDescription: 'Located 150m from Divulapitiya Town Clock Tower towards Kottawa on High Level Road left side.',
-      telephoneNumber: '011 285 4490 / 071 882 1100',
+      telephoneNumber: '031 224 6275 / 071 882 1100',
       nicNumber: '791140320V',
       privateAddress: 'No. 14/A, Katuwana Road, Divulapitiya',
       buildingOwnerInfo: 'Self-Owned (W. A. D. Sunil Jayawardena, No. 14/A, Katuwana Road)',
@@ -389,7 +389,7 @@ const BusinessTaxFormModal: React.FC<BusinessTaxFormModalProps> = ({ isOpen, onC
                       required
                       value={formData.telephoneNumber}
                       onChange={handleInputChange}
-                      placeholder="e.g. 011 285 4490 / 071 882 1100"
+                      placeholder="e.g. 031 224 6275 / 071 882 1100"
                       className="w-full bg-gray-50/70 border border-gray-300 focus:bg-white focus:border-[#8C1538] focus:ring-4 focus:ring-[#8C1538]/10 rounded-xl px-4 py-3 text-sm sm:text-base font-semibold text-gray-900 focus:outline-none transition-all"
                     />
                   </div>

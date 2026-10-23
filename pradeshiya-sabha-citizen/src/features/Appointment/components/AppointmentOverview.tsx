@@ -1,6 +1,5 @@
 import React from 'react';
 import { useLanguage } from '../../../context/LanguageContext';
-import pradeshiyaImg from '../../../assets/pradeshiyasabha.png';
 
 const AppointmentOverview = ({ onNavigate, bookings }) => {
   const { t } = useLanguage();
@@ -9,17 +8,24 @@ const AppointmentOverview = ({ onNavigate, bookings }) => {
 
   return ( 
     <div className="space-y-8">
-      {/* Hero Banner */}
-      <div 
-        className="relative h-64 rounded-xl overflow-hidden bg-cover bg-center shadow-lg"
-        style={{ 
-          backgroundImage: `linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url('${pradeshiyaImg}')` 
-        }}
-      >
-        <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent flex flex-col justify-end p-6">
-          <h2 className="text-3xl font-extrabold text-white tracking-wide">
+      {/* Hero Banner with modern civic gradient styling */}
+      <div className="relative h-60 rounded-2xl overflow-hidden bg-gradient-to-r from-[#500c1e] via-[#751124] to-[#8C1538] shadow-md p-8 flex flex-col justify-end">
+        {/* Subtle decorative vector motif */}
+        <div className="absolute right-0 top-0 bottom-0 w-1/2 opacity-10 pointer-events-none flex items-center justify-end pr-8">
+          <svg className="w-56 h-56 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+          </svg>
+        </div>
+        <div className="relative z-10 space-y-2">
+          <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-white/15 backdrop-blur-xs text-white border border-white/20">
+            Divulapitiya Pradeshiya Sabha
+          </span>
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-wide">
             {t('appointments.title', 'Citizen Appointment Portal')}
           </h2>
+          <p className="text-white/80 text-xs sm:text-sm max-w-xl">
+            Book one-on-one appointments with the Chairman, Secretary, and divisional department officers of Divulapitiya Pradeshiya Sabha.
+          </p>
         </div>
       </div>
 

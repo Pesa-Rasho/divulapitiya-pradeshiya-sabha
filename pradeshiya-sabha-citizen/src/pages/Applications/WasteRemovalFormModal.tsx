@@ -380,7 +380,7 @@ const WasteRemovalFormModal = ({ isOpen, onClose, onAddApplication }: any) => {
                       required
                       value={formData.telephoneNumber}
                       onChange={handleInputChange}
-                      placeholder="e.g. 071 854 1200 / 011 285 3000"
+                      placeholder="e.g. 071 854 1200 / 031 224 6275"
                       className="w-full bg-gray-50/70 border border-gray-300 focus:bg-white focus:border-[#8C1538] focus:ring-4 focus:ring-[#8C1538]/10 rounded-xl px-4 py-3 text-sm sm:text-base font-semibold text-gray-900 focus:outline-none transition-all"
                     />
                   </div>

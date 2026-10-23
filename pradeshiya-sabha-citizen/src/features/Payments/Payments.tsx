@@ -76,7 +76,7 @@ const Payments = () => {
   // Sample historical transactions
   const transactions = [
     {
-      id: 'HPS-PAY-2026-8921',
+      id: 'DPS-PAY-2026-8921',
       date: '2026-06-28',
       category: 'Utility',
       service: 'Water Charges & Assessment Rates',
@@ -86,7 +86,7 @@ const Payments = () => {
       method: 'Online Card'
     },
     {
-      id: 'HPS-PAY-2026-7410',
+      id: 'DPS-PAY-2026-7410',
       date: '2026-05-14',
       category: 'Miscellaneous',
       service: 'Environment & Health Certificate Fee',
@@ -96,7 +96,7 @@ const Payments = () => {
       method: 'LankaQR'
     },
     {
-      id: 'HPS-PAY-2026-6102',
+      id: 'DPS-PAY-2026-6102',
       date: '2026-04-03',
       category: 'Utility',
       service: 'Property & Assessment Tax (Q1)',
@@ -106,7 +106,7 @@ const Payments = () => {
       method: 'Online Card'
     },
     {
-      id: 'HPS-PAY-2026-5309',
+      id: 'DPS-PAY-2026-5309',
       date: '2026-02-19',
       category: 'Miscellaneous',
       service: 'Building Permit Renewal Fee',
@@ -207,7 +207,7 @@ const Payments = () => {
       globalThis.crypto.getRandomValues(randomValue);
 
       const newReceipt = {
-        id: `HPS-PAY-${100000 + (randomValue[0] % 900000)}`,
+        id: `DPS-PAY-${100000 + (randomValue[0] % 900000)}`,
         date: new Date().toLocaleDateString('en-CA'),
         time: new Date().toLocaleTimeString(),
         service: serviceTitle,

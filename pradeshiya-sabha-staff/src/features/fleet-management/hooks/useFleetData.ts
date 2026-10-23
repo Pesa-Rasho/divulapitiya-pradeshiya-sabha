@@ -137,8 +137,8 @@ export function useFleetData() {
         prevVehicles.map((v, idx) => {
           if (v.status !== 'On Mission' && v.status !== 'Available') return v
 
-          const baseLat = 6.8415 + (idx % 4) * 0.005
-          const baseLng = 79.9982 + (idx % 3) * 0.004
+          const baseLat = 7.2215 + (idx % 4) * 0.004
+          const baseLng = 80.0182 + (idx % 3) * 0.004
 
           const currentLat = v.gpsTracking?.lat || baseLat
           const currentLng = v.gpsTracking?.lng || baseLng

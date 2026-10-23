@@ -99,12 +99,12 @@ const Header = () => {
 
           {/* Telephone/Contact Button - Visible on mobile top row right next to logo, or right aligned on desktop */}
           <a
-            href="tel:+94112855230"
-            aria-label="Call +94 11 285 5230"
+            href="tel:+94312246275"
+            aria-label="Call +94 31 224 6275"
             className="inline-flex items-center gap-1 sm:gap-2 bg-[#6b6f76] hover:bg-[#55585e] text-white px-2 sm:px-3.5 py-1 sm:py-1.5 rounded-md sm:rounded-lg text-[11px] sm:text-sm font-medium transition-all duration-200 shadow-xs hover:shadow-md cursor-pointer shrink-0"
           >
             <WhatsappIcon />
-            <span className="font-semibold">+94 11 285 5230</span>
+            <span className="font-semibold">+94 31 224 6275</span>
           </a>
         </div>
 

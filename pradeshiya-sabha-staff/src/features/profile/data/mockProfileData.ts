@@ -8,7 +8,7 @@ import type {
 } from '../types'
 
 export const STAFF_PROFILE: UserBioProfile = {
-  empId: 'HPS-1999703',
+  empId: 'DPS-1999703',
   fullName: 'Anuradha P. Senanayake',
   nameWithInitials: 'A. P. Senanayake',
   designation: 'Senior Administrative Officer Grade II',
@@ -28,11 +28,11 @@ export const STAFF_PROFILE: UserBioProfile = {
   emergencyContactName: 'Sanduni Senanayake (Spouse)',
   emergencyContactRelation: 'Spouse',
   emergencyContactPhone: '+94 71 892 4431',
-  residentialAddress: 'No. 142/A, High Level Road, Divulapitiya, Western Province',
+  residentialAddress: 'No. 142/A, Mirigama Road, Divulapitiya, Western Province',
 }
 
 export const ADMIN_PROFILE: UserBioProfile = {
-  empId: 'HPS-0000101',
+  empId: 'DPS-0000101',
   fullName: 'Dr. Kasun M. Gunawardena',
   nameWithInitials: 'K. M. Gunawardena',
   designation: 'Chief Administrative Officer & Systems Coordinator',
@@ -69,7 +69,7 @@ export const INITIAL_SESSIONS: SecuritySession[] = [
   {
     id: 'sess-2',
     device: 'Apple iPhone 15 Pro',
-    browser: 'Safari Mobile / HPS Staff App v2.4',
+    browser: 'Safari Mobile / DPS Staff App v2.4',
     ipAddress: '112.134.88.19 (Mobitel 4G)',
     location: 'Divulapitiya, Sri Lanka',
     lastActive: '2 hours ago',

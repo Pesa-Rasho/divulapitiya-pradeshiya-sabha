@@ -1,6 +1,5 @@
 import React from 'react';
 import { useLanguage } from '../../../context/LanguageContext';
-import pradeshiyaImg from '../../../assets/pradeshiyasabha.png';
 import { type ComplaintItem } from './ComplaintDetailsModal';
 
 interface ComplaintOverviewProps {
@@ -21,17 +20,24 @@ const ComplaintOverview: React.FC<ComplaintOverviewProps> = ({
 
   return (
     <div className="space-y-8">
-      {/* Hero Banner with exact building image background & dark gradient overlay */}
-      <div
-        className="relative h-64 rounded-xl overflow-hidden bg-cover bg-center shadow-lg"
-        style={{
-          backgroundImage: `linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url('${pradeshiyaImg}')`
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-6">
-          <h2 className="text-3xl font-extrabold text-white tracking-wide">
-            Citizen Complaints &amp; Civic Redressal
+      {/* Hero Banner with modern civic gradient styling */}
+      <div className="relative h-60 rounded-2xl overflow-hidden bg-gradient-to-r from-[#500c1e] via-[#751124] to-[#8C1538] shadow-md p-8 flex flex-col justify-end">
+        {/* Subtle decorative vector motif */}
+        <div className="absolute right-0 top-0 bottom-0 w-1/2 opacity-10 pointer-events-none flex items-center justify-end pr-8">
+          <svg className="w-56 h-56 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+          </svg>
+        </div>
+        <div className="relative z-10 space-y-2">
+          <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-white/15 backdrop-blur-xs text-white border border-white/20">
+            Divulapitiya Pradeshiya Sabha
+          </span>
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-wide">
+            {t('complaints.title', 'Citizen Complaints & Civic Redressal')}
           </h2>
+          <p className="text-white/80 text-xs sm:text-sm max-w-xl">
+            Promptly report municipal issues regarding roads, waste collection, street lamps, and public utilities across Divulapitiya.
+          </p>
         </div>
       </div>
 

@@ -36,20 +36,20 @@ const Footer = () => {
           </h3>
           <div className="text-gray-300 text-sm leading-relaxed mb-4 font-normal space-y-1">
             <p>දිවුලපිටිය ප්‍රාදේශීය සභාව,</p>
-            <p>උසාවිය පාර,</p>
-            <p>දිවුලපිටිය</p>
+            <p>මීරිගම පාර,</p>
+            <p>දිවුලපිටිය, 11250</p>
           </div>
           <p className="text-gray-300 text-sm mb-2">
             <span className="text-gray-400">Phone: </span> 
-            +94 11 285 5230 / +94 11 275 5108
+            +94 31 224 6275 / +94 31 224 3865
           </p>
           <p className="text-gray-300 text-sm mb-5">
             <span className="text-gray-400">Email: </span> 
             <a 
-              href="mailto:divulapitiyapradeshiyasabawa@gmail.com" 
+              href="mailto:divupitiyaps@gmail.com" 
               className="hover:text-white transition-colors underline-offset-2 hover:underline"
             >
-              divulapitiyapradeshiyasabawa@gmail.com
+              divupitiyaps@gmail.com
             </a>
           </p>
 

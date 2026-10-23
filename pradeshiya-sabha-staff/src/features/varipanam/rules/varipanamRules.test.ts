@@ -62,7 +62,7 @@ const baseDomesticProperty: Property = {
   description: 'Residential single-family house',
   propertyType: 'Residential',
   annualAssessedValue: 200000,
-  latitude: 6.842,
+  latitude: 7.242,
   longitude: 80.003,
   zoneId: 'zone-divulapitiya',
   wardId: 'ward-01',
@@ -208,13 +208,13 @@ const existingProps: Property[] = [
   { ...baseDomesticProperty, assessmentNumber: '45/2' },
 ]
 
-const validNew = validateNewProperty('99/New', { latitude: 6.845, longitude: 80.005 }, existingProps)
+const validNew = validateNewProperty('99/New', { latitude: 7.245, longitude: 80.005 }, existingProps)
 assert(validNew.isValid, '4.A: Unique assessment number "99/New" is accepted')
 
-const duplicateNew = validateNewProperty('78/12a', { latitude: 6.845, longitude: 80.005 }, existingProps)
+const duplicateNew = validateNewProperty('78/12a', { latitude: 7.245, longitude: 80.005 }, existingProps)
 assert(!duplicateNew.isValid, '4.B: Exact duplicate assessment number "78/12a" is rejected')
 
-const caseInsensitiveDuplicate = validateNewProperty('  78/12A  ', { latitude: 6.845, longitude: 80.005 }, existingProps)
+const caseInsensitiveDuplicate = validateNewProperty('  78/12A  ', { latitude: 7.245, longitude: 80.005 }, existingProps)
 assert(!caseInsensitiveDuplicate.isValid, '4.C: Trimmed, case-insensitive duplicate assessment number is rejected')
 
 // ── Test Case 5: Location History Immutability ──────────────────────────────
@@ -222,25 +222,25 @@ console.log('\nTest 5: Location History Immutability & Coordinate Tracking')
 
 const propBeforeLocationChange: Property = {
   ...baseDomesticProperty,
-  latitude: 6.8421,
+  latitude: 7.2421,
   longitude: 80.0028,
 }
 
 const { updatedProperty, historyEntry } = recordLocationChange(
   propBeforeLocationChange,
-  6.8435,
+  7.2435,
   80.0042,
   'Super Admin',
   'Survey boundary verified by Municipal Cartographer'
 )
 
-assertEquals(historyEntry.oldLatitude, 6.8421, '5.A: Old latitude (6.8421) is preserved in history')
+assertEquals(historyEntry.oldLatitude, 7.2421, '5.A: Old latitude (7.2421) is preserved in history')
 assertEquals(historyEntry.oldLongitude, 80.0028, '5.A: Old longitude (80.0028) is preserved in history')
-assertEquals(historyEntry.newLatitude, 6.8435, '5.B: New latitude is recorded in history entry')
+assertEquals(historyEntry.newLatitude, 7.2435, '5.B: New latitude is recorded in history entry')
 assertEquals(historyEntry.newLongitude, 80.0042, '5.B: New longitude is recorded in history entry')
 assertEquals(historyEntry.reason, 'Survey boundary verified by Municipal Cartographer', '5.C: Change reason is preserved')
-assertEquals(updatedProperty.latitude, 6.8435, '5.D: Property coordinates updated to new position')
-assert(propBeforeLocationChange.latitude === 6.8421, '5.E: Original property object was not mutated directly')
+assertEquals(updatedProperty.latitude, 7.2435, '5.D: Property coordinates updated to new position')
+assert(propBeforeLocationChange.latitude === 7.2421, '5.E: Original property object was not mutated directly')
 
 console.log('\n------------------------------------------------------')
 console.log(`TEST SUMMARY: ${passedCount} PASSED, ${failedCount} FAILED`)

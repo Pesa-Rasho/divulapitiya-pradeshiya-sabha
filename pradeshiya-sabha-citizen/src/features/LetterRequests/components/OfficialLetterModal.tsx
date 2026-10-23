@@ -59,8 +59,8 @@ const OfficialLetterModal = ({ isOpen, onClose, letter }) => {
               දිවුලපිටිය ප්‍රාදේශීය සභාව • திவுலபிட்டிய பிரதேச சபை
             </span>
             <h1 className="text-xl sm:text-2xl font-bold text-[#8C1538] tracking-tight">DIVULAPITIYA PRADESHIYA SABHA</h1>
-            <p className="text-sm font-semibold text-gray-700 mt-1">Court Road, Divulapitiya, Sri Lanka.</p>
-            <p className="text-xs text-gray-500 mt-1">Tel: +94 11 285 5230 | Email: divulapitiyapradeshiyasabawa@gmail.com</p>
+            <p className="text-sm font-semibold text-gray-700 mt-1">Mirigama Road, Divulapitiya, Sri Lanka.</p>
+            <p className="text-xs text-gray-500 mt-1">Tel: +94 31 224 6275 | Email: divupitiyaps@gmail.com</p>
           </div>
 
           {/* Letter Metadata */}

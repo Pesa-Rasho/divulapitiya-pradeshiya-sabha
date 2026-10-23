@@ -49,32 +49,32 @@ const MinusIcon = () => (
   </svg>
 )
 
-// Helper to determine realistic GPS coordinates in Divulapitiya / Pradeshiya Sabha area
+// Helper to determine realistic GPS coordinates in Divulapitiya Pradeshiya Sabha area
 function getVehicleCoordinates(v: VehicleRecord, index: number): [number, number] {
   if (v.gpsTracking) {
     return [v.gpsTracking.lat, v.gpsTracking.lng]
   }
   const loc = (v.currentLocation || '').toLowerCase()
   if (loc.includes('ward 01') || loc.includes('town')) {
-    return [6.8415 + (index % 3) * 0.003, 79.9982 + (index % 4) * 0.003]
+    return [7.2215 + (index % 3) * 0.003, 80.0182 + (index % 4) * 0.003]
   }
-  if (loc.includes('ward 03') || loc.includes('piliyandala')) {
-    return [6.8120 + (index % 3) * 0.004, 79.9240 + (index % 4) * 0.004]
+  if (loc.includes('ward 03') || loc.includes('dunagaha') || loc.includes('piliyandala')) {
+    return [7.2120 + (index % 3) * 0.004, 80.0040 + (index % 4) * 0.004]
   }
   if (loc.includes('ward 04') || loc.includes('waste')) {
-    return [6.8525 + (index % 3) * 0.003, 79.9650 + (index % 4) * 0.003]
+    return [7.2325 + (index % 3) * 0.003, 80.0250 + (index % 4) * 0.003]
   }
   if (loc.includes('ward 07') || loc.includes('grading')) {
-    return [6.8640 + (index % 3) * 0.003, 79.9890 + (index % 4) * 0.003]
+    return [7.2440 + (index % 3) * 0.003, 80.0190 + (index % 4) * 0.003]
   }
   if (loc.includes('ward 08') || loc.includes('rural')) {
-    return [6.8280 + (index % 3) * 0.004, 80.0120 + (index % 4) * 0.003]
+    return [7.2080 + (index % 3) * 0.004, 80.0320 + (index % 4) * 0.003]
   }
   if (v.status === 'In Maintenance') {
-    return [6.8350 + index * 0.0015, 79.9880 + index * 0.0015]
+    return [7.2250 + index * 0.0015, 80.0180 + index * 0.0015]
   }
-  // Central Depot default
-  return [6.8440 + index * 0.002, 79.9960 + index * 0.002]
+  // Central Depot default (Mirigama Rd, Divulapitiya)
+  return [7.2245 + index * 0.002, 80.0194 + index * 0.002]
 }
 
 function getStatusBadgeStyle(status: VehicleStatus): string {
@@ -160,8 +160,8 @@ export const FleetDispatchPage: React.FC = () => {
   useEffect(() => {
     if (!mapContainerRef.current || mapInstanceRef.current) return
 
-    // Center on Western Province / Divulapitiya municipal region
-    const initialCenter: [number, number] = [6.8435, 79.9750]
+    // Center on Divulapitiya municipal region
+    const initialCenter: [number, number] = [7.2245, 80.0194]
     const map = L.map(mapContainerRef.current, {
       center: initialCenter,
       zoom: 13,
@@ -253,7 +253,7 @@ export const FleetDispatchPage: React.FC = () => {
     mapInstanceRef.current?.zoomOut()
   }
   const handleCenterMap = () => {
-    mapInstanceRef.current?.setView([6.8435, 79.9750], 13, { animate: true })
+    mapInstanceRef.current?.setView([7.2245, 80.0194], 13, { animate: true })
   }
 
   const activeMissionVehicles = vehicles.filter((v) => v.status === 'On Mission')

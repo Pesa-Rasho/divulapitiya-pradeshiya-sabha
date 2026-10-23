@@ -102,11 +102,11 @@ const TopBar: React.FC<TopBarProps> = ({ hideNav }) => {
 
               {/* Phone */}
               <a
-                href="tel:+94112855230"
+                href="tel:+94312246275"
                 className="flex items-center gap-1.5 bg-gray-800 hover:bg-[#A31736] text-white text-sm px-3 py-1.5 rounded transition-colors"
               >
                 <WhatsAppIcon />
-                <span className="font-medium">+94 11 285 5230</span>
+                <span className="font-medium">+94 31 224 6275</span>
               </a>
             </div>
           </div>

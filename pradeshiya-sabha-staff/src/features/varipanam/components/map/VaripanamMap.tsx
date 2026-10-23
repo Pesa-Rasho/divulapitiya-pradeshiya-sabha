@@ -88,7 +88,7 @@ export const VaripanamMap: React.FC<VaripanamMapProps> = ({
   useEffect(() => {
     if (!mapContainerRef.current || mapInstanceRef.current) return
 
-    const initialCenter = settings.mapCentre || [6.8415, 80.0035]
+    const initialCenter = settings.mapCentre || [7.2245, 80.0194]
     const initialZoom = settings.defaultZoom || 14
 
     const map = L.map(mapContainerRef.current, {

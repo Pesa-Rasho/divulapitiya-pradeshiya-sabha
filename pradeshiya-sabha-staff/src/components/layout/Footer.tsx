@@ -50,27 +50,27 @@ const Footer: React.FC = () => {
             <h3 className="text-white font-semibold text-base mb-4">Contact Information</h3>
             <div className="space-y-1 text-sm text-gray-400">
               <p>දිවුලපිටිය ප්‍රාදේශීය සභාව,</p>
-              <p>උසාවිය පාර,</p>
-              <p>දිවුලපිටිය</p>
+              <p>මීරිගම පාර,</p>
+              <p>දිවුලපිටිය, 11250</p>
             </div>
             <div className="mt-4 space-y-1 text-sm">
               <p>
                 Phone:{' '}
-                <a href="tel:+94112855230" className="hover:text-white transition-colors">
-                  +94 11 285 5230
+                <a href="tel:+94312246275" className="hover:text-white transition-colors">
+                  +94 31 224 6275
                 </a>{' '}
                 /{' '}
-                <a href="tel:+94112755108" className="hover:text-white transition-colors">
-                  +94 11 275 5108
+                <a href="tel:+94312243865" className="hover:text-white transition-colors">
+                  +94 31 224 3865
                 </a>
               </p>
               <p>
                 Email:{' '}
                 <a
-                  href="mailto:divulapitiyapradeshiyasabawa@gmail.com"
+                  href="mailto:divupitiyaps@gmail.com"
                   className="hover:text-white transition-colors"
                 >
-                  divulapitiyapradeshiyasabawa@gmail.com
+                  divupitiyaps@gmail.com
                 </a>
               </p>
             </div>

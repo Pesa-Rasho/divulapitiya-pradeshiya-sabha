@@ -1,6 +1,5 @@
 import React from 'react';
 import { useLanguage } from '../../../context/LanguageContext';
-import pradeshiyaImg from '../../../assets/pradeshiyasabha.png';
 
 interface LetterOverviewProps {
   onNavigate: (tab: 'overview' | 'letters' | 'new') => void;
@@ -24,21 +23,32 @@ const LetterOverview: React.FC<LetterOverviewProps> = ({
 
   return (
     <div className="space-y-8">
-      {/* Hero Banner with exact building image background & dark gradient overlay */}
-      <div
-        className="relative h-64 rounded-xl overflow-hidden bg-cover bg-center shadow-lg"
-        style={{
-          backgroundImage: `linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url('${pradeshiyaImg}')`
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-6">
-          <h2 className="text-3xl font-extrabold text-white tracking-wide">
+      {/* Hero Banner with modern civic gradient styling */}
+      <div className="relative h-60 rounded-2xl overflow-hidden bg-gradient-to-r from-[#500c1e] via-[#751124] to-[#8C1538] shadow-md p-8 flex flex-col justify-end">
+        {/* Subtle decorative vector lines */}
+        <div className="absolute right-0 top-0 bottom-0 w-1/2 opacity-10 pointer-events-none flex items-center justify-end pr-8">
+          <svg className="w-56 h-56 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+          </svg>
+        </div>
+        <div className="relative z-10 space-y-2">
+          <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-white/15 backdrop-blur-xs text-white border border-white/20">
+            Divulapitiya Pradeshiya Sabha
+          </span>
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-wide">
             {L(
               'පුරවැසි ලිපි හා නිල ලිපි හුවමාරු පැනලය',
               'Citizen Letters & Correspondence Portal',
               'குடிமக்கள் கடிதங்கள் போர்டல்'
             )}
           </h2>
+          <p className="text-white/80 text-xs sm:text-sm max-w-xl">
+            {L(
+              'දිවුලපිටිය ප්‍රාදේශීය සභාව වෙත ඔබගේ නිල ලිපි යොමු කරන්න සහ ප්‍රගතිය නිරීක්ෂණය කරන්න.',
+              'Submit official letters and applications directly to Divulapitiya Pradeshiya Sabha and track status digitally.',
+              'திவுலபிட்டிய பிரதேச சபைக்கு உங்கள் அதிகாரபூர்வ கடிதங்களை சமர்ப்பித்து நிலையை கண்காணிக்கவும்.'
+            )}
+          </p>
         </div>
       </div>
 

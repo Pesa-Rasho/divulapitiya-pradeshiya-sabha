@@ -213,7 +213,7 @@ export const ProfileHeaderCard: React.FC<ProfileHeaderCardProps> = ({
                 <p className="text-xs font-bold uppercase tracking-wide text-gray-800">Staff Identity Badge</p>
               </div>
               <div className="w-7 h-7 rounded bg-[#A31736] text-white flex items-center justify-center font-bold text-xs">
-                HPS
+                DPS
               </div>
             </div>
 

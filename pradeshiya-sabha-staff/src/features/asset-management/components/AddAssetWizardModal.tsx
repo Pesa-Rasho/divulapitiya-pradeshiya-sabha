@@ -121,8 +121,8 @@ export const AddAssetWizardModal: React.FC<AddAssetWizardModalProps> = ({ isOpen
   const [areaSize, setAreaSize] = useState<string>('12400')
   const [unit, setUnit] = useState<string>('sq.ft')
   const [conditionStatus, setConditionStatus] = useState<AssetRecord['status']>('Operational')
-  const [latitude, setLatitude] = useState<string>('6.841240')
-  const [longitude, setLongitude] = useState<string>('79.998520')
+  const [latitude, setLatitude] = useState<string>('7.224520')
+  const [longitude, setLongitude] = useState<string>('80.019450')
   const [mapPicked, setMapPicked] = useState<boolean>(true)
 
   // Stage 4 State
@@ -172,8 +172,8 @@ export const AddAssetWizardModal: React.FC<AddAssetWizardModalProps> = ({ isOpen
     // Simulate interactive GIS mapping coordinate selection in Divulapitiya
     const randomBytes = new Uint32Array(2)
     crypto.getRandomValues(randomBytes)
-    const lat = (6.840000 + (randomBytes[0] % 10) / 1000).toFixed(6)
-    const lng = (79.990000 + (randomBytes[1] % 10) / 1000).toFixed(6)
+    const lat = (7.220000 + (randomBytes[0] % 10) / 1000).toFixed(6)
+    const lng = (80.015000 + (randomBytes[1] % 10) / 1000).toFixed(6)
     setLatitude(lat)
     setLongitude(lng)
     setMapPicked(true)

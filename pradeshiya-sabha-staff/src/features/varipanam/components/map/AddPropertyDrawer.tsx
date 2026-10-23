@@ -68,8 +68,8 @@ export const AddPropertyDrawer: React.FC<AddPropertyDrawerProps> = ({
       setLatitude(initialCoords.latitude)
       setLongitude(initialCoords.longitude)
 
-      // Boundary proximity check
-      if (initialCoords.latitude < 6.82 || initialCoords.latitude > 6.865 || initialCoords.longitude < 79.98 || initialCoords.longitude > 80.035) {
+      // Boundary proximity check for Divulapitiya
+      if (initialCoords.latitude < 7.18 || initialCoords.latitude > 7.28 || initialCoords.longitude < 79.97 || initialCoords.longitude > 80.06) {
         setBoundaryWarning('Notice: This coordinate lies near or outside the standard Divulapitiya Sabha boundary polygon.')
       } else {
         setBoundaryWarning(null)

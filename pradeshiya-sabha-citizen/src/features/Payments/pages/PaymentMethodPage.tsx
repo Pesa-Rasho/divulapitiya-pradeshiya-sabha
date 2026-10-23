@@ -28,11 +28,11 @@ const GOVPAY_FINTECH = ["iPay", "HelaPay", "Other Fintech App (shown on GovPay)"
 
 /**
  * Generates a mock payment reference code using the current timestamp.
- * @returns Formatted reference string starting with 'HPS-PAY-'
+ * @returns Formatted reference string starting with 'DPS-PAY-'
  */
 function generateReference() {
   const ts = Date.now().toString().slice(-8);
-  return `HPS-PAY-${ts}`;
+  return `DPS-PAY-${ts}`;
 }
 
 /**
