@@ -247,5 +247,5 @@ console.log(`TEST SUMMARY: ${passedCount} PASSED, ${failedCount} FAILED`)
 console.log('------------------------------------------------------\n')
 
 if (failedCount > 0) {
-  process.exit(1)
+  throw new Error(`Test suite failed: ${failedCount} test(s) failed.`)
 }
